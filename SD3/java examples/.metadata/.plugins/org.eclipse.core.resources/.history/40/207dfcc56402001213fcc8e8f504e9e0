@@ -1,0 +1,11 @@
+import javax.swing.JOptionPane;
+public class WhiteBall extends Ball{
+	//properties
+	
+	//Constructors
+	public WhiteBall(){}
+	public WhiteBall(String Colour){super(Colour);}
+	
+	//Methods
+	
+}

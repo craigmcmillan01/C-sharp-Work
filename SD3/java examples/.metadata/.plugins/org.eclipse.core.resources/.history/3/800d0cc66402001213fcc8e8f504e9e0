@@ -1,0 +1,11 @@
+import javax.swing.JOptionPane;
+public class BlackBall extends Ball {
+	//Properties
+	
+	//Constructors
+	public BlackBall(){}
+	public BlackBall(String Colour){super(Colour); }
+	
+	//Methods
+
+}

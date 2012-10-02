@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="0054afcf-ba8c-4ff6-8b67-ff0ee65a14ef"
+  name="Practicle_2_01" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="3358e3c8-ed85-4c42-9d73-82c22979fc8e"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e380c166-141c-4ad3-a191-d9e55fe8f764"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Maintain bike list"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="91f1c7d5-d376-46b9-a6ad-118e00e4da5d"
+              LastKnownName="Maintain bike list"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="32f6a52f-e828-4a91-bfee-34fc75c3dcaf"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5597c66c-fad2-4abf-84a9-b5ba91606de7"
+                  name="Maintain bike list"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a1eab613-2628-412e-9df1-ac8eb1620934"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Maintain customer  list"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="424d127e-3300-44d5-974d-57737673a558"
+              LastKnownName="Maintain customer  list"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="128ed197-987b-4080-aae8-c6e26c003983"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ff0e7e4-02c2-4ef1-9f8b-d4a7048d8b56"
+                  name="Maintain customer  list"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="461d7c73-4f2d-4bf6-a2ae-35cb1dea6196"
+        name="Receptionist"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f5fdd03e-c4c2-4c96-98ee-b32e1fe3642e"
+            isDerived="false"
+            sourceEndRoleName="Receptionist"
+            targetEndRoleName="Maintain customer  list"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="424d127e-3300-44d5-974d-57737673a558"
+              LastKnownName="Maintain customer  list"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="76eb7978-5604-43d1-9811-14b6257ede18"
+                  name="Receptionist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0a67903-3cbc-45db-a8a0-ba14274a5d2c"
+                  name="Maintain customer  list"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6fc18727-98cf-4f5b-8f97-0ed6ed4926f9"
+            isDerived="false"
+            sourceEndRoleName="Receptionist"
+            targetEndRoleName="Handle enquiries"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="260ee1a8-06fb-4197-b4cb-55dab37e011d"
+              LastKnownName="Handle enquiries"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1a8b83fe-6557-48fe-8db1-3872fb61c5ba"
+                  name="Receptionist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="227d8e28-b7a3-4a0d-91c1-c81a32bc838f"
+                  name="Handle enquiries"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bb98c2a9-4b65-4516-b9fe-aeb40997929a"
+            isDerived="false"
+            sourceEndRoleName="Receptionist"
+            targetEndRoleName="Issue bike"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="90a2590a-3a6c-47f5-ad1b-97d1c9c9ef38"
+              LastKnownName="Issue bike"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d13adc9-c48e-4ece-8b49-1ae6427d2d6f"
+                  name="Receptionist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2646dd3a-e2d7-487b-ba34-26550ac71a30"
+                  name="Issue bike"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="eef933fb-06fa-44aa-81ff-91f93b8757b1"
+            isDerived="false"
+            sourceEndRoleName="Receptionist"
+            targetEndRoleName="Handle bike return"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6ca0137f-a6af-47db-bdd2-cddb21289df3"
+              LastKnownName="Handle bike return"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d99d799-ca55-45b0-bfe9-f14861cf62f4"
+                  name="Receptionist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c4306a10-b753-469a-bad3-276fa81f6b16"
+                  name="Handle bike return"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e57e02a0-dec4-44fc-923d-bfce97bdac4f"
+        name="Wheel system"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="91f1c7d5-d376-46b9-a6ad-118e00e4da5d"
+        name="Maintain bike list"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e57e02a0-dec4-44fc-923d-bfce97bdac4f"
+            LastKnownName="Wheel system"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="424d127e-3300-44d5-974d-57737673a558"
+        name="Maintain customer  list"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e57e02a0-dec4-44fc-923d-bfce97bdac4f"
+            LastKnownName="Wheel system"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="260ee1a8-06fb-4197-b4cb-55dab37e011d"
+        name="Handle enquiries"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e57e02a0-dec4-44fc-923d-bfce97bdac4f"
+            LastKnownName="Wheel system"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="90a2590a-3a6c-47f5-ad1b-97d1c9c9ef38"
+        name="Issue bike"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Use case: Issue bike
+Actors: Receptionist
+Goal: To hire out a bike
+Description:
+A customer chooses a bike to hire. The receptionist looks up the bike on the system, informs the customer of the cost.
+the customer pays, is issued with a recipt, then leaves with the bike</description>
+        <subjects>
+          <subsystemMoniker
+            Id="e57e02a0-dec4-44fc-923d-bfce97bdac4f"
+            LastKnownName="Wheel system"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6ca0137f-a6af-47db-bdd2-cddb21289df3"
+        name="Handle bike return"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e57e02a0-dec4-44fc-923d-bfce97bdac4f"
+            LastKnownName="Wheel system"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d283ef3f-0fe4-4c41-bd33-29d335d5e4fa"
+        name="Module Leader"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4fd1a6e9-413b-41d5-8947-af976811055e"
+            isDerived="false"
+            sourceEndRoleName="Module Leader"
+            targetEndRoleName="Produce class list"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c1f45563-ce41-4e65-9af5-c47dbf8ed6d4"
+              LastKnownName="Produce class list"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="852db4d3-193e-4331-b3cb-a38f5fcd19c6"
+                  name="Module Leader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77007ad1-2cad-41f0-80a1-08c2d29fbf3d"
+                  name="Produce class list"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="14f1bc92-52f4-4bae-bb7d-0dd2c1bc9ff1"
+            isDerived="false"
+            sourceEndRoleName="Module Leader"
+            targetEndRoleName="Enter results"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1e0026b8-00ee-46ad-91ba-3bed45ff636e"
+              LastKnownName="Enter results"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d616edd3-5f13-47f9-8fd4-20d0ac90e920"
+                  name="Module Leader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dfd52dd6-fe61-4efe-9bdb-6b19cfd589a0"
+                  name="Enter results"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="45f03543-4a30-4a10-bec1-af5c3d0f3ac9"
+        name="Program  Leader"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b67bbf7d-1f5b-41e7-8ca9-37346d899abc"
+            isDerived="false"
+            sourceEndRoleName="Program  Leader"
+            targetEndRoleName="Get results"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8196da5c-da17-47de-99ec-7b4631cea80b"
+              LastKnownName="Get results"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e224995c-dc22-440c-9b34-70465e1142ae"
+                  name="Program  Leader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e189c46f-50f2-4627-8dd7-0688c66720c4"
+                  name="Get results"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="08872203-ae31-4cf2-897f-e1279c7f8667"
+        name="Student"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="43a63700-8264-46e4-be0c-59d7220a186f"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="Matriculate"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1353eedb-df36-4a84-bb6f-839711e33d65"
+              LastKnownName="Matriculate"
+              LastKnownLocation="Practicle_2_01.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e637ddf9-cf85-48a8-b386-08d171969645"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7a38ce8-c226-43a5-8a02-f5a8da1e2d74"
+                  name="Matriculate"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e4fdc0df-bb1d-4447-8b92-e3d4b19b8618"
+        name="University student records"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1353eedb-df36-4a84-bb6f-839711e33d65"
+        name="Matriculate"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Use case: Matriculate 
+Actors: Student 
+Goal: To matriculate into the University 
+Description: 
+The student enters their personal details (name, address, date of birth)
+and their University reference number
+.The system will then enrol the student on a set of modules for their programme. </description>
+        <additions>
+          <include
+            Id="163faf5c-e5c2-48c1-b5dc-b7d16d6a56a2">
+            <useCaseMoniker
+              Id="dabc5a21-cb8c-4d65-9330-b2dace5f8ee9"
+              LastKnownName="Find modules"
+              LastKnownLocation="Practicle_2_01.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="e4fdc0df-bb1d-4447-8b92-e3d4b19b8618"
+            LastKnownName="University student records"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c1f45563-ce41-4e65-9af5-c47dbf8ed6d4"
+        name="Produce class list"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Use case: Produce a class list 
+Actors: Module Leader 
+Goal: To produce a class list 
+Description: 
+The module leader enters their module number into the system.
+The system will find each of the students and produce a list of all the students who are enrolled on that module. </description>
+        <additions>
+          <include
+            Id="93263833-60ba-4894-b8e0-d0ccf85dd167">
+            <useCaseMoniker
+              Id="dabc5a21-cb8c-4d65-9330-b2dace5f8ee9"
+              LastKnownName="Find modules"
+              LastKnownLocation="Practicle_2_01.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="e4fdc0df-bb1d-4447-8b92-e3d4b19b8618"
+            LastKnownName="University student records"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e0026b8-00ee-46ad-91ba-3bed45ff636e"
+        name="Enter results"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Use case: Enter results 
+Actors: Module Leader 
+Goal: To record results for an assessment 
+Description: 
+For each student on their module the module leader enters a matriculation number,
+the system will then find the student and allow an assessment mark to be added. </description>
+        <additions>
+          <include
+            Id="e7e6bb48-90cb-4852-a6bf-cdcc31fa189e">
+            <useCaseMoniker
+              Id="d8128af4-9a33-422d-9197-e955af99b008"
+              LastKnownName="Get matriculation number"
+              LastKnownLocation="Practicle_2_01.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="e4fdc0df-bb1d-4447-8b92-e3d4b19b8618"
+            LastKnownName="University student records"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8196da5c-da17-47de-99ec-7b4631cea80b"
+        name="Get results"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Use case: Get results 
+Actors: Programme Leader 
+Goal: To obtain module results for a student 
+Description: 
+The programme leader enters the matriculation number of a student into the system.
+The system the finds that student and presents the results obtained by the student on each of their modules. </description>
+        <additions>
+          <include
+            Id="c1cc253d-7567-41ac-914c-2e7697be6cd0">
+            <useCaseMoniker
+              Id="d8128af4-9a33-422d-9197-e955af99b008"
+              LastKnownName="Get matriculation number"
+              LastKnownLocation="Practicle_2_01.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="e4fdc0df-bb1d-4447-8b92-e3d4b19b8618"
+            LastKnownName="University student records"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d8128af4-9a33-422d-9197-e955af99b008"
+        name="Get matriculation number"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Use Case:Get Matriculation number
+Description: To get the matriculation number of a student. </description>
+        <subjects>
+          <subsystemMoniker
+            Id="e4fdc0df-bb1d-4447-8b92-e3d4b19b8618"
+            LastKnownName="University student records"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="77bc955e-476f-4d91-a8ab-a1d91c5ee93d"
+        name="system"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dabc5a21-cb8c-4d65-9330-b2dace5f8ee9"
+        name="Find modules"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Use Case: Find Modules
+Goal: find modules associated with actor
+Description: To find the modules associated with the actor,
+to allow further operations to be performed.</description>
+        <subjects>
+          <subsystemMoniker
+            Id="e4fdc0df-bb1d-4447-8b92-e3d4b19b8618"
+            LastKnownName="University student records"
+            LastKnownLocation="Practicle_2_01.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

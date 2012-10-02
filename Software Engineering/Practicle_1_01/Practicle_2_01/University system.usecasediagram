@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="07f71904-06bb-4075-a98a-4cd276053ee5" name="University system" linkedPackageId="c175a7e8-a3ce-4f32-bd96-6f4fab3eaf2c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="6555768c-f219-4fea-b5e6-fb343ef804ad">
+      <profileInstance Id="69a73ec1-bf9a-40c9-95b4-fef498402dc4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6bddd4c8-8287-477d-84a1-25ee860921a3">
+      <profileInstance Id="f83eb577-309f-4faa-b2d8-0976099330e8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9a7b2ea7-35cd-4f51-a912-658bbbcc07cb" name="Module Leader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d283ef3f-0fe4-4c41-bd33-29d335d5e4fa" />
+        <targetEnds>
+          <association Id="8d09fa81-5492-4009-8df5-d6cd638d28cb" isDerived="false" sourceEndRoleName="Module Leader" targetEndRoleName="Produce class list" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d111a1ed-053b-4566-b909-800b9d0fa559" LastKnownName="Produce class list" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ece06401-de45-4725-93ef-215193c2e4df" name="Module Leader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="852db4d3-193e-4331-b3cb-a38f5fcd19c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c4d69db-5187-470c-96cb-103e721077a6" name="Produce class list" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="77007ad1-2cad-41f0-80a1-08c2d29fbf3d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4fd1a6e9-413b-41d5-8947-af976811055e" />
+          </association>
+          <association Id="12815721-5b48-4fef-8871-330a5901852b" isDerived="false" sourceEndRoleName="Module Leader" targetEndRoleName="Enter results" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2d2c4282-80d9-42d6-9cd6-97a7b230413b" LastKnownName="Enter results" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96b561b6-10a3-4456-b082-d4b5022349f0" name="Module Leader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d616edd3-5f13-47f9-8fd4-20d0ac90e920" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a460729-4b0a-4721-af99-f4f0a2252a51" name="Enter results" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dfd52dd6-fe61-4efe-9bdb-6b19cfd589a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="14f1bc92-52f4-4bae-bb7d-0dd2c1bc9ff1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="45391fba-b60e-4fbc-898c-bfa7638b2229" name="Program  Leader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="45f03543-4a30-4a10-bec1-af5c3d0f3ac9" />
+        <targetEnds>
+          <association Id="2abeafe1-c2e8-4a2f-a597-d84272e35f9c" isDerived="false" sourceEndRoleName="Program  Leader" targetEndRoleName="Get results" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f2a05fb5-8cbb-4d5d-b7ff-b7b64b4c7478" LastKnownName="Get results" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="df9426b9-2ba7-4668-8060-5ff9cae1fbf9" name="Program  Leader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e224995c-dc22-440c-9b34-70465e1142ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72c3edb9-df12-45ed-b18e-f96e6e1b0eb8" name="Get results" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e189c46f-50f2-4627-8dd7-0688c66720c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b67bbf7d-1f5b-41e7-8ca9-37346d899abc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4e02f1a6-a0ed-49cf-a51e-2e165a5b87e6" name="Student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="08872203-ae31-4cf2-897f-e1279c7f8667" />
+        <targetEnds>
+          <association Id="42c50ef0-1b45-4997-b645-db2abce51ea4" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Matriculate" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f63a80c1-060d-4667-b5a0-0a033b2acd65" LastKnownName="Matriculate" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b8d7bd83-a585-4d75-a201-743680a15b00" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e637ddf9-cf85-48a8-b386-08d171969645" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27e448d4-cb3b-44df-8407-cd9784d40ba0" name="Matriculate" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a7a38ce8-c226-43a5-8a02-f5a8da1e2d74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43a63700-8264-46e4-be0c-59d7220a186f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="87f9c918-8d44-4e52-82b7-72d446060992" name="University student records" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4fdc0df-bb1d-4447-8b92-e3d4b19b8618" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="f63a80c1-060d-4667-b5a0-0a033b2acd65" name="Matriculate" isAbstract="false" isLeaf="false">
+        <description>Use case: Matriculate 
+Actors: Student 
+Goal: To matriculate into the University 
+Description: 
+The student enters their personal details (name, address, date of birth)
+and their University reference number
+.The system will then enrol the student on a set of modules for their programme. </description>
+        <elementDefinition Id="1353eedb-df36-4a84-bb6f-839711e33d65" />
+        <additions>
+          <include Id="1c3f018f-ff24-4d5b-b2ce-09019cd6d44e">
+            <useCaseMoniker Id="079ca2e8-176c-42e8-8d44-f9005ab59078" LastKnownName="Find modules" />
+            <elementDefinition Id="163faf5c-e5c2-48c1-b5dc-b7d16d6a56a2" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="87f9c918-8d44-4e52-82b7-72d446060992" LastKnownName="University student records" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d111a1ed-053b-4566-b909-800b9d0fa559" name="Produce class list" isAbstract="false" isLeaf="false">
+        <description>Use case: Produce a class list 
+Actors: Module Leader 
+Goal: To produce a class list 
+Description: 
+The module leader enters their module number into the system.
+The system will find each of the students and produce a list of all the students who are enrolled on that module. </description>
+        <elementDefinition Id="c1f45563-ce41-4e65-9af5-c47dbf8ed6d4" />
+        <additions>
+          <include Id="b9eb15c2-c295-411a-9962-4a3675a78802">
+            <useCaseMoniker Id="079ca2e8-176c-42e8-8d44-f9005ab59078" LastKnownName="Find modules" />
+            <elementDefinition Id="93263833-60ba-4894-b8e0-d0ccf85dd167" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="87f9c918-8d44-4e52-82b7-72d446060992" LastKnownName="University student records" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2d2c4282-80d9-42d6-9cd6-97a7b230413b" name="Enter results" isAbstract="false" isLeaf="false">
+        <description>Use case: Enter results 
+Actors: Module Leader 
+Goal: To record results for an assessment 
+Description: 
+For each student on their module the module leader enters a matriculation number,
+the system will then find the student and allow an assessment mark to be added. </description>
+        <elementDefinition Id="1e0026b8-00ee-46ad-91ba-3bed45ff636e" />
+        <additions>
+          <include Id="efac539b-4fb2-4a1d-b12d-a356c02f4b5f">
+            <useCaseMoniker Id="b90339d4-ba02-4c1b-94d8-c0c1f35f9292" LastKnownName="Get matriculation number" />
+            <elementDefinition Id="e7e6bb48-90cb-4852-a6bf-cdcc31fa189e" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="87f9c918-8d44-4e52-82b7-72d446060992" LastKnownName="University student records" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f2a05fb5-8cbb-4d5d-b7ff-b7b64b4c7478" name="Get results" isAbstract="false" isLeaf="false">
+        <description>Use case: Get results 
+Actors: Programme Leader 
+Goal: To obtain module results for a student 
+Description: 
+The programme leader enters the matriculation number of a student into the system.
+The system the finds that student and presents the results obtained by the student on each of their modules. </description>
+        <elementDefinition Id="8196da5c-da17-47de-99ec-7b4631cea80b" />
+        <additions>
+          <include Id="b4cdb6b4-47b7-409b-b6e2-b720cb004f7f">
+            <useCaseMoniker Id="b90339d4-ba02-4c1b-94d8-c0c1f35f9292" LastKnownName="Get matriculation number" />
+            <elementDefinition Id="c1cc253d-7567-41ac-914c-2e7697be6cd0" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="87f9c918-8d44-4e52-82b7-72d446060992" LastKnownName="University student records" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b90339d4-ba02-4c1b-94d8-c0c1f35f9292" name="Get matriculation number" isAbstract="false" isLeaf="false">
+        <description>Use Case:Get Matriculation number
+Description: To get the matriculation number of a student. </description>
+        <elementDefinition Id="d8128af4-9a33-422d-9197-e955af99b008" />
+        <subjects>
+          <subsystemMoniker Id="87f9c918-8d44-4e52-82b7-72d446060992" LastKnownName="University student records" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="079ca2e8-176c-42e8-8d44-f9005ab59078" name="Find modules" isAbstract="false" isLeaf="false">
+        <description>Use Case: Find Modules
+Goal: find modules associated with actor
+Description: To find the modules associated with the actor,
+to allow further operations to be performed.</description>
+        <elementDefinition Id="dabc5a21-cb8c-4d65-9330-b2dace5f8ee9" />
+        <subjects>
+          <subsystemMoniker Id="87f9c918-8d44-4e52-82b7-72d446060992" LastKnownName="University student records" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="c175a7e8-a3ce-4f32-bd96-6f4fab3eaf2c" name="Practicle_2_01">
+    <elementDefinition Id="0054afcf-ba8c-4ff6-8b67-ff0ee65a14ef" />
+  </package>
+</useCaseModelRoot>

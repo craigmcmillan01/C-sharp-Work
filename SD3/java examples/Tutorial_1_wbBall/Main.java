@@ -1,0 +1,39 @@
+import java.util.*;
+import java.util.Random;
+
+import javax.swing.JOptionPane;
+//Tutorial_1_wbBall
+//19/09/12 white ball, black ball challenge question 1
+//Craig McMillan 10004694
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Ball winner = new Ball(); 
+		Random numGenerator = new Random();
+		int num;
+		Ball ball = new Ball("red", "Red");
+		WhiteBall whiteBall = new WhiteBall("white", "WhiteBall");
+		BlackBall blackBall = new BlackBall("black","BlackBall" );
+		
+		num = numGenerator.nextInt(10);
+		
+		String output; 
+		
+		output = "You got a "+num;
+		JOptionPane.showMessageDialog(null, output, "Random number",
+				JOptionPane.INFORMATION_MESSAGE);
+		
+		if (num <= 5){winner = whiteBall;}
+		else if (num > 5){winner = blackBall;}
+		
+		output = "Winner is " + winner.Name;
+		
+		JOptionPane.showMessageDialog(null, output, "Winner",
+				JOptionPane.INFORMATION_MESSAGE);
+
+	}
+
+}

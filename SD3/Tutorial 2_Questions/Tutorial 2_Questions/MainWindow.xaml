@@ -1,0 +1,8 @@
+﻿<Window x:Class="Tutorial_2_Questions.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Run" Height="63" HorizontalAlignment="Left" Margin="194,132,0,0" Name="btn_run" VerticalAlignment="Top" Width="111" Click="btn_run_Click" />
+    </Grid>
+</Window>

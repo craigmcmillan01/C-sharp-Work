@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="657d0ace-3761-4b2c-b2e4-408485845be1" name="FirstClassDiagram" linkedPackageId="42758789-0dc7-4c13-a657-08c659f15154" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e5dba5f7-5485-4fc0-97d1-b72ef85ee61b">
+      <profileInstance Id="ea7a8323-63ae-4254-a1cb-722d9c24f100" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fc0560ce-efaa-45a5-adcc-884ef167b121">
+      <profileInstance Id="adf99524-b237-40e6-baa2-c86ee8a4ede1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1c0d9f49-adde-4e55-bbe5-ab82f946df96" name="House" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9f39cc7b-87c6-4f31-91ad-169dd62cfbb4" />
+        <ownedAttributesInternal>
+          <property Id="803feb96-357a-4adc-9ac3-9e435870a87b" name="streetName (string)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="42dcdd86-bd0e-4d6c-baf9-0308eee1ad73" />
+          </property>
+          <property Id="4bf409e0-526f-40c9-a21e-0b4fe551c28b" name="number (int)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9d83ae7c-7f48-412d-b220-6c703694b3d4" />
+          </property>
+          <property Id="b51797ae-e524-4f3b-baf4-00990c23bccc" name="postCode (string)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63aaa99b-b72c-40f3-b34d-8a2bafb44a7c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0da278e2-84af-43a5-ad14-9747cb4d824a" name="Street" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b03558e0-bdfb-436e-bc1e-5332b9bc4080" />
+        <targetEnds>
+          <association Id="2463ebe8-2030-4d9b-9729-ddb0f32f0422" isDerived="false" sourceEndRoleName="Street" targetEndRoleName="House" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1c0d9f49-adde-4e55-bbe5-ab82f946df96" LastKnownName="House" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3685f15-eea7-4ed7-98c4-be4140a57101" name="Street" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc27a988-698e-4a89-b338-8fa382242d34" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c34a0e25-1f22-4e85-857b-2efcb75de67f" name="House" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="2e423873-fa76-4d03-b666-45eab7e10467" name="Lower" value="*">
+                      <elementDefinition Id="bb2f1681-8e96-45a2-86d9-994725e05b86" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="cc58933e-6bc2-4d7b-988f-111c83451f2d" name="Upper" value="*">
+                      <elementDefinition Id="6ccf9f22-4fe9-46a9-b04d-24675bb9341f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e6fe5658-a975-4c4c-8105-c5ad0fde1ad0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d1925fa2-f6cf-4b04-ab7b-bfa6c649d5ad" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2a9b1933-b03f-4f18-896e-4e4eb920fde7" name="name (string)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="96076dea-9a0f-4ac1-99d4-979367ee9d8e" />
+          </property>
+          <property Id="940bb4de-af68-437c-9169-60692c993b06" name="speedLimit (int)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ce8faf7c-7819-44d8-ba7d-b4a01964e6b5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="42758789-0dc7-4c13-a657-08c659f15154" name="Practical 3_01">
+    <elementDefinition Id="3b8f00c3-b514-4d40-9dd0-08b05fc4969a" />
+  </package>
+</logicalClassDesignerModel>

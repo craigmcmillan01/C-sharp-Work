@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="98b967d5-4b76-4012-a9bc-5b5a2ebd818e" name="cycleHire" linkedPackageId="ac998e77-70de-4d40-9a30-270d16e86608" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="dd32a48e-bce5-48f5-9c0d-285ba1abec9a">
+      <profileInstance Id="6aff3f47-28b5-4f12-bba8-ca57a5e4ed49" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="77ed116d-8399-4828-8433-f513e6c159d6">
+      <profileInstance Id="17df5f8d-4c8a-4184-b7ff-c420384ec836" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e36f6602-2049-4c2c-9ddb-6e2445821278" name="Administrator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3358e3c8-ed85-4c42-9d73-82c22979fc8e" />
+        <targetEnds>
+          <association Id="4b5c6f08-896d-4b6f-93a8-88ee7ab63cd6" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Maintain bike list" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="88de43d7-41a5-48c8-a1e6-f327a65a2c66" LastKnownName="Maintain bike list" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85a6e9f7-3563-41e7-81b2-53cbc1bef385" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="32f6a52f-e828-4a91-bfee-34fc75c3dcaf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a415360b-db97-41b8-a7f5-23f563092fcb" name="Maintain bike list" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5597c66c-fad2-4abf-84a9-b5ba91606de7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e380c166-141c-4ad3-a191-d9e55fe8f764" />
+          </association>
+          <association Id="10924a96-6801-41f8-8850-c8a182147c03" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Maintain customer  list" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="de7a004e-c0f3-4656-9e90-6d2f077d7f4c" LastKnownName="Maintain customer  list" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7f88c0ec-f17f-4aba-ad24-713935db0c29" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="128ed197-987b-4080-aae8-c6e26c003983" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88c4779f-a7fa-4704-9ff0-23d6646bf61a" name="Maintain customer  list" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ff0e7e4-02c2-4ef1-9f8b-d4a7048d8b56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a1eab613-2628-412e-9df1-ac8eb1620934" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="11bd2dde-b3d2-4562-896b-de4c9841c824" name="Receptionist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="461d7c73-4f2d-4bf6-a2ae-35cb1dea6196" />
+        <targetEnds>
+          <association Id="5e9471db-fb3b-4ffa-a7f3-b8b7d3e6a1ba" isDerived="false" sourceEndRoleName="Receptionist" targetEndRoleName="Maintain customer  list" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="de7a004e-c0f3-4656-9e90-6d2f077d7f4c" LastKnownName="Maintain customer  list" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="252fe821-24c5-482c-8689-b3752d3ce6f8" name="Receptionist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76eb7978-5604-43d1-9811-14b6257ede18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aedfc178-244c-4a53-94dc-14f13dc465fc" name="Maintain customer  list" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f0a67903-3cbc-45db-a8a0-ba14274a5d2c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f5fdd03e-c4c2-4c96-98ee-b32e1fe3642e" />
+          </association>
+          <association Id="ce0506f4-3653-41d2-89e7-d873868955e1" isDerived="false" sourceEndRoleName="Receptionist" targetEndRoleName="Handle enquiries" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dafd9687-a0ae-4ea3-a00f-6c1e3b00147a" LastKnownName="Handle enquiries" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0140ba9d-01d5-45fd-91e9-69319893be99" name="Receptionist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a8b83fe-6557-48fe-8db1-3872fb61c5ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="978eb783-27cf-42d0-8029-8828b6061def" name="Handle enquiries" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="227d8e28-b7a3-4a0d-91c1-c81a32bc838f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6fc18727-98cf-4f5b-8f97-0ed6ed4926f9" />
+          </association>
+          <association Id="1a6b995b-19d8-4d1f-aa3e-22655a85d0ae" isDerived="false" sourceEndRoleName="Receptionist" targetEndRoleName="Issue bike" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0fde39ad-8775-4377-8714-6f94d04c2e88" LastKnownName="Issue bike" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd03b9c9-f347-4105-9198-b4ce9857e6e7" name="Receptionist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9d13adc9-c48e-4ece-8b49-1ae6427d2d6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="756a45ef-8546-4327-9d92-c5871d23d421" name="Issue bike" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2646dd3a-e2d7-487b-ba34-26550ac71a30" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb98c2a9-4b65-4516-b9fe-aeb40997929a" />
+          </association>
+          <association Id="0159a9ad-0f5c-4dcd-8784-d73de11bb8a2" isDerived="false" sourceEndRoleName="Receptionist" targetEndRoleName="Handle bike return" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="936806f4-37ff-40aa-ab87-167e54eb3516" LastKnownName="Handle bike return" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5dc670cd-bce5-41bf-af86-539d0b0575c6" name="Receptionist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7d99d799-ca55-45b0-bfe9-f14861cf62f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="961cab91-864f-4309-8f61-610d80913c96" name="Handle bike return" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c4306a10-b753-469a-bad3-276fa81f6b16" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eef933fb-06fa-44aa-81ff-91f93b8757b1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="66f6fd1b-98ac-4a2e-a641-301f74f44548" name="Wheel system" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e57e02a0-dec4-44fc-923d-bfce97bdac4f" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="88de43d7-41a5-48c8-a1e6-f327a65a2c66" name="Maintain bike list" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="91f1c7d5-d376-46b9-a6ad-118e00e4da5d" />
+        <subjects>
+          <subsystemMoniker Id="66f6fd1b-98ac-4a2e-a641-301f74f44548" LastKnownName="Wheel system" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="de7a004e-c0f3-4656-9e90-6d2f077d7f4c" name="Maintain customer  list" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="424d127e-3300-44d5-974d-57737673a558" />
+        <subjects>
+          <subsystemMoniker Id="66f6fd1b-98ac-4a2e-a641-301f74f44548" LastKnownName="Wheel system" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="dafd9687-a0ae-4ea3-a00f-6c1e3b00147a" name="Handle enquiries" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="260ee1a8-06fb-4197-b4cb-55dab37e011d" />
+        <subjects>
+          <subsystemMoniker Id="66f6fd1b-98ac-4a2e-a641-301f74f44548" LastKnownName="Wheel system" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0fde39ad-8775-4377-8714-6f94d04c2e88" name="Issue bike" isAbstract="false" isLeaf="false">
+        <description>Use case: Issue bike
+Actors: Receptionist
+Goal: To hire out a bike
+Description:
+A customer chooses a bike to hire. The receptionist looks up the bike on the system, informs the customer of the cost.
+the customer pays, is issued with a recipt, then leaves with the bike</description>
+        <elementDefinition Id="90a2590a-3a6c-47f5-ad1b-97d1c9c9ef38" />
+        <subjects>
+          <subsystemMoniker Id="66f6fd1b-98ac-4a2e-a641-301f74f44548" LastKnownName="Wheel system" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="936806f4-37ff-40aa-ab87-167e54eb3516" name="Handle bike return" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6ca0137f-a6af-47db-bdd2-cddb21289df3" />
+        <subjects>
+          <subsystemMoniker Id="66f6fd1b-98ac-4a2e-a641-301f74f44548" LastKnownName="Wheel system" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="ac998e77-70de-4d40-9a30-270d16e86608" name="Practicle_2_01">
+    <elementDefinition Id="0054afcf-ba8c-4ff6-8b67-ff0ee65a14ef" />
+  </package>
+</useCaseModelRoot>

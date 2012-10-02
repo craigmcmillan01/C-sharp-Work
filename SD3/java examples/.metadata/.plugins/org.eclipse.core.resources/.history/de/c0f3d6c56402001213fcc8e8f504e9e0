@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+public class Ball {
+	//properties
+	protected String colour;
+	//constructors
+	public Ball(){}
+	
+	public Ball(String colour){
+		setColour(colour);
+	}
+	
+	//gets and sets
+	public void setColour(String Colour){this.colour = colour; }
+	public String getColour() {return this.colour; }
+	
+}
+
