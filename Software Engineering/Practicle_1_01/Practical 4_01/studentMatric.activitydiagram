@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f481ae3e-486e-4aee-9ec8-512c3bb56963" name="studentMatric" linkedPackageId="d7b85dec-8168-479f-bfde-7a53ac3f8bbc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b4294b0d-259a-4a81-b2fb-344894554e94">
+      <profileInstance Id="f0d44156-644f-40de-b118-028828d7987d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a79805ef-ee0a-4d4c-95a5-87758c1d56fc">
+      <profileInstance Id="b3b75b35-4925-49f1-b55d-7993d4df709e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="028aeb02-b838-496e-95e6-94b8581032e6" name="studentMatric" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="4a0dc5b8-c3dc-4c79-8911-dd5ed4c1993a" />
+        <nodes>
+          <initialNode Id="b74c594f-d3b2-470f-a121-1e53592a7480" name="Initial1" isLeaf="false">
+            <elementDefinition Id="391c910e-a3d2-4404-aedf-f4cffcea415d" />
+            <flowNodeTargets>
+              <controlFlow Id="94038f17-994d-49d3-b1d5-ec6a3d3da3ad" isLeaf="false">
+                <opaqueActionMoniker Id="1cff4f31-6acf-4997-899d-1d8d1ee7590b" LastKnownName="Supply Details" />
+                <elementDefinition Id="7162d598-257e-458f-96e8-e29d0d327618" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="3f4092de-3a0a-4ad1-8b0d-4750c3ac716a" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="88db8830-5ea3-4aec-b21c-496ab666b40e" />
+          </activityFinalNode>
+          <opaqueAction Id="1cff4f31-6acf-4997-899d-1d8d1ee7590b" name="Supply Details" isLeaf="false">
+            <elementDefinition Id="6a10308e-ac50-4fb9-a148-7d4c0166c83b" />
+            <flowNodeTargets>
+              <controlFlow Id="c22c7880-35c2-4f73-83dd-49de601b1d8e" isLeaf="false">
+                <opaqueActionMoniker Id="f2e9eaa4-17e4-42ac-bc85-5be93352a9ba" LastKnownName="Generate MatricNumber" />
+                <elementDefinition Id="dd2bd04b-0bb9-483d-ad6b-6520e4cd7821" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="50c73cb2-d761-4c4f-8cb8-cc2d77e02838" name="Students Desired Programme" isLeaf="false">
+            <description>Provide details of their desired programme of study </description>
+            <elementDefinition Id="1d38343b-571e-4d7a-833b-d04ad3132572" />
+            <flowNodeTargets>
+              <controlFlow Id="c56ceae7-d225-49bc-803e-b847a03a9fcf" isLeaf="false">
+                <opaqueActionMoniker Id="04810470-361d-49e4-a7e0-c6e3587a9e67" LastKnownName="enroll student" />
+                <elementDefinition Id="be0a2ce3-379e-465a-b0ad-5b4b35247362" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f2e9eaa4-17e4-42ac-bc85-5be93352a9ba" name="Generate MatricNumber" isLeaf="false">
+            <elementDefinition Id="ae1915e6-85d5-4f99-b6db-a56dfc7ff455" />
+            <flowNodeTargets>
+              <controlFlow Id="d1e00c63-381b-4e87-bfbd-5f6a1471cc0e" isLeaf="false">
+                <opaqueActionMoniker Id="50c73cb2-d761-4c4f-8cb8-cc2d77e02838" LastKnownName="Students Desired Programme" />
+                <elementDefinition Id="aaa4f1d9-6d20-4483-b181-582b89e8edd5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="04810470-361d-49e4-a7e0-c6e3587a9e67" name="enroll student" isLeaf="false">
+            <elementDefinition Id="575c46de-35e7-4426-bb25-f9ebd566a9b5" />
+            <flowNodeTargets>
+              <controlFlow Id="ac2b702b-9739-403b-b7fb-acb76b45a920" isLeaf="false">
+                <activityFinalNodeMoniker Id="3f4092de-3a0a-4ad1-8b0d-4750c3ac716a" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="8c6a0669-38b3-4022-ba20-51e9c04e7f08" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="7039a732-2a81-4fd8-b82a-7aa01e551fa8" name="Student" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="f0fd10f2-7331-4543-8e66-3013f6f2ebc4" />
+            <upperBound>
+              <literalInteger Id="bfebd496-f04f-4338-a1f9-149376dabc74" name="2147483647" value="2147483647">
+                <elementDefinition Id="a9b1178f-8822-4ffe-b6e5-f82ec35cd4b7" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="3f86fb69-25b9-4741-ac15-75984772f964" name="System" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="96f7d124-26d4-4fe0-910d-a156db434efb" />
+            <upperBound>
+              <literalInteger Id="66ba9a12-b33e-4829-bcfc-61a67cabe85d" name="2147483647" value="2147483647">
+                <elementDefinition Id="49f8640b-c97c-4314-93ff-4b3378232735" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="d7b85dec-8168-479f-bfde-7a53ac3f8bbc" name="Practical 4_01">
+    <elementDefinition Id="8d8f8726-9bf3-423b-8736-a09a7b88fb38" />
+  </package>
+</activityRootModel>
