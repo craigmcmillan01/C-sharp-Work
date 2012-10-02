@@ -138,6 +138,221 @@
         </nodes>
       </activity>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="943bda8d-59c6-4ceb-aae2-cd5db42e856d"
+        name="StudentMatric02"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="54b97636-20d3-4dab-b5b4-d3d45af0d4b4"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="58540cf8-bbe1-4ea7-a149-3e771f387c3c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b1600604-10c4-497e-873e-63315eded9f2"
+                  LastKnownName="Supply Details"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="195fab8a-ba58-4ca8-9d2b-51ffd8195f8c"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="b1600604-10c4-497e-873e-63315eded9f2"
+            name="Supply Details"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7cdf639b-9db0-49ee-8288-2f9d0f64ac4d"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2a617e76-fb8c-411e-82bc-d4c2568e581d"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cd77bfe1-a505-4eeb-b040-00433e008721"
+            name="Students Desired Programme"
+            isLeaf="false">
+            <description>Provide details of their desired programme of study </description>
+            <flowNodeTargets>
+              <controlFlow
+                Id="17a1ec52-26ba-4250-8ae2-652c3c2c8657"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c807d908-ddbc-4348-9908-3b1537ae9973"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c0186134-cee5-4780-a939-db258db5ecc8"
+            name="Generate MatricNumber"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0799cb8a-db3e-4016-83ae-af3eb429d29e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cd77bfe1-a505-4eeb-b040-00433e008721"
+                  LastKnownName="Students Desired Programme"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2ddee6aa-8da3-4ec4-bf19-66ed36d3dfbe"
+            name="enroll student"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3ff23140-1a89-4669-94bf-badbdc7b5a21"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="195fab8a-ba58-4ca8-9d2b-51ffd8195f8c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="449aac20-bf53-4ae7-a382-a169a95f0539"
+            name="Student"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="093065d8-13a9-434b-bc32-78fc044a18ac"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="479245a5-f3f7-41ce-a359-cc83cbc88a0f"
+            name="System"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="8c607bf1-2ae0-4d40-8b97-3a9c9a3d30b5"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <decisionNode
+            Id="2a617e76-fb8c-411e-82bc-d4c2568e581d"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bb767f78-5678-45aa-8bba-56ceac4a6675"
+                guard="if british student"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c0186134-cee5-4780-a939-db258db5ecc8"
+                  LastKnownName="Generate MatricNumber"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2eced561-9471-40ed-b51f-1a72d0a65c40"
+                guard="if oversea student"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fec41bf4-5371-4399-a9ce-931ee9d3fdeb"
+                  LastKnownName="enter passport number"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="fec41bf4-5371-4399-a9ce-931ee9d3fdeb"
+            name="enter passport number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="45c495e0-c723-4e22-aff3-d6f22bae6b04"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c0186134-cee5-4780-a939-db258db5ecc8"
+                  LastKnownName="Generate MatricNumber"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="c807d908-ddbc-4348-9908-3b1537ae9973"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="06880970-f869-46c8-b0da-3a00990b2d55"
+                guard="SAAS Paying"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4943b72e-f501-4cc0-9fdd-f1b32a3067d4"
+                  LastKnownName="Record SAAS number"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9a310293-8e19-4f60-be45-e00f40ba6428"
+                guard="SAAS not paying"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ed9242de-9955-4868-b907-683206018b81"
+                  LastKnownName="Record payment method"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="4943b72e-f501-4cc0-9fdd-f1b32a3067d4"
+            name="Record SAAS number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce21cb7a-87d9-42bd-80e4-08590a341acc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2ddee6aa-8da3-4ec4-bf19-66ed36d3dfbe"
+                  LastKnownName="enroll student"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ed9242de-9955-4868-b907-683206018b81"
+            name="Record payment method"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bde0045f-c3d8-4238-af8b-de92240ae77d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2ddee6aa-8da3-4ec4-bf19-66ed36d3dfbe"
+                  LastKnownName="enroll student"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

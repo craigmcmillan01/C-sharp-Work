@@ -24,6 +24,13 @@
       <SubType>Content</SubType>
       <DependentUpon>studentMatric.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="StudentMatric02.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="StudentMatric02.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>StudentMatric02.activitydiagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Practical 4_01.uml">
       <SubType>Content</SubType>
