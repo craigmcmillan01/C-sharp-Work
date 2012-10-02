@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/craig/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/c4p532zb.gqf/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log">
+  <Message Timestamp="2012-10-02T20:54:02" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2012-10-02T20:54:02" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2012-10-02T20:54:02" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-10-02T20:54:02" Importance="Diagnostic" Text="ProjectPath = ..\TextAdventureDiagramsLib\TextAdventureDiagramsLib.csproj" />
+  <Message Timestamp="2012-10-02T20:54:02" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-10-02T20:54:02" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-10-02T20:54:02" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-10-02T20:54:02" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-10-02T20:54:02" Importance="Medium" Text="TextAdventureDiagrams's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'TextAdventureDiagrams::Humanoid' -  (Class), 'TextAdventureDiagrams::Player' -  (Class), 'TextAdventureDiagrams::Bandit' -  (Class), 'TextAdventureDiagrams::Creature' -  (Class), 'TextAdventureDiagrams::Weapon' -  (Class), 'TextAdventureDiagrams::Pistol' -  (Class), 'TextAdventureDiagrams::Sword' -  (Class), 'TextAdventureDiagrams::AssaultRifle' -  (Class) " />
+  <Message Timestamp="2012-10-02T20:54:08" Importance="Medium" Text="Project Added: C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\TextAdventureDiagramsLib.csproj" />
+  <Message Timestamp="2012-10-02T20:54:08" Importance="Medium" Text="'TextAdventureDiagrams::Humanoid' -  (Class) : success (file created) - C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\GeneratedCode\Humanoid.cs" />
+  <Message Timestamp="2012-10-02T20:54:08" Importance="Medium" Text="'TextAdventureDiagrams::Player' -  (Class) : success (file created) - C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\GeneratedCode\Player.cs" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Medium" Text="'TextAdventureDiagrams::Bandit' -  (Class) : success (file created) - C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\GeneratedCode\Bandit.cs" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Medium" Text="'TextAdventureDiagrams::Creature' -  (Class) : success (file created) - C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\GeneratedCode\Creature.cs" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Medium" Text="'TextAdventureDiagrams::Weapon' -  (Class) : success (file created) - C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\GeneratedCode\Weapon.cs" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Medium" Text="'TextAdventureDiagrams::Pistol' -  (Class) : success (file created) - C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\GeneratedCode\Pistol.cs" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Medium" Text="'TextAdventureDiagrams::Sword' -  (Class) : success (file created) - C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\GeneratedCode\Sword.cs" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Medium" Text="'TextAdventureDiagrams::AssaultRifle' -  (Class) : success (file created) - C:\Users\craig\Desktop\Game Ideas\Text Adventure\TextAdventureDiagrams\TextAdventureDiagramsLib\GeneratedCode\AssaultRifle.cs" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="ProjectPath = ..\TextAdventureDiagramsLib\TextAdventureDiagramsLib.csproj" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Medium" Text="TextAdventureDiagrams's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'TextAdventureDiagrams::Humanoid' -  (Class), 'TextAdventureDiagrams::Player' -  (Class), 'TextAdventureDiagrams::Bandit' -  (Class), 'TextAdventureDiagrams::Creature' -  (Class), 'TextAdventureDiagrams::Weapon' -  (Class), 'TextAdventureDiagrams::Pistol' -  (Class), 'TextAdventureDiagrams::Sword' -  (Class), 'TextAdventureDiagrams::AssaultRifle' -  (Class) " />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="'TextAdventureDiagrams::Humanoid' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="'TextAdventureDiagrams::Player' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="'TextAdventureDiagrams::Bandit' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="'TextAdventureDiagrams::Creature' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="'TextAdventureDiagrams::Weapon' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-02T20:54:09" Importance="Diagnostic" Text="'TextAdventureDiagrams::Pistol' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'TextAdventureDiagrams::Sword' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'TextAdventureDiagrams::AssaultRifle' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="The selection included 7 elements which were not bound to a template." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'30b382a8-6c9e-4434-9193-f08fa40377f5' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'1f2625fe-88fa-41b3-9fda-a36469daac57' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'fc8f8581-0db8-406e-ac70-9948a2ecf0d5' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'TextAdventureDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'994f48fe-386b-456a-9ae7-052cdfcc9aec' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'b8028b79-1d82-4274-8076-f0917ec3bf1a' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="Diagnostic" Text="'d85c56e3-8c7b-4bb0-a765-5f17006d7ec3' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-02T20:54:10" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
