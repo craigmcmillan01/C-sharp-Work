@@ -41,8 +41,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeneratedCode\Character.cs" />
+    <Compile Include="GeneratedCode\Clothing.cs" />
+    <Compile Include="GeneratedCode\Environment.cs" />
+    <Compile Include="GeneratedCode\Food.cs" />
+    <Compile Include="GeneratedCode\House.cs" />
+    <Compile Include="GeneratedCode\Item.cs" />
+    <Compile Include="GeneratedCode\Mission.cs" />
+    <Compile Include="GeneratedCode\Money.cs" />
     <Compile Include="GeneratedCode\NPC.cs" />
     <Compile Include="GeneratedCode\Player.cs" />
+    <Compile Include="GeneratedCode\Room.cs" />
+    <Compile Include="GeneratedCode\Street.cs" />
+    <Compile Include="GeneratedCode\Tool.cs" />
+    <Compile Include="GeneratedCode\Weapon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

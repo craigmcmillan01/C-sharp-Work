@@ -1,32 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="file:///C:/Users/craig/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/c4p532zb.gqf/Logging/CodeGenLog.xslt"?>
 <Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log">
-  <Message Timestamp="2012-10-03T18:06:19" Importance="High" Text="Code generation or text transformation started." />
-  <Message Timestamp="2012-10-03T18:06:19" Importance="Diagnostic" Text="Name = ClassTemplate" />
-  <Message Timestamp="2012-10-03T18:06:19" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2012-10-03T18:06:19" Importance="Diagnostic" Text="ProjectPath = ..\ClassDiagram_01Lib\ClassDiagram_01Lib.csproj" />
-  <Message Timestamp="2012-10-03T18:06:19" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2012-10-03T18:06:19" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2012-10-03T18:06:19" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2012-10-03T18:06:19" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2012-10-03T18:06:19" Importance="Medium" Text="ClassDiagram_01's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'ClassDiagram_01::Character' -  (Class), 'ClassDiagram_01::Player' -  (Class), 'ClassDiagram_01::NPC' -  (Class) " />
-  <Message Timestamp="2012-10-03T18:06:25" Importance="Medium" Text="Project Added: C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\ClassDiagram_01Lib.csproj" />
-  <Message Timestamp="2012-10-03T18:06:25" Importance="Medium" Text="'ClassDiagram_01::Character' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\GeneratedCode\Character.cs" />
-  <Message Timestamp="2012-10-03T18:06:25" Importance="Medium" Text="'ClassDiagram_01::Player' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\GeneratedCode\Player.cs" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Medium" Text="'ClassDiagram_01::NPC' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\GeneratedCode\NPC.cs" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="Name = StructTemplate" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="ProjectPath = ..\ClassDiagram_01Lib\ClassDiagram_01Lib.csproj" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Medium" Text="ClassDiagram_01's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'ClassDiagram_01::Character' -  (Class), 'ClassDiagram_01::Player' -  (Class), 'ClassDiagram_01::NPC' -  (Class) " />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="'ClassDiagram_01::Character' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="'ClassDiagram_01::Player' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="'ClassDiagram_01::NPC' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="The selection included 2 elements which were not bound to a template." />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="'62f47d04-53cd-4856-8679-51d219020c26' -  (Generalization): no bound template." />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="Diagnostic" Text="'fec18ac3-1172-4f3e-b954-82d420618a40' -  (Generalization): no bound template." />
-  <Message Timestamp="2012-10-03T18:06:26" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Diagnostic" Text="ProjectPath = ..\ClassDiagram_01Lib\ClassDiagram_01Lib.csproj" />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Medium" Text="ClassDiagram_01's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'ClassDiagram_01::Mission' -  (Class), 'ClassDiagram_01::Environment' -  (Class), 'ClassDiagram_01::Street' -  (Class), 'ClassDiagram_01::House' -  (Class), 'ClassDiagram_01::Room' -  (Class) " />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Medium" Text="'ClassDiagram_01::Mission' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\GeneratedCode\Mission.cs" />
+  <Message Timestamp="2012-10-03T19:23:19" Importance="Medium" Text="'ClassDiagram_01::Environment' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\GeneratedCode\Environment.cs" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Medium" Text="'ClassDiagram_01::Street' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\GeneratedCode\Street.cs" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Medium" Text="'ClassDiagram_01::House' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\GeneratedCode\House.cs" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Medium" Text="'ClassDiagram_01::Room' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Text Adventure\TextAdventer_Iteration_02\ClassDiagram_01Lib\GeneratedCode\Room.cs" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="ProjectPath = ..\ClassDiagram_01Lib\ClassDiagram_01Lib.csproj" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Medium" Text="ClassDiagram_01's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'ClassDiagram_01::Mission' -  (Class), 'ClassDiagram_01::Environment' -  (Class), 'ClassDiagram_01::Street' -  (Class), 'ClassDiagram_01::House' -  (Class), 'ClassDiagram_01::Room' -  (Class) " />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::Mission' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::Environment' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::Street' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::House' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::Room' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="The selection included 7 elements which were not bound to a template." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'9875da34-0052-47ce-8cf9-0282da30c0fd' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'6c1cc0da-7556-48e1-b335-64143e6572e0' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'ClassDiagram_01::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="Diagnostic" Text="'f2aa1e21-e7a9-4739-8344-ef9999a2640c' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-03T19:23:20" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
 </Log>
