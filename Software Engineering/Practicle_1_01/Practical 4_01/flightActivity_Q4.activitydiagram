@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9e933279-a4d3-4c1a-ad53-3d611d9c6b15" name="flightActivity_Q4" linkedPackageId="df6fdfe7-66ec-42fa-9e69-132339f8b41d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ea9cec7a-3e09-4dc1-b079-3ebee95dd93d">
+      <profileInstance Id="68eb3547-6ec6-4339-b0e2-6206a2257d1f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5061199c-8cf0-458c-8155-401bd4d67992">
+      <profileInstance Id="475722a8-984a-4c03-bc89-abf0c7044008" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="62defc16-8280-4cd7-88fc-9bd36601285c" name="flightActivity_Q4" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="e750a94c-d612-4ad5-bbae-f293dba9f360" />
+        <nodes>
+          <initialNode Id="c3ebaad0-d46b-4892-ad95-623b07f392bf" name="Initial1" isLeaf="false">
+            <elementDefinition Id="4eb23289-3c26-44f7-947b-f3668cf90a10" />
+            <flowNodeTargets>
+              <controlFlow Id="ed7c23e0-13e5-41fc-bf56-3090e405b1db" isLeaf="false">
+                <opaqueActionMoniker Id="e1a5a837-d1ea-4d74-8f29-f0bd3fcb9f87" LastKnownName="Call Passengers to departure lounge" />
+                <elementDefinition Id="28f1758e-fc89-4c72-a9ec-f5ffc71d5ea6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="e1a5a837-d1ea-4d74-8f29-f0bd3fcb9f87" name="Call Passengers to departure lounge" isLeaf="false">
+            <elementDefinition Id="548ea485-a33d-427e-ae3d-17d508b6f60c" />
+            <flowNodeTargets>
+              <controlFlow Id="e1d008cd-9026-4655-acd3-dba9327c4af6" isLeaf="false">
+                <opaqueActionMoniker Id="765c22c6-f777-431d-9286-e408fa974e5f" LastKnownName="Retrieve checked in passenger list" />
+                <elementDefinition Id="3ea8a4a8-0200-4c8a-9c4e-29f1869efb53" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="765c22c6-f777-431d-9286-e408fa974e5f" name="Retrieve checked in passenger list" isLeaf="false">
+            <elementDefinition Id="4a0c6683-a70e-47f3-b0c5-c48eadb3a7c3" />
+            <flowNodeTargets>
+              <controlFlow Id="abc25959-a024-4083-bea6-639635181f2d" isLeaf="false">
+                <opaqueActionMoniker Id="3439e2b8-f1e2-45f0-8373-d5a8a30a4eb7" LastKnownName="Get passenger" />
+                <elementDefinition Id="2f4527e4-338b-43a7-9f8a-f6c8df80f0ce" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="6ae81ca3-f8f8-4732-abaf-3bdd9b18f210" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="8df6c45d-7532-4ad6-b372-16b0aa06d9f8" LastKnownName="Passenger List" />
+                <elementDefinition Id="5424c8ab-8fe5-4924-bf33-64d40a1ca0c8" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="8ce3f620-d986-451e-99b4-af1dd00f6df6" name="Scan boarding card" isLeaf="false">
+            <elementDefinition Id="4d90550e-7110-4c0f-8163-c81a23882054" />
+            <flowNodeTargets>
+              <controlFlow Id="60c0d542-e3f5-442c-9b2a-30db6ab8c081" isLeaf="false">
+                <opaqueActionMoniker Id="92aba4a7-b3f9-4f11-92bb-681a3c010720" LastKnownName="check id number against list" />
+                <elementDefinition Id="51de50bc-1a55-464b-8619-80a42288f717" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="b7a4c89d-1984-45f4-83e4-4683a2e08642" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1b918b9d-bb1d-4d8b-b3f2-8508b6bfa868" LastKnownName="Passenger" />
+                <elementDefinition Id="f8b5a785-8b9d-49bd-9662-fca8e80b0ad0" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="92aba4a7-b3f9-4f11-92bb-681a3c010720" name="check id number against list" isLeaf="false">
+            <elementDefinition Id="94c88f77-2476-4164-b377-812d8426850e" />
+            <flowNodeTargets>
+              <controlFlow Id="5f8aee10-38b2-4322-b15a-1212f7f44a53" isLeaf="false">
+                <decisionNodeMoniker Id="94e07e4b-a1fb-4423-86b9-94692f09e3ae" LastKnownName="Decision1" />
+                <elementDefinition Id="99cf5b09-bd57-497a-9e22-34341a3d2ea5" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="5a1b4953-bef3-4300-a738-7cf8aac423d5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="8df6c45d-7532-4ad6-b372-16b0aa06d9f8" LastKnownName="Passenger List" />
+                <elementDefinition Id="56cee1db-2c5a-492f-8ad9-f843cbb8d6d6" />
+              </objectFlow>
+              <objectFlow Id="d9bddd5d-f6bc-4bfc-8847-9aa338168579" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1b918b9d-bb1d-4d8b-b3f2-8508b6bfa868" LastKnownName="Passenger" />
+                <elementDefinition Id="dae7d71c-212a-4667-93c1-013ea4b30c46" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="ce544d70-6800-4d3c-99aa-b2ea8fa5134b" name="Generate error" isLeaf="false">
+            <elementDefinition Id="96203696-e5ce-42e6-9390-2f57f1a63da9" />
+            <flowNodeTargets>
+              <controlFlow Id="8ed13cd5-0888-46ef-b89a-6ac86b9df862" isLeaf="false">
+                <opaqueActionMoniker Id="3439e2b8-f1e2-45f0-8373-d5a8a30a4eb7" LastKnownName="Get passenger" />
+                <elementDefinition Id="dd4f4643-59ab-4416-b0e8-a4f8ccce7de2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="94e07e4b-a1fb-4423-86b9-94692f09e3ae" name="Decision1" isLeaf="false">
+            <elementDefinition Id="ba5b74cd-73cd-49b1-8365-01a458e708b3" />
+            <flowNodeTargets>
+              <controlFlow Id="7ef2c8e6-def0-4a21-9c3a-402e1508517e" guard="id not on list" isLeaf="false">
+                <opaqueActionMoniker Id="ce544d70-6800-4d3c-99aa-b2ea8fa5134b" LastKnownName="Generate error" />
+                <elementDefinition Id="40f3a0d0-f7ba-4eba-ab89-4c7d23f830c8" />
+              </controlFlow>
+              <controlFlow Id="ff9fd438-d71c-4460-b757-93d240c6dee3" guard="Id on list" isLeaf="false">
+                <opaqueActionMoniker Id="945db2c3-5029-4888-8a66-70b6402dfbb6" LastKnownName="board plane" />
+                <elementDefinition Id="63b450fd-4ece-4697-ae1f-7daea10e646e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="945db2c3-5029-4888-8a66-70b6402dfbb6" name="board plane" isLeaf="false">
+            <elementDefinition Id="dbdc3636-c606-4460-bad2-c3cfe02592a8" />
+            <flowNodeTargets>
+              <controlFlow Id="a6cdfb77-6e76-481b-af76-ee0e3a209796" isLeaf="false">
+                <decisionNodeMoniker Id="ab879fee-e9cf-42a3-af1c-e6bfeed99963" LastKnownName="Decision2" />
+                <elementDefinition Id="932573de-1ff0-4fe7-81b1-5b5b0f33bd1f" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="c90fef8e-1057-4369-8a96-20afbcd13c76" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1b918b9d-bb1d-4d8b-b3f2-8508b6bfa868" LastKnownName="Passenger" />
+                <elementDefinition Id="64ac1c20-2420-4941-b7d9-889d1cb058a8" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <decisionNode Id="ab879fee-e9cf-42a3-af1c-e6bfeed99963" name="Decision2" isLeaf="false">
+            <elementDefinition Id="19851976-0e81-4e20-a9ba-2fd778569ee7" />
+            <flowNodeTargets>
+              <controlFlow Id="26370f11-e065-4464-84cb-69fc16ad9fe2" guard="If all passengers have boarded" isLeaf="false">
+                <opaqueActionMoniker Id="dc96d2a2-feca-4c7e-ac82-95f58a40321e" LastKnownName="Print manifest" />
+                <elementDefinition Id="98580632-a732-418f-aa1b-0cf4a3093794" />
+              </controlFlow>
+              <controlFlow Id="f6504a79-239d-444c-8dcd-f6826b6c55cd" guard="Passengers still to board" isLeaf="false">
+                <opaqueActionMoniker Id="3439e2b8-f1e2-45f0-8373-d5a8a30a4eb7" LastKnownName="Get passenger" />
+                <elementDefinition Id="3aa752ae-12d8-4603-82b0-e483ac103f56" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="dc96d2a2-feca-4c7e-ac82-95f58a40321e" name="Print manifest" isLeaf="false">
+            <elementDefinition Id="e0d84b9b-7808-482a-933b-30c0a73476d1" />
+            <flowNodeTargets>
+              <controlFlow Id="59dc91de-85e5-4df4-b008-d4de8ca74d8c" isLeaf="false">
+                <activityFinalNodeMoniker Id="9285b9ec-56fa-40ed-b6bc-8b4f86ec7453" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ce6ef63c-5bf5-483d-905a-b2d1a5c1f366" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="90f8a66e-ba51-4170-847c-30699fddd6f8" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1d39672a-f9e4-4c7e-9d77-bf4d89f9283d" LastKnownName="Manifest" />
+                <elementDefinition Id="111d252e-0a1f-4b53-b5f5-35137ee8fb85" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="3439e2b8-f1e2-45f0-8373-d5a8a30a4eb7" name="Get passenger" isLeaf="false">
+            <elementDefinition Id="aed1eba9-646f-4c53-937e-4d9515a0eb24" />
+            <flowNodeTargets>
+              <controlFlow Id="63ed18b1-4ab2-42cd-bbb7-15ab6e1ab416" isLeaf="false">
+                <opaqueActionMoniker Id="8ce3f620-d986-451e-99b4-af1dd00f6df6" LastKnownName="Scan boarding card" />
+                <elementDefinition Id="015acf59-5aa3-4827-80d0-65ed06cf4c7f" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="22485e03-7318-4969-8ea8-7151baa1b6f9" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1b918b9d-bb1d-4d8b-b3f2-8508b6bfa868" LastKnownName="Passenger" />
+                <elementDefinition Id="89d9c6a4-90e3-4dd7-9bce-2402a7a44019" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <activityFinalNode Id="9285b9ec-56fa-40ed-b6bc-8b4f86ec7453" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="358bf647-2ec1-432f-ac21-1c4adaa76c90" />
+          </activityFinalNode>
+          <objectNode Id="1b918b9d-bb1d-4d8b-b3f2-8508b6bfa868" name="Passenger" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="4b846e0c-52a1-452c-ad5c-117b50f60212" />
+            <upperBound>
+              <literalInteger Id="c6c4e96d-9644-4b2f-a9c7-578cfe54f107" name="2147483647" value="2147483647">
+                <elementDefinition Id="e18299f6-9e25-45d4-95fb-da3af371325b" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="8df6c45d-7532-4ad6-b372-16b0aa06d9f8" name="Passenger List" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="d26ae0b0-e7e6-49e5-83fb-316ddb86c6f9" />
+            <upperBound>
+              <literalInteger Id="5dabe20a-3670-47c5-b9d1-287bc8c86d2f" name="2147483647" value="2147483647">
+                <elementDefinition Id="94c6dee1-ba3c-4a7b-9319-5e15ef044160" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="1d39672a-f9e4-4c7e-9d77-bf4d89f9283d" name="Manifest" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="cf8ff26b-8713-42c8-b785-3b6f5173abb1" />
+            <upperBound>
+              <literalInteger Id="84f68855-9480-494a-8312-67174f47ff2f" name="2147483647" value="2147483647">
+                <elementDefinition Id="7f676162-574c-49d3-bf10-fb607f313cbc" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="df6fdfe7-66ec-42fa-9e69-132339f8b41d" name="Practical 4_01">
+    <elementDefinition Id="8d8f8726-9bf3-423b-8736-a09a7b88fb38" />
+  </package>
+</activityRootModel>

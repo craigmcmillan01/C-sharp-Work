@@ -17,6 +17,20 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
+    <Content Include="FiresRUs_Q7.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FiresRUs_Q7.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FiresRUs_Q7.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="flightActivity_Q4.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flightActivity_Q4.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>flightActivity_Q4.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="studentMatric.activitydiagram">
       <SubType>Content</SubType>
     </Content>

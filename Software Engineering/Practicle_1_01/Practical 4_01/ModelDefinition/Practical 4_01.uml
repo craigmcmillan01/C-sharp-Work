@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="8d8f8726-9bf3-423b-8736-a09a7b88fb38"
   name="Practical 4_01" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -350,6 +350,626 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="e750a94c-d612-4ad5-bbae-f293dba9f360"
+        name="flightActivity_Q4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="4eb23289-3c26-44f7-947b-f3668cf90a10"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="28f1758e-fc89-4c72-a9ec-f5ffc71d5ea6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="548ea485-a33d-427e-ae3d-17d508b6f60c"
+                  LastKnownName="Call Passengers to departure lounge"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="548ea485-a33d-427e-ae3d-17d508b6f60c"
+            name="Call Passengers to departure lounge"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3ea8a4a8-0200-4c8a-9c4e-29f1869efb53"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4a0c6683-a70e-47f3-b0c5-c48eadb3a7c3"
+                  LastKnownName="Retrieve checked in passenger list"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4a0c6683-a70e-47f3-b0c5-c48eadb3a7c3"
+            name="Retrieve checked in passenger list"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2f4527e4-338b-43a7-9f8a-f6c8df80f0ce"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aed1eba9-646f-4c53-937e-4d9515a0eb24"
+                  LastKnownName="Get passenger"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="5424c8ab-8fe5-4924-bf33-64d40a1ca0c8"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="d26ae0b0-e7e6-49e5-83fb-316ddb86c6f9"
+                  LastKnownName="Passenger List"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4d90550e-7110-4c0f-8163-c81a23882054"
+            name="Scan boarding card"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="51de50bc-1a55-464b-8619-80a42288f717"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="94c88f77-2476-4164-b377-812d8426850e"
+                  LastKnownName="check id number against list"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="f8b5a785-8b9d-49bd-9662-fca8e80b0ad0"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4b846e0c-52a1-452c-ad5c-117b50f60212"
+                  LastKnownName="Passenger"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="94c88f77-2476-4164-b377-812d8426850e"
+            name="check id number against list"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="99cf5b09-bd57-497a-9e22-34341a3d2ea5"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ba5b74cd-73cd-49b1-8365-01a458e708b3"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="56cee1db-2c5a-492f-8ad9-f843cbb8d6d6"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="d26ae0b0-e7e6-49e5-83fb-316ddb86c6f9"
+                  LastKnownName="Passenger List"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="dae7d71c-212a-4667-93c1-013ea4b30c46"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4b846e0c-52a1-452c-ad5c-117b50f60212"
+                  LastKnownName="Passenger"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="96203696-e5ce-42e6-9390-2f57f1a63da9"
+            name="Generate error"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dd4f4643-59ab-4416-b0e8-a4f8ccce7de2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aed1eba9-646f-4c53-937e-4d9515a0eb24"
+                  LastKnownName="Get passenger"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="ba5b74cd-73cd-49b1-8365-01a458e708b3"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="40f3a0d0-f7ba-4eba-ab89-4c7d23f830c8"
+                guard="id not on list"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="96203696-e5ce-42e6-9390-2f57f1a63da9"
+                  LastKnownName="Generate error"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="63b450fd-4ece-4697-ae1f-7daea10e646e"
+                guard="Id on list"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dbdc3636-c606-4460-bad2-c3cfe02592a8"
+                  LastKnownName="board plane"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="dbdc3636-c606-4460-bad2-c3cfe02592a8"
+            name="board plane"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="932573de-1ff0-4fe7-81b1-5b5b0f33bd1f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="19851976-0e81-4e20-a9ba-2fd778569ee7"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="64ac1c20-2420-4941-b7d9-889d1cb058a8"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4b846e0c-52a1-452c-ad5c-117b50f60212"
+                  LastKnownName="Passenger"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="19851976-0e81-4e20-a9ba-2fd778569ee7"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="98580632-a732-418f-aa1b-0cf4a3093794"
+                guard="If all passengers have boarded"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e0d84b9b-7808-482a-933b-30c0a73476d1"
+                  LastKnownName="Print manifest"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3aa752ae-12d8-4603-82b0-e483ac103f56"
+                guard="Passengers still to board"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aed1eba9-646f-4c53-937e-4d9515a0eb24"
+                  LastKnownName="Get passenger"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="e0d84b9b-7808-482a-933b-30c0a73476d1"
+            name="Print manifest"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce6ef63c-5bf5-483d-905a-b2d1a5c1f366"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="358bf647-2ec1-432f-ac21-1c4adaa76c90"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="111d252e-0a1f-4b53-b5f5-35137ee8fb85"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="cf8ff26b-8713-42c8-b785-3b6f5173abb1"
+                  LastKnownName="Manifest"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="aed1eba9-646f-4c53-937e-4d9515a0eb24"
+            name="Get passenger"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="015acf59-5aa3-4827-80d0-65ed06cf4c7f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4d90550e-7110-4c0f-8163-c81a23882054"
+                  LastKnownName="Scan boarding card"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="89d9c6a4-90e3-4dd7-9bce-2402a7a44019"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4b846e0c-52a1-452c-ad5c-117b50f60212"
+                  LastKnownName="Passenger"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="358bf647-2ec1-432f-ac21-1c4adaa76c90"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <objectNode
+            Id="4b846e0c-52a1-452c-ad5c-117b50f60212"
+            name="Passenger"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="e18299f6-9e25-45d4-95fb-da3af371325b"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="d26ae0b0-e7e6-49e5-83fb-316ddb86c6f9"
+            name="Passenger List"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="94c6dee1-ba3c-4a7b-9319-5e15ef044160"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="cf8ff26b-8713-42c8-b785-3b6f5173abb1"
+            name="Manifest"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="7f676162-574c-49d3-bf10-fb607f313cbc"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="4acf5332-b207-4da3-9928-533bcf6b6df3"
+        name="FiresRUs_Q7"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="f7e5697e-9c13-43e8-b164-82e041219a86"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d3755083-99ec-466c-b45a-5be87d0bdf32"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="98b66eb3-24e0-48b7-865a-06f0678a62b7"
+                  LastKnownName="Get Customers  Order"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="98b66eb3-24e0-48b7-865a-06f0678a62b7"
+            name="Get Customers  Order"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4d25604b-a751-4216-b3b5-937c980ca91d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5b549a4e-d072-40dd-8570-fc33fe6af113"
+                  LastKnownName="Process customer payment"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5b549a4e-d072-40dd-8570-fc33fe6af113"
+            name="Process customer payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="406fdcc0-e8cf-4c22-bdcc-9cb5add9cec5"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a16cffc6-3fe9-496a-9daa-c598b48d5054"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="a16cffc6-3fe9-496a-9daa-c598b48d5054"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="891803e8-9eee-42c6-999c-693631f1a620"
+                guard="Payment failed"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="25dfbf6f-d298-4f98-87ea-83e180bd764d"
+                  LastKnownName="Email customer"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="51ba3d27-0945-43d6-bc60-8b3a41002802"
+                guard="Payment Success"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="561cec79-59bd-4082-8d9d-151bc2a2ebaa"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="25dfbf6f-d298-4f98-87ea-83e180bd764d"
+            name="Email customer"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e3c6a025-d31e-468a-bfb8-bfa7383dd68d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d047c974-427d-4e6c-b50d-088cc9c2cf35"
+                  LastKnownName="Cancell Order"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d047c974-427d-4e6c-b50d-088cc9c2cf35"
+            name="Cancell Order"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="19c9793b-0dd1-4e86-9c83-01fefe0e5ed0"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a6572256-8937-4af6-ba04-6509f339962c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="561cec79-59bd-4082-8d9d-151bc2a2ebaa"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6470c6eb-b2a8-4e90-86dd-fb513a83c003"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a9cfb3cb-7bed-4ab9-8986-2450bdd44f0d"
+                  LastKnownName="Order MantlePiece"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8cc7af7c-d655-4b80-9372-1ce6d7134a5f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b57a20ed-9b6a-4672-b7be-00892825e732"
+                  LastKnownName="OrderFire"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="a9cfb3cb-7bed-4ab9-8986-2450bdd44f0d"
+            name="Order MantlePiece"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3de58be2-4cd7-4ee0-8faf-4645e45f1036"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ba673fc4-e50a-4e0c-8bd4-e73ed7c0f7ab"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b57a20ed-9b6a-4672-b7be-00892825e732"
+            name="OrderFire"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0d0f90c3-3176-4a21-9a5d-7046a7acf32f"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ba673fc4-e50a-4e0c-8bd4-e73ed7c0f7ab"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="ba673fc4-e50a-4e0c-8bd4-e73ed7c0f7ab"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="694aaec1-6330-4fea-b303-5f1e8e8ba5d6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="81b5a1d0-df5a-455e-a6dc-58cee1215ac5"
+                  LastKnownName="Store item upon arrival"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="81b5a1d0-df5a-455e-a6dc-58cee1215ac5"
+            name="Store item upon arrival"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ecbc0f0e-8317-41fc-9f98-dcdf62c2dc48"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="bfe884bb-15e5-445d-ad24-0396984ed4d9"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="bfe884bb-15e5-445d-ad24-0396984ed4d9"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e07058dc-6688-4b23-b68a-d664634348d6"
+                guard="Only 1 item arrived"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="81b5a1d0-df5a-455e-a6dc-58cee1215ac5"
+                  LastKnownName="Store item upon arrival"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="ce8cfeb2-3667-400d-b106-4e568aab7c69"
+                guard="both arrive"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="53b34578-0ec4-4d57-8592-08f383e404cf"
+                  LastKnownName="Email customer installation date"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="53b34578-0ec4-4d57-8592-08f383e404cf"
+            name="Email customer installation date"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="579f43d8-736f-42ab-8d6a-cce268bc7963"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a57fdb8e-39df-49b9-b54e-562cfc9f8264"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="a57fdb8e-39df-49b9-b54e-562cfc9f8264"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="79ec5573-7e39-41ef-83dc-d92be0b7c654"
+                guard="Date ok"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4a00bc3b-ce44-43ce-8ac7-6a8c502a156e"
+                  LastKnownName="Install products"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4a1de73a-c186-4126-bbca-a08fea41cf80"
+                guard="Date not Ok"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="947ea009-e282-4f2e-9c47-f0aa45c58584"
+                  LastKnownName="Arrange new date"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="947ea009-e282-4f2e-9c47-f0aa45c58584"
+            name="Arrange new date"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="26e125c6-fc2a-437b-8072-16a4a8339b34"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="53b34578-0ec4-4d57-8592-08f383e404cf"
+                  LastKnownName="Email customer installation date"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4a00bc3b-ce44-43ce-8ac7-6a8c502a156e"
+            name="Install products"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4c01a41e-e9a9-4dcf-bd3b-006f5dec0b15"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a6572256-8937-4af6-ba04-6509f339962c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Practical 4_01.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="a6572256-8937-4af6-ba04-6509f339962c"
+            name="ActivityFinal1"
+            isLeaf="false" />
         </nodes>
       </activity>
     </packageHasNamedElement>
