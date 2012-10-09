@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="c980e6e3-f0d1-4d11-b559-21a10484ad32" name="ClinicActivity_01" linkedPackageId="c8044b6e-4311-4d55-aea9-56596c74532f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="2902aa5f-e5f8-47c8-bdc2-01a73756f1ec">
+      <profileInstance Id="731e34f0-80ae-4038-9c54-c0e20f0202c7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cf94683d-a1f9-4dfb-a342-bdc419515ae5">
+      <profileInstance Id="2bdeb727-9964-4c49-a65c-36984baf3c84" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="f3b7ffe5-e06b-4993-b994-8fa7423e5328" name="ClinicActivity_01" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="52c5945c-939a-42e6-9750-1c8343d233ba" />
+        <nodes>
+          <initialNode Id="94cc5df9-7c64-46d6-ac93-72eb9e4ccada" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7b733e98-2e9e-4fb0-a64d-9934fcbeca95" />
+            <flowNodeTargets>
+              <controlFlow Id="5c463299-64bc-41c3-8aaa-606e561cb16f" isLeaf="false">
+                <opaqueActionMoniker Id="d24b75f0-b60f-4496-8f4a-fc3dc2cfa83e" LastKnownName="Get doctor or nurse choice" />
+                <elementDefinition Id="e0172bd0-7658-4e95-a8c2-96feadf3f3e4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="d24b75f0-b60f-4496-8f4a-fc3dc2cfa83e" name="Get doctor or nurse choice" isLeaf="false">
+            <elementDefinition Id="471efb63-7648-4ab5-a00b-51597cfbf819" />
+            <flowNodeTargets>
+              <controlFlow Id="4ee8ecfe-d9d8-410b-b1a5-3fde21b93896" isLeaf="false">
+                <opaqueActionMoniker Id="cb3d12f1-1793-4c0e-b203-53c1252a772c" LastKnownName="Set appointment" />
+                <elementDefinition Id="0c6275d5-72b0-4ebb-928d-79195b0b8c94" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cb3d12f1-1793-4c0e-b203-53c1252a772c" name="Set appointment" isLeaf="false">
+            <elementDefinition Id="fb703883-fc36-4238-a13a-92d106131a5d" />
+            <flowNodeTargets>
+              <controlFlow Id="a07cbe2f-e208-4091-9417-622f35535636" isLeaf="false">
+                <decisionNodeMoniker Id="bc4e5128-0eeb-430e-940f-eba622c29576" LastKnownName="Decision2" />
+                <elementDefinition Id="320f2efb-8b00-48cb-861a-89029c60ea26" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="04f76d66-218f-44d3-8a29-338e1373f9be" name="See patient" isLeaf="false">
+            <elementDefinition Id="02628b2c-0cfb-456e-a4fc-5b5823797ebd" />
+            <flowNodeTargets>
+              <controlFlow Id="450f09d8-9ea4-4a51-a732-ab8de7ab40fe" isLeaf="false">
+                <decisionNodeMoniker Id="cb1c0aa8-374c-40c7-8532-2d3c94ca8305" LastKnownName="Decision1" />
+                <elementDefinition Id="e719dfbc-caea-45b4-abe0-98a42c1b6119" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="52d646d4-c5f6-492a-b5d3-5235aec20320" name="Fork1" isLeaf="false">
+            <elementDefinition Id="54d48418-821e-4ee3-82f0-64eb1dc2a0f2" />
+            <flowNodeTargets>
+              <controlFlow Id="651a0794-4d6f-4d15-917d-c87595f97db7" isLeaf="false">
+                <opaqueActionMoniker Id="2062acbc-8957-4793-aa26-b0e9e890d98d" LastKnownName="add date and time to patient records" />
+                <elementDefinition Id="6b7b788a-b0cc-48cd-86e4-d5c127d5035d" />
+              </controlFlow>
+              <controlFlow Id="dd19cf54-3415-4ab1-ab5c-587f8e63b652" isLeaf="false">
+                <opaqueActionMoniker Id="5baa4f8f-070e-4b35-b4db-f1faaba1c0bc" LastKnownName="add notes to patient records" />
+                <elementDefinition Id="5ee83c31-4349-4dce-a657-dcf5b7a6ec7c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="2062acbc-8957-4793-aa26-b0e9e890d98d" name="add date and time to patient records" isLeaf="false">
+            <elementDefinition Id="08e2e6c2-cc83-48e5-84ca-2ad474274575" />
+            <flowNodeTargets>
+              <controlFlow Id="22b67d05-46f4-4a17-82e1-1302ee50b4ad" isLeaf="false">
+                <joinNodeMoniker Id="5f08661b-c9fd-49dc-8fb2-8833d588b6c7" LastKnownName="Join1" />
+                <elementDefinition Id="455d90e7-7a50-40f8-af22-309d6bdd166b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5baa4f8f-070e-4b35-b4db-f1faaba1c0bc" name="add notes to patient records" isLeaf="false">
+            <elementDefinition Id="e3a7be52-1c08-411c-9c80-ec82e312a7ec" />
+            <flowNodeTargets>
+              <controlFlow Id="f1fc4dab-fcf8-40cd-8216-2266636ec4cb" isLeaf="false">
+                <joinNodeMoniker Id="5f08661b-c9fd-49dc-8fb2-8833d588b6c7" LastKnownName="Join1" />
+                <elementDefinition Id="cd078aac-cf44-426e-91bc-a1404256767f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="5f08661b-c9fd-49dc-8fb2-8833d588b6c7" name="Join1" isLeaf="false">
+            <elementDefinition Id="9b705b93-330d-42c7-a693-3cc83283553e" />
+            <flowNodeTargets>
+              <controlFlow Id="69acab83-2372-477a-b7b8-c6855a8fc409" isLeaf="false">
+                <decisionNodeMoniker Id="454de1bb-1660-46c8-b7a6-2bab6d433611" LastKnownName="Decision3" />
+                <elementDefinition Id="9b188d32-47cb-4eb6-9b8a-74a417cb866a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <decisionNode Id="cb1c0aa8-374c-40c7-8532-2d3c94ca8305" name="Decision1" isLeaf="false">
+            <elementDefinition Id="1dd0994b-e3fc-46be-801d-f0adf7dc3692" />
+            <flowNodeTargets>
+              <controlFlow Id="a93055bb-fbcd-4141-b997-ccc0f3934558" guard="Needs Prescription" isLeaf="false">
+                <opaqueActionMoniker Id="647a2086-f0de-4463-ac34-fc676a01c60e" LastKnownName="Issue Prescription" />
+                <elementDefinition Id="b567df34-2bd6-4d6c-8719-005917efc9eb" />
+              </controlFlow>
+              <controlFlow Id="dddae116-fd9d-4427-a427-45d8b6e3f644" guard="No prescription needed" isLeaf="false">
+                <mergeNodeMoniker Id="467f06e1-e06c-4662-bfb1-4917bc4b075e" LastKnownName="Merge1" />
+                <elementDefinition Id="da5987f5-53e3-4e43-aa20-3450808f2fd6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="647a2086-f0de-4463-ac34-fc676a01c60e" name="Issue Prescription" isLeaf="false">
+            <elementDefinition Id="9fc195dc-0091-46ed-95ed-be6a962a1e14" />
+            <flowNodeTargets>
+              <controlFlow Id="daa855d5-80db-41bf-ba2b-d961a145af07" isLeaf="false">
+                <forkNodeMoniker Id="47b9514e-87af-4461-9dd3-4dd05bc821ed" LastKnownName="Fork2" />
+                <elementDefinition Id="bede5e76-ba6a-4ff4-b75c-3f3c2fe6b003" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="bc4e5128-0eeb-430e-940f-eba622c29576" name="Decision2" isLeaf="false">
+            <elementDefinition Id="05316656-a8c9-4808-9155-47cf47e29c84" />
+            <flowNodeTargets>
+              <controlFlow Id="638b5d41-4339-4679-9c07-63a732a0774e" guard="Patient doesn't show" isLeaf="false">
+                <opaqueActionMoniker Id="6d38683a-c142-445c-aa24-533eb7a62409" LastKnownName="Add missed appointment note to patient record" />
+                <elementDefinition Id="9d5bad05-3db1-4186-aa64-efbd5de5e771" />
+              </controlFlow>
+              <controlFlow Id="4b413662-9d54-4671-8c26-edb0321368ad" guard="Patient shows up" isLeaf="false">
+                <opaqueActionMoniker Id="04f76d66-218f-44d3-8a29-338e1373f9be" LastKnownName="See patient" />
+                <elementDefinition Id="2b074668-1170-4b9b-a7fa-bd6737e10529" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="6d38683a-c142-445c-aa24-533eb7a62409" name="Add missed appointment note to patient record" isLeaf="false">
+            <elementDefinition Id="c6bfe231-6bee-414a-9409-bc22c1df671e" />
+            <flowNodeTargets>
+              <controlFlow Id="f8a1ea06-40f2-437d-a802-ee6abad378df" isLeaf="false">
+                <activityFinalNodeMoniker Id="15d32af9-f338-49da-8a8a-30ca565b1a8f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="abd7882d-ba76-4972-a39c-322e3004fa89" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="467f06e1-e06c-4662-bfb1-4917bc4b075e" name="Merge1" isLeaf="false">
+            <elementDefinition Id="92254a92-b9fa-4bd1-9a1d-c5aaf2511e3e" />
+            <flowNodeTargets>
+              <controlFlow Id="7ffa34ae-49c2-47f8-9a6d-b33afc462528" isLeaf="false">
+                <forkNodeMoniker Id="52d646d4-c5f6-492a-b5d3-5235aec20320" LastKnownName="Fork1" />
+                <elementDefinition Id="4d25c912-9f89-43b5-9be4-be6b184e816d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <forkNode Id="47b9514e-87af-4461-9dd3-4dd05bc821ed" name="Fork2" isLeaf="false">
+            <elementDefinition Id="737da8cc-5edc-4f03-b22f-109053e74228" />
+            <flowNodeTargets>
+              <controlFlow Id="dc128735-8d02-4020-a8ad-429d4fdbad04" isLeaf="false">
+                <opaqueActionMoniker Id="3e53f48a-67ce-49a8-ad0e-f23c62c39059" LastKnownName="Print and sign prescription" />
+                <elementDefinition Id="1aeeff9d-0ebd-4477-bb19-f9b78c21c10e" />
+              </controlFlow>
+              <controlFlow Id="0316b154-900c-4bc5-8321-a2d28bc247db" isLeaf="false">
+                <opaqueActionMoniker Id="4ac47e08-638d-4e90-a450-abeb9ad39a3f" LastKnownName="Add to patient records" />
+                <elementDefinition Id="12a4b83b-a904-47d1-becd-36e5f8733b32" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode Id="9462b1b2-0e17-4bfc-b949-5f604470f923" name="Join2" isLeaf="false">
+            <elementDefinition Id="ea1183c7-f6a2-46d6-88ea-76133cb28e8f" />
+            <flowNodeTargets>
+              <controlFlow Id="69067e0c-7068-4b12-a592-44ef59d2d779" isLeaf="false">
+                <mergeNodeMoniker Id="467f06e1-e06c-4662-bfb1-4917bc4b075e" LastKnownName="Merge1" />
+                <elementDefinition Id="c374cf15-7694-4f71-a298-72a088cf2dec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="3e53f48a-67ce-49a8-ad0e-f23c62c39059" name="Print and sign prescription" isLeaf="false">
+            <elementDefinition Id="4676da9e-f67a-4876-b232-cbfd08b1d2f7" />
+            <flowNodeTargets>
+              <controlFlow Id="f37a1022-1d91-4902-a263-f665faf4b45e" isLeaf="false">
+                <joinNodeMoniker Id="9462b1b2-0e17-4bfc-b949-5f604470f923" LastKnownName="Join2" />
+                <elementDefinition Id="d333ce36-fa5f-473e-b05a-30ee4cb6db9d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4ac47e08-638d-4e90-a450-abeb9ad39a3f" name="Add to patient records" isLeaf="false">
+            <elementDefinition Id="56956db6-00bf-4113-84e9-0dcfa4e1a074" />
+            <flowNodeTargets>
+              <controlFlow Id="fa57d0b6-0dc6-4d00-8818-dbc0e522435a" isLeaf="false">
+                <joinNodeMoniker Id="9462b1b2-0e17-4bfc-b949-5f604470f923" LastKnownName="Join2" />
+                <elementDefinition Id="8db4aec7-a4c0-4275-bcf7-d494124000f0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="454de1bb-1660-46c8-b7a6-2bab6d433611" name="Decision3" isLeaf="false">
+            <elementDefinition Id="8b6fc49d-6b58-461c-b1fa-83987140bcef" />
+            <flowNodeTargets>
+              <controlFlow Id="ab8864fd-c2b5-4fe3-b4ae-705883908c67" guard="Private Patient" isLeaf="false">
+                <opaqueActionMoniker Id="d30dada8-c012-42c3-9531-5ea8dc3cf712" LastKnownName="Issue Bill" />
+                <elementDefinition Id="e669e64c-ca22-4ec4-b34c-2a8116d069cc" />
+              </controlFlow>
+              <controlFlow Id="77aec969-1d39-41bb-96d7-d0ae906081d1" guard="Free Patient" isLeaf="false">
+                <activityFinalNodeMoniker Id="15d32af9-f338-49da-8a8a-30ca565b1a8f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="be85cd55-4e47-4048-99d5-7285908b71af" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="d30dada8-c012-42c3-9531-5ea8dc3cf712" name="Issue Bill" isLeaf="false">
+            <elementDefinition Id="e28b4c7a-36a1-46ea-b4ea-5e6e6d2107e2" />
+            <flowNodeTargets>
+              <controlFlow Id="fa105b54-f7bd-4e36-ba87-d8bcf0cf277a" isLeaf="false">
+                <activityFinalNodeMoniker Id="15d32af9-f338-49da-8a8a-30ca565b1a8f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="82b7bc90-d211-4a24-bd45-e042b546bedc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="15d32af9-f338-49da-8a8a-30ca565b1a8f" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="56c68b95-7db0-488a-a592-9f68499c88aa" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c8044b6e-4311-4d55-aea9-56596c74532f" name="CaseStudyDiagrams">
+    <elementDefinition Id="9caad3aa-883d-4968-be52-58f9965291ed" />
+  </package>
+</activityRootModel>
