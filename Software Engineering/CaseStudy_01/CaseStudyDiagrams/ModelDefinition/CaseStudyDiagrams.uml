@@ -1,8 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="9caad3aa-883d-4968-be52-58f9965291ed"
   name="CaseStudyDiagrams" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="fbd1c915-9005-430e-8139-2e5bd5445b18"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="f7d8cce4-a4d9-4860-8586-f4b2dbe9b9b1">
+          <propertyInstance
+            Id="f6b255d2-f42a-4e0c-8aa4-b67c7d0e246d"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="8027e87e-9f35-45e7-a502-cc161ccd7dfb">
+          <propertyInstance
+            Id="a9d0edd0-29fb-4958-be51-61a60685f87f"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="02c5214c-c483-483a-a808-477c13b5b97f">
+          <propertyInstance
+            Id="d4b51961-0841-4a4d-b2a4-67d3afe28272"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="17f0f605-177b-4c19-a703-f87dbaa5acbe"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="e8eea2dd-50c3-4b4e-93ba-47d486f9d072">
+          <propertyInstance
+            Id="b6ccd90f-9bcf-4281-b03f-81bae8cae7e6"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="50b6155f-ca05-4df3-b87d-d2d57b22406f">
+          <propertyInstance
+            Id="635bc362-0eed-451b-88bd-74b2468d86a5"
+            name="TemplateFilePath"
+            value="ClassTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4|EnumTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\EnumTemplate.t4|InterfaceTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\InterfaceTemplate.t4|StructTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c7d59870-061e-4516-b9b7-c74a973ad9d7">
+          <propertyInstance
+            Id="d9cbd62d-78b4-48da-a2bf-fb9bda6b488a"
+            name="ProjectPath"
+            value="ClassTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|EnumTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|InterfaceTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|StructTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="96b2a883-236a-4930-a274-433817cff05d">
+          <propertyInstance
+            Id="0d1e7474-f9c7-43ae-a92e-8cc8f83fed46"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="d8f2c251-af0e-4344-916e-669899fe9b2c">
+          <propertyInstance
+            Id="49ac25bd-cc6a-4777-9d8f-daf777f40f23"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="11e4fd08-ea3a-4de0-a528-5cefe71464e8">
+          <propertyInstance
+            Id="410ab2f7-28d1-4721-accc-c6dd43523a50"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="5ec55bff-c0b2-4fab-8713-73d8a98ab293">
+          <propertyInstance
+            Id="510e618b-ad63-41b6-b506-b13af914785a"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -15,6 +97,18 @@
       <profileInstance
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="8eaa9e12-651e-45ed-9fa8-a912030dc46a">
+      <profileInstance
+        Id="0fdcf9f1-3c5b-46d2-baf8-5d8fcd750cee"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="0b11c499-f1cd-4fd3-b848-c3d8eb72f232">
+      <profileInstance
+        Id="2f8bcb26-2247-46ce-935d-3b0274bc8897"
+        name="TextTemplateBindings" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -1701,11 +1795,11 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="e0172bd0-7658-4e95-a8c2-96feadf3f3e4"
+                Id="3705857c-4b8f-41aa-9d29-3dcbf2d407df"
                 isLeaf="false">
-                <opaqueActionMoniker
-                  Id="471efb63-7648-4ab5-a00b-51597cfbf819"
-                  LastKnownName="Get doctor or nurse choice"
+                <decisionNodeMoniker
+                  Id="11e55f76-f8b2-46d0-ae05-eb218f46e6b2"
+                  LastKnownName="Decision4"
                   LastKnownLocation="CaseStudyDiagrams.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -2024,14 +2118,1317 @@
                   LastKnownName="ActivityFinal1"
                   LastKnownLocation="CaseStudyDiagrams.uml" />
               </controlFlow>
+              <controlFlow
+                Id="d6289d30-5940-485e-8c1f-01c7411c61a5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2e33e28e-6818-4603-8084-40a88518321a"
+                  LastKnownName="Request Payment"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <activityFinalNode
             Id="56c68b95-7db0-488a-a592-9f68499c88aa"
             name="ActivityFinal1"
             isLeaf="false" />
+          <decisionNode
+            Id="11e55f76-f8b2-46d0-ae05-eb218f46e6b2"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7c801972-9da9-41f0-bad4-2cad3413f298"
+                guard="private patient"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="6ed7bd30-d80f-457b-918f-9d67ddb1f69e"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="79f20060-89eb-479e-b928-6dc0003ca79d"
+                guard="Free patient"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="2bb63f5c-dfdd-4ef2-84c0-1c7c2d66526f"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="2e33e28e-6818-4603-8084-40a88518321a"
+            name="Request Payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9e55b6ff-556b-453c-812f-2640f5d62074"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="8c49f30f-0fd9-4eef-b0b5-8ec04c3cc24c"
+                  LastKnownName="Decision6"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="27780fcc-72ff-4488-b64b-263339a8db3b"
+            name="make payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="85892129-2526-4a88-841f-6f4018683a0c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="99e8fe59-2bd4-46e2-ae1e-fff4018e2444"
+                  LastKnownName="Accept Payment"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e29633d9-0309-4df6-b873-29a3fec3731c"
+            name="Postpone payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="93183743-ce8a-4082-a0e3-71dc78a0560d"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="56c68b95-7db0-488a-a592-9f68499c88aa"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="6ed7bd30-d80f-457b-918f-9d67ddb1f69e"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="226b4a2c-e4b4-4a98-bae8-3d2683382fa0"
+                guard="Outstanding Payment"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2e33e28e-6818-4603-8084-40a88518321a"
+                  LastKnownName="Request Payment"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="196d3d97-847a-4cd7-b26d-85c27d61dfa0"
+                guard="Payments Up to date"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="2bb63f5c-dfdd-4ef2-84c0-1c7c2d66526f"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode
+            Id="2bb63f5c-dfdd-4ef2-84c0-1c7c2d66526f"
+            name="Merge2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="51c96128-0f49-4775-98c5-570c8473cff8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="471efb63-7648-4ab5-a00b-51597cfbf819"
+                  LastKnownName="Get doctor or nurse choice"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="99e8fe59-2bd4-46e2-ae1e-fff4018e2444"
+            name="Accept Payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="05be823f-fdbc-4af8-a3d8-61d71b3b8370"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="2bb63f5c-dfdd-4ef2-84c0-1c7c2d66526f"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="8c49f30f-0fd9-4eef-b0b5-8ec04c3cc24c"
+            name="Decision6"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7ae4c299-1088-449c-bd30-a8d5cf76b147"
+                guard="Pay now"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="27780fcc-72ff-4488-b64b-263339a8db3b"
+                  LastKnownName="make payment"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e79d9728-466f-488b-9ba0-d41e9eaa358c"
+                guard="Pay later"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e29633d9-0309-4df6-b873-29a3fec3731c"
+                  LastKnownName="Postpone payment"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="37fae201-cf86-41bb-8bfd-d3039c21be1c"
+        name="ClinicActivity_02"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="a1ddfeab-a4c8-476c-8af3-657445055e88"
+            name="Doctor/Nurse"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="a96b2001-ceb2-4bcb-8ae6-a57d0a936b0e"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <initialNode
+            Id="71ed31ba-e00b-4385-a7b6-7ea96e917dcf"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="abc598e5-19bb-4877-80f9-0f3ebcb36560"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="7f3fafe1-d892-4832-beb3-3f00ec4ba6ca"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <forkNode
+            Id="7f3fafe1-d892-4832-beb3-3f00ec4ba6ca"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4effeb99-0494-41a3-ae5b-7ccfb5444366"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b9f780b0-68a0-4d2c-b96a-34bdf8b2386e"
+                  LastKnownName="View Patient Records"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3f7c3df8-c6ae-4b0e-be11-93024683ebd2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1e1362fa-0456-44e7-8b46-01110dba228b"
+                  LastKnownName="View Appointments"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode
+            Id="687e406a-ac69-4f3c-a277-b8eb77968f6d"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="56495bab-a8f9-4321-a1f1-608c7963bff0"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="5af774f0-a4a6-483b-9f05-1028731fd1fb"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="b9f780b0-68a0-4d2c-b96a-34bdf8b2386e"
+            name="View Patient Records"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b5cdb1ac-895b-47e2-a5c2-98ab6b26ef65"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="687e406a-ac69-4f3c-a277-b8eb77968f6d"
+                  LastKnownName="Join1"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="157286f0-c38a-4e74-9c64-763fc68c0644"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="2c1f9aa5-285e-4152-b511-8f46eca08531"
+                  LastKnownName="Patient"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1e1362fa-0456-44e7-8b46-01110dba228b"
+            name="View Appointments"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5baf2855-2c43-410c-b1aa-ad2775259b06"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="687e406a-ac69-4f3c-a277-b8eb77968f6d"
+                  LastKnownName="Join1"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="f3d2fcd9-1f0f-47ee-a680-6a60469293bb"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="31cbd5dd-ee45-4dd5-a351-f08f4419f35d"
+                  LastKnownName="Record system"
+                  LastKnownLocation="CaseStudyDiagrams.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="2c1f9aa5-285e-4152-b511-8f46eca08531"
+            name="Patient"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="d9a5086d-6a8b-433c-9a32-2997e6c440f0"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <activityFinalNode
+            Id="5af774f0-a4a6-483b-9f05-1028731fd1fb"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <objectNode
+            Id="31cbd5dd-ee45-4dd5-a351-f08f4419f35d"
+            name="Record system"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="e59563f1-3473-4aaf-a5f2-5052d87ff522"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3259a3b2-6a4f-484d-9aa2-640a56babdd2"
+        name="Patient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c112ae51-73a8-4346-b3ec-15e638c6a5ef"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5ca9d74c-e793-42ed-a408-fd14874d7ea5">
+                <propertyInstance
+                  Id="32c4660a-5303-4b0a-ba85-9a775fd78f05"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6b74b4d4-77c6-4c8b-86ab-0edb2a4cae27">
+                <propertyInstance
+                  Id="714f03ff-b111-4253-8b9f-354a4cfa21d3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8110e670-7f8a-40c7-afac-6f0a5f02aa4e">
+                <propertyInstance
+                  Id="8a81ff4e-2eb1-4af5-9467-a669964c42c3"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7bd65b81-996f-4319-8ba3-007beb3319f7">
+                <propertyInstance
+                  Id="2bd36452-3c61-4c21-b74d-27c38d27fd9a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="70b76b61-5c84-4136-872e-63976d54e9b7">
+                <propertyInstance
+                  Id="cd5eb244-c31d-4f21-868b-999dd99df8ff"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="22de8f2c-f34f-4b26-a05e-efb702b52bc4"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Appointment"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3041d92a-7481-4766-bb1e-90f2407516e4"
+              LastKnownName="Appointment"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f330ac2-1251-445c-8a7d-694bcd1715f7"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0d7491d-d1e4-48ad-a660-0cf06c75ef91"
+                  name="Appointment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="38c73c80-2cfb-4646-8a4c-58df81cf8071"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ed02020b-d194-4c98-817d-c2b1e1a27940"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="41c8dcf5-60ee-4c61-9f66-69fe10ede2dc"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Prescription"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="87c4d631-f366-44eb-aa6f-05847235d671"
+              LastKnownName="Prescription"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7fda791-86f6-4655-8aef-30e64850253d"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aeb3761b-346e-4e5e-b75d-81a1c3147a15"
+                  name="Prescription"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b17f9007-2dd8-48b7-ac70-23db915e1553"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ae9ba563-d213-49e6-bafb-b993526a2b2c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cebf0b1a-b7da-4c30-884a-8cfd01b5fdc3"
+        name="PrivatePatient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="067f1a37-03b0-47c0-9a90-ee26a54b1719"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="933dd95b-6b75-485f-b432-f56f1029a060">
+                <propertyInstance
+                  Id="b5342b68-39aa-4410-8c61-52063e910254"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eaa1fbc4-99be-40a4-8a14-617e195e38c8">
+                <propertyInstance
+                  Id="babe3544-8428-4243-82e9-4a0790da278e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b0e8f23-460f-4180-8c39-d0be51beefda">
+                <propertyInstance
+                  Id="1e035e56-c55c-4e05-bb28-a9ed1c69920b"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a63f942d-08b8-4baa-bbc9-e79bc0a48594">
+                <propertyInstance
+                  Id="7d67ea5b-3aba-48c6-a5a3-1a20dd5e202e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1136d456-b5b4-402d-92c2-7b4ff025cc88">
+                <propertyInstance
+                  Id="f090af7b-090e-435a-8a26-f847e913e43d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e7ccd940-9c68-4904-94ef-f8288de81d9e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3259a3b2-6a4f-484d-9aa2-640a56babdd2"
+              LastKnownName="Patient"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="de37529e-7964-424e-99a0-329b3489644a"
+            isDerived="false"
+            sourceEndRoleName="PrivatePatient"
+            targetEndRoleName="Payment"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d3b691ae-af2e-45d6-a702-6ee82ff19398"
+              LastKnownName="PaymentSystem"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80b7936a-90d9-4ed0-b3d3-dd11b2d57146"
+                  name="PrivatePatient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bcc80e89-04ce-4fc7-af18-6294994a270b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5b5ae890-fd2a-4998-8671-20bda744254e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a9766afa-3ed4-4ea0-9009-bf20634c1321"
+                  name="Payment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3041d92a-7481-4766-bb1e-90f2407516e4"
+        name="Appointment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e2d43d5b-df50-499b-847d-c51f67d4aad7"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4cba9cd6-1b59-4e3d-ae5c-9d97481567bb">
+                <propertyInstance
+                  Id="43483b9a-2c55-408b-bab3-940bddc524dd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="54e8597f-9401-4ab7-9bc1-0d59b09323fc">
+                <propertyInstance
+                  Id="9c733898-03a7-48a9-8873-539becb5a913"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e163f37-d2ad-4b81-974d-1811c5321dbc">
+                <propertyInstance
+                  Id="025d10f3-4287-45f6-afa9-3c4e70219112"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="528c8fae-41f7-46e8-be74-61293fb49ee9">
+                <propertyInstance
+                  Id="d86756f6-f884-43af-8b63-962d64b3ac60"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="20413ead-3817-4a61-b42b-19c08c1a4aae">
+                <propertyInstance
+                  Id="4c0a666f-90b8-4560-a2a3-b99155f4ad62"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="502fbbd2-3d1d-4ab9-b421-c8f985e1da87"
+            isDerived="false"
+            sourceEndRoleName="Appointment"
+            targetEndRoleName="MedicalStaff"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6a450acc-dd13-43ed-9dd2-7bbacb0b6481"
+              LastKnownName="MedicalStaff"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="215aea00-361a-4c5d-928c-0d1535429f11"
+                  name="Appointment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fe0ffdd3-d704-4c2f-99f4-722af51435f0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1008207c-6bfa-48f1-8f60-83d854f1979a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6cbf7d9d-d30f-4389-ad8b-2df1b9809162"
+                  name="MedicalStaff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6a450acc-dd13-43ed-9dd2-7bbacb0b6481"
+        name="MedicalStaff"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cb30b61d-3148-41f7-99f2-0003a9ea6b67"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fa365221-3e52-496c-a554-10a017b0f281">
+                <propertyInstance
+                  Id="d3bcf5e5-3f40-4bbb-9446-07591f55de5d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0066aff3-f034-4fcc-b856-672014198cea">
+                <propertyInstance
+                  Id="6430576f-5d90-44cc-8519-50e2b04cccd0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fdfbd961-1448-4ccc-9c4f-6e28c6e98c93">
+                <propertyInstance
+                  Id="e0dd0076-5db9-4e89-a1c0-8aadc3dde013"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1b8de22b-3212-4257-accd-184ad2cf7d9f">
+                <propertyInstance
+                  Id="4d92db3c-359a-40cb-a30c-5f4995b8f3ac"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e8a64594-2b85-4c3c-ab7e-57dfec43f692">
+                <propertyInstance
+                  Id="f26fc102-e094-40cc-b050-0764c386bcdb"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="abae2084-06b0-4717-9525-a0f735b3fae2"
+            isDerived="false"
+            sourceEndRoleName="MedicalStaff"
+            targetEndRoleName="Prescription"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="87c4d631-f366-44eb-aa6f-05847235d671"
+              LastKnownName="Prescription"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="002586d2-d883-4d5d-9c8d-a81971873e27"
+                  name="MedicalStaff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9465d9f3-bd3d-4f7e-9938-367c83e8398f"
+                  name="Prescription"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0ae0d4af-6145-4107-a365-5689a7dfb427"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="567d99ce-3e28-4dee-9f7d-9cd9ad975b6f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a8102516-3ec0-4556-92c9-b07fa8828324"
+        name="Doctor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3f636a5f-02a8-4f27-893f-b2121c01d649"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="910a198e-ed38-4088-9620-4e9022770628">
+                <propertyInstance
+                  Id="eebe7688-c63e-4240-973c-f50e24c7c44a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="03368cd9-a698-4ec9-97e9-a81ba07966a6">
+                <propertyInstance
+                  Id="b0c6972a-b1e5-4702-98b3-1308ef638cec"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b86e973d-4130-4ef7-b481-0c2427e3613e">
+                <propertyInstance
+                  Id="b22d5666-b709-4a7c-a5bd-d7343235267b"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3aa83ece-9311-4ea9-a6d0-aee76c3b13af">
+                <propertyInstance
+                  Id="4928f7d6-0b25-45c4-8375-8f1400e52d9d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="87f84d24-6ab7-4641-a9b8-5ccd333f4e90">
+                <propertyInstance
+                  Id="285b2469-c043-4150-85a2-505a65c63b28"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="21ba821c-dbd5-4608-b35f-ccab5c4c9449"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6a450acc-dd13-43ed-9dd2-7bbacb0b6481"
+              LastKnownName="MedicalStaff"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4719d725-517d-47dc-9829-23c3a937b001"
+        name="Nurse"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dc3943e2-a542-4eba-8e92-909a8453ced0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="71cc4899-56b1-49e6-931c-93c1659fda2a">
+                <propertyInstance
+                  Id="80970946-72d6-4afe-b7b9-bb551a5fb876"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="78779f61-d710-4b3f-9341-e43334f0b3e5">
+                <propertyInstance
+                  Id="add0a0f4-6ae7-4b11-81b8-87815ca3a34b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="75389007-c0e2-46cb-b8c0-6a144ddcefdf">
+                <propertyInstance
+                  Id="b9c23934-2071-4288-86e7-580b46a19208"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a23f7b9e-a407-4c3e-804b-758dbb32ec60">
+                <propertyInstance
+                  Id="72db4d26-d8bc-4b22-b4ce-4e0361a722cd"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a6e3eaf4-29d6-4b22-9ca5-fac653eb196a">
+                <propertyInstance
+                  Id="8ec95da8-c548-4388-afaf-39365e8e00f9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="6666c6c8-f1a3-4b6e-a314-cb59e7262532"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6a450acc-dd13-43ed-9dd2-7bbacb0b6481"
+              LastKnownName="MedicalStaff"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d3b691ae-af2e-45d6-a702-6ee82ff19398"
+        name="PaymentSystem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2b9e9005-d499-4d2f-889e-9c7d12d69d54"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3b6897ff-fe9a-4e89-aee1-b44d18c54442">
+                <propertyInstance
+                  Id="610e4283-c108-4b2e-835e-aad804d4ceb9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e9998a6f-8226-4072-8199-81e037491861">
+                <propertyInstance
+                  Id="d17ff084-d950-4ce6-b41f-fa2f6e4ee556"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="233e20e7-c540-4900-a647-c30501a2e72a">
+                <propertyInstance
+                  Id="9619e645-9588-48f4-b8d7-30e60706d9d5"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e3f68cc5-4795-44f0-987d-dae9635fba90">
+                <propertyInstance
+                  Id="d4e0f075-87aa-4f1b-9fd4-3d016d153d7d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c76f1efc-101b-495b-9ad2-b22c3c124a05">
+                <propertyInstance
+                  Id="66a66967-b436-4ebe-b18d-0b68bc0d509b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="50a47d6c-f447-4162-b252-f1259e19ae03"
+            isDerived="false"
+            sourceEndRoleName="PaymentSystem"
+            targetEndRoleName="Receptionist"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ab775bbb-de58-40f1-bef8-3bc076c3695a"
+              LastKnownName="Receptionist"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="280db7b9-9bab-4e57-b32d-b53bc7b8dd91"
+                  name="PaymentSystem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a5f96c2-de32-49a9-b0e5-2e841c965755"
+                  name="Receptionist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b1af8d3a-93f1-4965-b5d6-61720a1378a4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="da735daa-df2c-4221-ad06-4cf246a76e3e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ab775bbb-de58-40f1-bef8-3bc076c3695a"
+        name="Receptionist"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ce438571-8272-4a0a-952d-96553bc7dddd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3bd34d6-05fa-44a4-a72c-2389004e00b2">
+                <propertyInstance
+                  Id="be0c2558-1b50-4729-a1a3-40a48e6a0d1d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4a48b1e-7fe4-4ab3-9033-c6253347aa6a">
+                <propertyInstance
+                  Id="302c075b-7e4e-4ff6-916b-adaa3bdf6a97"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b21cd6f-791e-4488-bf76-180490b383e4">
+                <propertyInstance
+                  Id="4d8ce93f-e19d-42fa-bebe-ecf8fc9eebe1"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="34a15909-a3fa-4807-a343-164139482199">
+                <propertyInstance
+                  Id="613e5324-4849-4f95-bb90-d388c51582fb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="86a4e12f-cdcf-49d8-a81b-de75b8dab8cc">
+                <propertyInstance
+                  Id="0d6d78a8-39e7-452e-9348-4235a69cbad4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="23de4596-1029-4aa7-a4ba-242db128e98d"
+            isDerived="false"
+            sourceEndRoleName="Receptionist"
+            targetEndRoleName="Appointment"
+            isLeaf="false"
+            name="Makes"
+            isAbstract="false">
+            <classMoniker
+              Id="3041d92a-7481-4766-bb1e-90f2407516e4"
+              LastKnownName="Appointment"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d448a8af-d5e4-4cc5-a21b-7ec2b66ce74e"
+                  name="Receptionist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="119d33c1-acde-47c1-ac47-217449c60dc0"
+                  name="Appointment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f411db9c-eee1-4c92-b984-0e7c09d2b29e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dc9ef601-cec1-4b5b-91fa-ace5bef6897f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="87c4d631-f366-44eb-aa6f-05847235d671"
+        name="Prescription"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9f8b2be7-f2ea-4ad2-a480-b9e1d5b3aec5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8aaaded1-1270-4f6f-9d6d-c72414f2915b">
+                <propertyInstance
+                  Id="ebfdbeed-77fb-4663-b5c6-129d285f2980"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="552447c8-934f-4a08-b300-532563dc9a1f">
+                <propertyInstance
+                  Id="b704b5c5-5b40-4e2c-a507-65166580b5ea"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be32432f-e644-4f83-8fa5-05be479a814c">
+                <propertyInstance
+                  Id="7c4b4129-9447-47c5-9b1c-196190a8511b"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af3b2cab-76ea-4af0-bbb4-c8f23a2f8b7c">
+                <propertyInstance
+                  Id="49dfa185-8689-4baf-8c93-d4864788969a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9caf7c3c-482f-4938-b14a-89f9a436f241">
+                <propertyInstance
+                  Id="8e8d9242-2c60-454b-b8bd-9262e5f74d7c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="34367e34-0b65-4edb-bd8a-8232db009e55"
+        name="RecordSystem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="01da030e-60cf-47f6-9ae7-b83027023516"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3837e77e-bb89-483c-9c11-eeab573fab17">
+                <propertyInstance
+                  Id="e87eaace-a8a2-4a82-8379-18c8ef6a4551"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7998910d-bb5f-4edf-83ee-bdae476bc040">
+                <propertyInstance
+                  Id="2c67b553-0b16-4967-b895-6da3c6a4157b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a72365ef-6a73-4cf5-a1ed-7db3a68f8b67">
+                <propertyInstance
+                  Id="80cd288c-c0d4-4f80-b51c-18790a2c30e7"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2bcfc7b3-0f94-4301-867b-1b5f417c2808">
+                <propertyInstance
+                  Id="46426348-798b-4727-8909-b035fa2918c4"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e9b338a-61b6-4f4f-b597-d3008820da0f">
+                <propertyInstance
+                  Id="f7ee9b73-87a2-4be1-ab67-8327563c308c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="d96065fd-ee86-491b-b61a-f8df3e0dcad6"
+            isDerived="false"
+            sourceEndRoleName="RecordSystem"
+            targetEndRoleName="Patient"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3259a3b2-6a4f-484d-9aa2-640a56babdd2"
+              LastKnownName="Patient"
+              LastKnownLocation="CaseStudyDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be6d17df-d100-413d-b351-aad134e2136e"
+                  name="RecordSystem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c5b6a22-206a-4f9f-90ea-f80420e8d642"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b8f859dc-f046-447c-9535-137b80c91e70"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e92f082e-3049-4d63-bbf8-f35fc62e3f7e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

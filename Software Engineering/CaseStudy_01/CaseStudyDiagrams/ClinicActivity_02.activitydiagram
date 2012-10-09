@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="9d16ff35-93ee-4e6e-b14d-88e5dfdabe1e" name="ClinicActivity_02" linkedPackageId="ce44ed07-a4e2-4d82-b4e5-8cfaa8ef7d34" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="65de5779-934e-4c1e-931e-319bcdad6064" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="fbd1c915-9005-430e-8139-2e5bd5445b18" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b74bbf8a-73ae-4bf0-8f26-e29ee0b78aa1">
+          <propertyInstance Id="75e570f7-8fd4-4491-ad53-e4e77aad3bdb" name="BaseName">
+            <elementDefinition Id="f6b255d2-f42a-4e0c-8aa4-b67c7d0e246d" />
+          </propertyInstance>
+          <elementDefinition Id="f7d8cce4-a4d9-4860-8586-f4b2dbe9b9b1" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="248572c0-fb3c-4351-a075-e5b146fd920d">
+          <propertyInstance Id="d6dd6cc3-8da6-44b4-8e98-a1945c773159" name="ClrAttributes">
+            <elementDefinition Id="a9d0edd0-29fb-4958-be51-61a60685f87f" />
+          </propertyInstance>
+          <elementDefinition Id="8027e87e-9f35-45e7-a502-cc161ccd7dfb" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c3280a77-244a-459f-8e56-c9940525d347">
+          <propertyInstance Id="6233bc66-90cd-4f3e-b2ed-279aeb00a301" name="Usings">
+            <elementDefinition Id="d4b51961-0841-4a4d-b2a4-67d3afe28272" />
+          </propertyInstance>
+          <elementDefinition Id="02c5214c-c483-483a-a808-477c13b5b97f" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="3d1a9fa0-fe65-422a-a16e-e4637c1ca211" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="17f0f605-177b-4c19-a703-f87dbaa5acbe" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="55f45e9b-006e-48d7-a881-e6cb54ec72a2">
+          <propertyInstance Id="9480daf0-f263-42c2-ad90-1b973b836f4a" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="b6ccd90f-9bcf-4281-b03f-81bae8cae7e6" />
+          </propertyInstance>
+          <elementDefinition Id="e8eea2dd-50c3-4b4e-93ba-47d486f9d072" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="335adda7-bb5f-4691-a48b-2db63c650ae8">
+          <propertyInstance Id="b28689c9-049e-495f-848f-424241f35afb" name="TemplateFilePath" value="ClassTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4|EnumTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\EnumTemplate.t4|InterfaceTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\InterfaceTemplate.t4|StructTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="635bc362-0eed-451b-88bd-74b2468d86a5" />
+          </propertyInstance>
+          <elementDefinition Id="50b6155f-ca05-4df3-b87d-d2d57b22406f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="54f982c2-6fdd-4a0c-b27d-f01bd9dde72f">
+          <propertyInstance Id="919c6e11-1b2e-46c2-b1cf-bd4a8f07441e" name="ProjectPath" value="ClassTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|EnumTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|InterfaceTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|StructTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj">
+            <elementDefinition Id="d9cbd62d-78b4-48da-a2bf-fb9bda6b488a" />
+          </propertyInstance>
+          <elementDefinition Id="c7d59870-061e-4516-b9b7-c74a973ad9d7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="aec87062-6036-487a-b3fe-7eae4c2b1444">
+          <propertyInstance Id="aa6cd2d9-f4c7-4f9d-8d49-804ed41e3feb" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="0d1e7474-f9c7-43ae-a92e-8cc8f83fed46" />
+          </propertyInstance>
+          <elementDefinition Id="96b2a883-236a-4930-a274-433817cff05d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7306b519-5aa3-4e0a-a705-66e14aa496f2">
+          <propertyInstance Id="37c3c1cb-0afb-4a14-a08a-fc2e0e172e60" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="49ac25bd-cc6a-4777-9d8f-daf777f40f23" />
+          </propertyInstance>
+          <elementDefinition Id="d8f2c251-af0e-4344-916e-669899fe9b2c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="54ccfd31-8815-4bf7-a4e1-6bb41ec61d39">
+          <propertyInstance Id="11ad8781-5f0f-4c61-8a84-a9d61f01f815" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="410ab2f7-28d1-4721-accc-c6dd43523a50" />
+          </propertyInstance>
+          <elementDefinition Id="11e4fd08-ea3a-4de0-a528-5cefe71464e8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b020b9ef-e2f5-4ede-9ef2-614d2a46c57a">
+          <propertyInstance Id="81984e88-f2ec-46ab-a83a-cfad3fecdfd0" name="Parameters">
+            <elementDefinition Id="510e618b-ad63-41b6-b506-b13af914785a" />
+          </propertyInstance>
+          <elementDefinition Id="5ec55bff-c0b2-4fab-8713-73d8a98ab293" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="97cfc315-9db8-4f05-a0a1-7c06276f95c3">
+      <profileInstance Id="fc717779-a832-41c6-a11d-824e424d8b83" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5561c661-1e57-4f80-a1e2-b86f93ea7a01">
+      <profileInstance Id="327c05d0-f4d3-404b-99ee-1805e88eebf0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="324a53dc-d8a2-4e77-9fc7-6947c14b2d3a">
+      <profileInstance Id="5adfb94f-d5a1-4670-9e22-59f731ba9004" name="CSharpProfile">
+        <elementDefinition Id="0fdcf9f1-3c5b-46d2-baf8-5d8fcd750cee" />
+      </profileInstance>
+      <elementDefinition Id="8eaa9e12-651e-45ed-9fa8-a912030dc46a" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a57c1db6-0909-404e-add1-ecb4a26e03ee">
+      <profileInstance Id="381d1967-16a6-4f65-a4f5-e971e3e2de23" name="TextTemplateBindings">
+        <elementDefinition Id="2f8bcb26-2247-46ce-935d-3b0274bc8897" />
+      </profileInstance>
+      <elementDefinition Id="0b11c499-f1cd-4fd3-b848-c3d8eb72f232" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c74be8cb-0b56-4f6b-a7bc-e9673e28259e" name="ClinicActivity_02" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="37fae201-cf86-41bb-8bfd-d3039c21be1c" />
+        <nodes>
+          <objectNode Id="b89ff392-c271-4d5f-8ddb-8c4804df2ac1" name="Doctor/Nurse" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="a1ddfeab-a4c8-476c-8af3-657445055e88" />
+            <upperBound>
+              <literalInteger Id="34b9faea-1e9a-4fa1-af36-561bd8943f46" name="2147483647" value="2147483647">
+                <elementDefinition Id="a96b2001-ceb2-4bcb-8ae6-a57d0a936b0e" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="018f9ae9-4f00-4003-99cc-5aab5f6140d9" name="Initial1" isLeaf="false">
+            <elementDefinition Id="71ed31ba-e00b-4385-a7b6-7ea96e917dcf" />
+            <flowNodeTargets>
+              <controlFlow Id="be9a3d53-cabc-44e9-a296-9ac8da0b6b5d" isLeaf="false">
+                <forkNodeMoniker Id="f2da4f15-2d9c-4f6a-a461-4d6dda3cf42c" LastKnownName="Fork1" />
+                <elementDefinition Id="abc598e5-19bb-4877-80f9-0f3ebcb36560" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <forkNode Id="f2da4f15-2d9c-4f6a-a461-4d6dda3cf42c" name="Fork1" isLeaf="false">
+            <elementDefinition Id="7f3fafe1-d892-4832-beb3-3f00ec4ba6ca" />
+            <flowNodeTargets>
+              <controlFlow Id="3d32418e-7698-496f-be44-2c6cd54353fc" isLeaf="false">
+                <opaqueActionMoniker Id="a88a3c18-f5f9-410e-8ed0-aceb4df84811" LastKnownName="View Patient Records" />
+                <elementDefinition Id="4effeb99-0494-41a3-ae5b-7ccfb5444366" />
+              </controlFlow>
+              <controlFlow Id="0ea99f60-6ac3-4c56-a954-f5bb11e2e1a2" isLeaf="false">
+                <opaqueActionMoniker Id="cd9ea0fb-4ba4-460f-b468-ebbec9c9ec53" LastKnownName="View Appointments" />
+                <elementDefinition Id="3f7c3df8-c6ae-4b0e-be11-93024683ebd2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode Id="f1bcc888-d692-4b9b-9389-8e833b8e4cc7" name="Join1" isLeaf="false">
+            <elementDefinition Id="687e406a-ac69-4f3c-a277-b8eb77968f6d" />
+            <flowNodeTargets>
+              <controlFlow Id="2280de65-69db-43a9-9221-1dd569792e2d" isLeaf="false">
+                <activityFinalNodeMoniker Id="f27386e6-3d0b-4cdb-a20c-8e24b2668aa0" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="56495bab-a8f9-4321-a1f1-608c7963bff0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="a88a3c18-f5f9-410e-8ed0-aceb4df84811" name="View Patient Records" isLeaf="false">
+            <elementDefinition Id="b9f780b0-68a0-4d2c-b96a-34bdf8b2386e" />
+            <flowNodeTargets>
+              <controlFlow Id="10dcdb41-6bf9-4c9d-aa9e-46edca2daf86" isLeaf="false">
+                <joinNodeMoniker Id="f1bcc888-d692-4b9b-9389-8e833b8e4cc7" LastKnownName="Join1" />
+                <elementDefinition Id="b5cdb1ac-895b-47e2-a5c2-98ab6b26ef65" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="ad38061a-ed36-4fd5-9ef0-4ab3a7675570" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2d704826-9a45-487a-89f0-57062fd11647" LastKnownName="Patient" />
+                <elementDefinition Id="157286f0-c38a-4e74-9c64-763fc68c0644" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="cd9ea0fb-4ba4-460f-b468-ebbec9c9ec53" name="View Appointments" isLeaf="false">
+            <elementDefinition Id="1e1362fa-0456-44e7-8b46-01110dba228b" />
+            <flowNodeTargets>
+              <controlFlow Id="cfc25ca4-fc6f-4e3a-9a21-291009a35d9f" isLeaf="false">
+                <joinNodeMoniker Id="f1bcc888-d692-4b9b-9389-8e833b8e4cc7" LastKnownName="Join1" />
+                <elementDefinition Id="5baf2855-2c43-410c-b1aa-ad2775259b06" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="f7684f18-3e81-43cc-9b15-77944f78ea3f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="f13bcaa2-626b-4d16-8379-0e2fb1535529" LastKnownName="Record system" />
+                <elementDefinition Id="f3d2fcd9-1f0f-47ee-a680-6a60469293bb" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="2d704826-9a45-487a-89f0-57062fd11647" name="Patient" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="2c1f9aa5-285e-4152-b511-8f46eca08531" />
+            <upperBound>
+              <literalInteger Id="eee4e771-c12e-47a1-b391-f80105d6abd8" name="2147483647" value="2147483647">
+                <elementDefinition Id="d9a5086d-6a8b-433c-9a32-2997e6c440f0" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <activityFinalNode Id="f27386e6-3d0b-4cdb-a20c-8e24b2668aa0" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="5af774f0-a4a6-483b-9f05-1028731fd1fb" />
+          </activityFinalNode>
+          <objectNode Id="f13bcaa2-626b-4d16-8379-0e2fb1535529" name="Record system" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="31cbd5dd-ee45-4dd5-a351-f08f4419f35d" />
+            <upperBound>
+              <literalInteger Id="8cf0f686-6cf0-4e97-8325-95a840f7a10e" name="2147483647" value="2147483647">
+                <elementDefinition Id="e59563f1-3473-4aaf-a5f2-5052d87ff522" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ce44ed07-a4e2-4d82-b4e5-8cfaa8ef7d34" name="CaseStudyDiagrams">
+    <elementDefinition Id="9caad3aa-883d-4968-be52-58f9965291ed" />
+  </package>
+</activityRootModel>

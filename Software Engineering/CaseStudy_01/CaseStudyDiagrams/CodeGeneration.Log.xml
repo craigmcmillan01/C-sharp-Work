@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/craig/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/c4p532zb.gqf/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log">
+  <Message Timestamp="2012-10-09T21:46:01" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2012-10-09T21:46:01" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2012-10-09T21:46:01" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-10-09T21:46:01" Importance="Diagnostic" Text="ProjectPath = ..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj" />
+  <Message Timestamp="2012-10-09T21:46:01" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-10-09T21:46:01" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-10-09T21:46:01" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-10-09T21:46:01" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-10-09T21:46:01" Importance="Medium" Text="CaseStudyDiagrams's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'CaseStudyDiagrams::Patient' -  (Class), 'CaseStudyDiagrams::PrivatePatient' -  (Class), 'CaseStudyDiagrams::Appointment' -  (Class), 'CaseStudyDiagrams::MedicalStaff' -  (Class), 'CaseStudyDiagrams::Doctor' -  (Class), 'CaseStudyDiagrams::Nurse' -  (Class), 'CaseStudyDiagrams::PaymentSystem' -  (Class), 'CaseStudyDiagrams::Receptionist' -  (Class), 'CaseStudyDiagrams::Prescription' -  (Class), 'CaseStudyDiagrams::RecordSystem' -  (Class) " />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::Patient' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\Patient.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::PrivatePatient' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\PrivatePatient.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::Appointment' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\Appointment.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::MedicalStaff' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\MedicalStaff.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::Doctor' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\Doctor.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::Nurse' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\Nurse.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::PaymentSystem' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\PaymentSystem.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::Receptionist' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\Receptionist.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::Prescription' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\Prescription.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="'CaseStudyDiagrams::RecordSystem' -  (Class) : success (file created) - C:\Users\craig\Documents\GitHub\C-sharp-Work\Software Engineering\CaseStudy_01\CaseStudyDiagramsLib\GeneratedCode\RecordSystem.cs" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Diagnostic" Text="ProjectPath = ..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-10-09T21:46:02" Importance="Medium" Text="CaseStudyDiagrams's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'CaseStudyDiagrams::Patient' -  (Class), 'CaseStudyDiagrams::PrivatePatient' -  (Class), 'CaseStudyDiagrams::Appointment' -  (Class), 'CaseStudyDiagrams::MedicalStaff' -  (Class), 'CaseStudyDiagrams::Doctor' -  (Class), 'CaseStudyDiagrams::Nurse' -  (Class), 'CaseStudyDiagrams::PaymentSystem' -  (Class), 'CaseStudyDiagrams::Receptionist' -  (Class), 'CaseStudyDiagrams::Prescription' -  (Class), 'CaseStudyDiagrams::RecordSystem' -  (Class) " />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::Patient' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::PrivatePatient' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::Appointment' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::MedicalStaff' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::Doctor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::Nurse' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::PaymentSystem' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::Receptionist' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::Prescription' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::RecordSystem' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="The selection included 11 elements which were not bound to a template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'e7ccd940-9c68-4904-94ef-f8288de81d9e' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'21ba821c-dbd5-4608-b35f-ccab5c4c9449' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'6666c6c8-f1a3-4b6e-a314-cb59e7262532' -  (Generalization): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::Makes' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="Diagnostic" Text="'CaseStudyDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2012-10-09T21:46:03" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

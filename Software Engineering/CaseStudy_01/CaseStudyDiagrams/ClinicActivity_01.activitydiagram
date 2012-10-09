@@ -1,5 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="c980e6e3-f0d1-4d11-b559-21a10484ad32" name="ClinicActivity_01" linkedPackageId="c8044b6e-4311-4d55-aea9-56596c74532f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="c980e6e3-f0d1-4d11-b559-21a10484ad32" name="ClinicActivity_01" linkedPackageId="c8044b6e-4311-4d55-aea9-56596c74532f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="56ddfde7-f3f0-4b3e-924c-3fb3aa40548d" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="fbd1c915-9005-430e-8139-2e5bd5445b18" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="cf51998c-c794-4045-bb39-e34336303f53">
+          <propertyInstance Id="66fd2a23-3400-4747-a51d-c4a89f02bc19" name="BaseName">
+            <elementDefinition Id="f6b255d2-f42a-4e0c-8aa4-b67c7d0e246d" />
+          </propertyInstance>
+          <elementDefinition Id="f7d8cce4-a4d9-4860-8586-f4b2dbe9b9b1" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9f5dde17-fa76-4f2e-9d8f-21e58759d8a7">
+          <propertyInstance Id="8b4ce024-1c3a-41cc-a9e2-3ef3780dcdb2" name="ClrAttributes">
+            <elementDefinition Id="a9d0edd0-29fb-4958-be51-61a60685f87f" />
+          </propertyInstance>
+          <elementDefinition Id="8027e87e-9f35-45e7-a502-cc161ccd7dfb" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="dfa4d80f-b2e9-4bb0-a7bc-abd6ae5541d5">
+          <propertyInstance Id="263108ca-3939-41c1-9282-b48d00d1eb32" name="Usings">
+            <elementDefinition Id="d4b51961-0841-4a4d-b2a4-67d3afe28272" />
+          </propertyInstance>
+          <elementDefinition Id="02c5214c-c483-483a-a808-477c13b5b97f" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="b9a7a3e4-a863-4ba6-9abb-bcf893e78da1" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="17f0f605-177b-4c19-a703-f87dbaa5acbe" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="98581b89-5bee-4c26-9338-9b00aca69093">
+          <propertyInstance Id="38f677c8-4183-4b1f-b1b0-cbeabaaea2b8" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="b6ccd90f-9bcf-4281-b03f-81bae8cae7e6" />
+          </propertyInstance>
+          <elementDefinition Id="e8eea2dd-50c3-4b4e-93ba-47d486f9d072" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4b0f0e46-2344-4e8c-9e3d-0de06cab87dc">
+          <propertyInstance Id="29d87fd7-b84d-42ed-ab64-aa39754e244b" name="TemplateFilePath" value="ClassTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4|EnumTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\EnumTemplate.t4|InterfaceTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\InterfaceTemplate.t4|StructTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="635bc362-0eed-451b-88bd-74b2468d86a5" />
+          </propertyInstance>
+          <elementDefinition Id="50b6155f-ca05-4df3-b87d-d2d57b22406f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5a6e9a58-a427-4f8e-a0db-41bed5176bf3">
+          <propertyInstance Id="1bee69a0-8a78-4ba8-bff8-eb60f78a8275" name="ProjectPath" value="ClassTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|EnumTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|InterfaceTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj|StructTemplate=..\CaseStudyDiagramsLib\CaseStudyDiagramsLib.csproj">
+            <elementDefinition Id="d9cbd62d-78b4-48da-a2bf-fb9bda6b488a" />
+          </propertyInstance>
+          <elementDefinition Id="c7d59870-061e-4516-b9b7-c74a973ad9d7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="aef3c79f-4344-4f1c-9688-654fac726da7">
+          <propertyInstance Id="939f88e7-429a-4a5e-bece-6badd9691254" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="0d1e7474-f9c7-43ae-a92e-8cc8f83fed46" />
+          </propertyInstance>
+          <elementDefinition Id="96b2a883-236a-4930-a274-433817cff05d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3365e581-a7b6-4d77-9370-3db9da3db811">
+          <propertyInstance Id="abbc5a0d-204c-400c-9612-857420c7641e" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="49ac25bd-cc6a-4777-9d8f-daf777f40f23" />
+          </propertyInstance>
+          <elementDefinition Id="d8f2c251-af0e-4344-916e-669899fe9b2c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9b44e60a-4920-4d9e-b1a8-c357d26f07f2">
+          <propertyInstance Id="416e6d08-d628-42b1-b5c2-227bcea019a3" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="410ab2f7-28d1-4721-accc-c6dd43523a50" />
+          </propertyInstance>
+          <elementDefinition Id="11e4fd08-ea3a-4de0-a528-5cefe71464e8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a4c8533b-9284-43b5-bfbf-d939d72f1b95">
+          <propertyInstance Id="4c597d81-679f-4eea-96f5-dd21e9b68247" name="Parameters">
+            <elementDefinition Id="510e618b-ad63-41b6-b506-b13af914785a" />
+          </propertyInstance>
+          <elementDefinition Id="5ec55bff-c0b2-4fab-8713-73d8a98ab293" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <profileInstances>
     <packageHasProfileInstances Id="2902aa5f-e5f8-47c8-bdc2-01a73756f1ec">
       <profileInstance Id="731e34f0-80ae-4038-9c54-c0e20f0202c7" name="StandardProfileL2">
@@ -13,6 +85,18 @@
       </profileInstance>
       <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
     </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b6df80e6-6c4f-4aff-8ee6-6480bc0ae69f">
+      <profileInstance Id="a60aa471-d3e8-4bf4-98f0-d5fd3d9be84a" name="CSharpProfile">
+        <elementDefinition Id="0fdcf9f1-3c5b-46d2-baf8-5d8fcd750cee" />
+      </profileInstance>
+      <elementDefinition Id="8eaa9e12-651e-45ed-9fa8-a912030dc46a" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b2381f20-9b27-4e4b-b517-d6a96eb9c131">
+      <profileInstance Id="48da03d2-3ff0-4d8a-bd59-6090ddbe652a" name="TextTemplateBindings">
+        <elementDefinition Id="2f8bcb26-2247-46ce-935d-3b0274bc8897" />
+      </profileInstance>
+      <elementDefinition Id="0b11c499-f1cd-4fd3-b848-c3d8eb72f232" />
+    </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
@@ -22,9 +106,9 @@
           <initialNode Id="94cc5df9-7c64-46d6-ac93-72eb9e4ccada" name="Initial1" isLeaf="false">
             <elementDefinition Id="7b733e98-2e9e-4fb0-a64d-9934fcbeca95" />
             <flowNodeTargets>
-              <controlFlow Id="5c463299-64bc-41c3-8aaa-606e561cb16f" isLeaf="false">
-                <opaqueActionMoniker Id="d24b75f0-b60f-4496-8f4a-fc3dc2cfa83e" LastKnownName="Get doctor or nurse choice" />
-                <elementDefinition Id="e0172bd0-7658-4e95-a8c2-96feadf3f3e4" />
+              <controlFlow Id="80b5dd85-a3cc-4c58-8221-f24a2d0a9133" isLeaf="false">
+                <decisionNodeMoniker Id="164b3a20-aa71-4df6-b005-a272bf6a58b9" LastKnownName="Decision4" />
+                <elementDefinition Id="3705857c-4b8f-41aa-9d29-3dcbf2d407df" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
@@ -208,11 +292,99 @@
                 <activityFinalNodeMoniker Id="15d32af9-f338-49da-8a8a-30ca565b1a8f" LastKnownName="ActivityFinal1" />
                 <elementDefinition Id="82b7bc90-d211-4a24-bd45-e042b546bedc" />
               </controlFlow>
+              <controlFlow Id="ac2679f9-28f3-46ca-be6e-13bac0213b93" isLeaf="false">
+                <opaqueActionMoniker Id="d443d85d-c052-416d-aa39-b18984eaed2d" LastKnownName="Request Payment" />
+                <elementDefinition Id="d6289d30-5940-485e-8c1f-01c7411c61a5" />
+              </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <activityFinalNode Id="15d32af9-f338-49da-8a8a-30ca565b1a8f" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="56c68b95-7db0-488a-a592-9f68499c88aa" />
           </activityFinalNode>
+          <decisionNode Id="164b3a20-aa71-4df6-b005-a272bf6a58b9" name="Decision4" isLeaf="false">
+            <elementDefinition Id="11e55f76-f8b2-46d0-ae05-eb218f46e6b2" />
+            <flowNodeTargets>
+              <controlFlow Id="3484b659-4125-4b10-b8fd-ee4b61a86a02" guard="private patient" isLeaf="false">
+                <decisionNodeMoniker Id="51bc7b9d-69b0-456d-b9ea-1aef54c691dc" LastKnownName="Decision5" />
+                <elementDefinition Id="7c801972-9da9-41f0-bad4-2cad3413f298" />
+              </controlFlow>
+              <controlFlow Id="6949d53d-1edb-499e-bc16-c6dc4228c488" guard="Free patient" isLeaf="false">
+                <mergeNodeMoniker Id="be1ce17d-d578-4ae2-9493-7e3d21058eb5" LastKnownName="Merge2" />
+                <elementDefinition Id="79f20060-89eb-479e-b928-6dc0003ca79d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="d443d85d-c052-416d-aa39-b18984eaed2d" name="Request Payment" isLeaf="false">
+            <elementDefinition Id="2e33e28e-6818-4603-8084-40a88518321a" />
+            <flowNodeTargets>
+              <controlFlow Id="e2fe1b22-749a-4d8b-81dc-ba2f747ae86b" isLeaf="false">
+                <decisionNodeMoniker Id="bb5f5c90-0b93-4163-8d7c-0bfab4fc346f" LastKnownName="Decision6" />
+                <elementDefinition Id="9e55b6ff-556b-453c-812f-2640f5d62074" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c27dc8bd-82ed-4ed3-b61d-f9652763370c" name="make payment" isLeaf="false">
+            <elementDefinition Id="27780fcc-72ff-4488-b64b-263339a8db3b" />
+            <flowNodeTargets>
+              <controlFlow Id="04c8accf-983d-45ee-b9c4-dcb59e0cfcc7" isLeaf="false">
+                <opaqueActionMoniker Id="586a2755-261d-4ae1-8e70-ab8d1e4de5ba" LastKnownName="Accept Payment" />
+                <elementDefinition Id="85892129-2526-4a88-841f-6f4018683a0c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c2509900-a0f6-4db6-a315-8a9106cf12ea" name="Postpone payment" isLeaf="false">
+            <elementDefinition Id="e29633d9-0309-4df6-b873-29a3fec3731c" />
+            <flowNodeTargets>
+              <controlFlow Id="58794f79-4d9e-4cae-81fb-69141158632c" isLeaf="false">
+                <activityFinalNodeMoniker Id="15d32af9-f338-49da-8a8a-30ca565b1a8f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="93183743-ce8a-4082-a0e3-71dc78a0560d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="51bc7b9d-69b0-456d-b9ea-1aef54c691dc" name="Decision5" isLeaf="false">
+            <elementDefinition Id="6ed7bd30-d80f-457b-918f-9d67ddb1f69e" />
+            <flowNodeTargets>
+              <controlFlow Id="faa01253-1451-45b3-a233-d72e0c5e927d" guard="Outstanding Payment" isLeaf="false">
+                <opaqueActionMoniker Id="d443d85d-c052-416d-aa39-b18984eaed2d" LastKnownName="Request Payment" />
+                <elementDefinition Id="226b4a2c-e4b4-4a98-bae8-3d2683382fa0" />
+              </controlFlow>
+              <controlFlow Id="1aeccb46-2986-4e2f-bfbd-5d14dea44daa" guard="Payments Up to date" isLeaf="false">
+                <mergeNodeMoniker Id="be1ce17d-d578-4ae2-9493-7e3d21058eb5" LastKnownName="Merge2" />
+                <elementDefinition Id="196d3d97-847a-4cd7-b26d-85c27d61dfa0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode Id="be1ce17d-d578-4ae2-9493-7e3d21058eb5" name="Merge2" isLeaf="false">
+            <elementDefinition Id="2bb63f5c-dfdd-4ef2-84c0-1c7c2d66526f" />
+            <flowNodeTargets>
+              <controlFlow Id="66e3d650-1467-41eb-b2bb-1d3ac0e7f062" isLeaf="false">
+                <opaqueActionMoniker Id="d24b75f0-b60f-4496-8f4a-fc3dc2cfa83e" LastKnownName="Get doctor or nurse choice" />
+                <elementDefinition Id="51c96128-0f49-4775-98c5-570c8473cff8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="586a2755-261d-4ae1-8e70-ab8d1e4de5ba" name="Accept Payment" isLeaf="false">
+            <elementDefinition Id="99e8fe59-2bd4-46e2-ae1e-fff4018e2444" />
+            <flowNodeTargets>
+              <controlFlow Id="0110ad84-1c16-4dc2-a2ed-9fb8988f7660" isLeaf="false">
+                <mergeNodeMoniker Id="be1ce17d-d578-4ae2-9493-7e3d21058eb5" LastKnownName="Merge2" />
+                <elementDefinition Id="05be823f-fdbc-4af8-a3d8-61d71b3b8370" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="bb5f5c90-0b93-4163-8d7c-0bfab4fc346f" name="Decision6" isLeaf="false">
+            <elementDefinition Id="8c49f30f-0fd9-4eef-b0b5-8ec04c3cc24c" />
+            <flowNodeTargets>
+              <controlFlow Id="0dec15b3-1b39-4f75-bedd-bb03663ea7f6" guard="Pay now" isLeaf="false">
+                <opaqueActionMoniker Id="c27dc8bd-82ed-4ed3-b61d-f9652763370c" LastKnownName="make payment" />
+                <elementDefinition Id="7ae4c299-1088-449c-bd30-a8d5cf76b147" />
+              </controlFlow>
+              <controlFlow Id="45001c7d-6dff-43e6-bfa2-7f8fc3fd3921" guard="Pay later" isLeaf="false">
+                <opaqueActionMoniker Id="c2509900-a0f6-4db6-a315-8a9106cf12ea" LastKnownName="Postpone payment" />
+                <elementDefinition Id="e79d9728-466f-488b-9ba0-d41e9eaa358c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
