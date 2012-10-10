@@ -15,8 +15,18 @@ public abstract class Character
 	public virtual IEnumerable<Item> Item { get; set; }
 
 	public Character(){	}
-	//TODO set up constructor for characters that takes in relevant properties
-
+	public Character(string name, int strength, int weaponskill, int attack, int speed, int health, int level)
+	{
+		this.name = name;
+		this.strength = strength;
+		this.weaponSkill = weaponSkill;
+		this.attack = attack;
+		this.speed = speed;
+		this.health = health;
+		this.level = level;
+	}
+	
+	//TODO these methods might not need to be abstract(investigate this)
 	public abstract void addItem(Item i); //EXPLANATION add an item to characters inventory(itemList)
 	public abstract void useItem(Item i); //EXPLANATION use an item in the inventory
 	public abstract void useWeapon(Weapon w); //EXPLANATION use a weapon in inventory to attack other character

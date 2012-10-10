@@ -6,7 +6,7 @@ using System.Text;
 public class Player : Character
 {
 	public Player()	{ }
-	//TODO set up constructor for creating the player
+    public Player(string name, int strength, int weaponskill, int attack, int speed, int health, int level) : base(name, strength, weaponskill, attack, speed, health, level) { }
 
 	public override void addItem(Item i)
 	{

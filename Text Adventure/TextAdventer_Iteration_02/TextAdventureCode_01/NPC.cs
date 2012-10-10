@@ -8,7 +8,10 @@ public class NPC : Character
 	public virtual bool isHostile { get; set; }
 
 	public NPC(){ }
-	//TODO set up constructor for creating an NPC 
+	public NPC(string name, int strength, int weaponskill, int attack, int speed, int health, int level, bool isHostile) : base(name, strength, weaponskill, attack, speed, health, level)
+	{
+		this.isHostile = isHostile;
+	}
 
 	public override void addItem(Item i)
 	{

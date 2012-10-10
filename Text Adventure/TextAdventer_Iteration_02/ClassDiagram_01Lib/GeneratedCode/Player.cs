@@ -15,5 +15,20 @@ public class Player : Character
 	{
 	}
 
+
+    public override void addWeapon()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void useWeapon()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void showInventory()
+    {
+        throw new NotImplementedException();
+    }
 }
 
