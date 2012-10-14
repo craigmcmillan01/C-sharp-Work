@@ -188,10 +188,21 @@ namespace TextAdventureCode_01
 
             foreach (Weapon c in weaponList) // Debug statement to check NPC's are being created properly
             {
-                Console.WriteLine("name: " + c.name + "\ncondition: " + c.condition + "\nweight " + c.weight + "\nskill: " + c.skill + "\ndamage: " + c.damage + "\ncost: " + c.cost + "\nuseable: " + c.useable);
+                Console.WriteLine("name: " + c.name + "\ncondition: " + c.condition + "\nweight: " + c.weight + "\nskill: " + c.skill + "\ndamage: " + c.damage + "\ncost: " + c.cost + "\nuseable: " + c.useable);
                 Console.WriteLine("\n");
             }
             Console.ReadLine();
+        }
+
+        public Weapon getRandomWeapon() //return random npc from list
+        {
+            Weapon w;
+            int listLength = npcList.Count;
+            Random rand = new Random();
+            int randNum = rand.Next(0, listLength);
+               
+            w = weaponList.ElementAt(randNum);
+            return w;
         }
     }
 }

@@ -26,7 +26,14 @@ namespace TextAdventureCode_01
             //odd.saveWeaponData("Weapons.xml");
             XDocument weaponDoc = XDocument.Load("weapons.xml");
             odd.addWeaponToList(weaponDoc);
+            //=================================================================================
+            //===================Debug statements for weapons==================================
             odd.displayWeapons();
+            Console.Clear();
+            Weapon w = odd.getRandomWeapon();
+            Console.WriteLine(w.name);
+            Console.ReadLine();
+            //================================================================================
             //================Debug statements for NPC's=======================================
             //odd.displayNpcs();
             //Console.Clear();
