@@ -19,7 +19,7 @@ public abstract class Character
 	{
 		this.name = name;
 		this.strength = strength;
-		this.weaponSkill = weaponSkill;
+		this.weaponSkill = weaponskill;
 		this.attack = attack;
 		this.speed = speed;
 		this.health = health;
