@@ -8,7 +8,11 @@ public class Weapon : Item
     public virtual int damage { get; set; }
 
     public Weapon() { }
-    //TODO set up constructor for adding in weapons. 
-
+    public Weapon(string name, int condition, int weight, int skill, int damage, int cost, bool useable)
+    : base(name, condition, weight, skill, useable, cost)
+    {
+        this.damage = damage;
+    }
+    
 }
 

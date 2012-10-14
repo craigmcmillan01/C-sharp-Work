@@ -13,7 +13,15 @@ public abstract class Item
 	public virtual int cost { get; set; }
 
 	public Item(){ }
-	//TODO set up constructor for creating items
+    public Item(string name, int condition, int weight, int skill, bool useable, int cost)
+    {
+        this.name = name;
+        this.condition = condition;
+        this.weight = weight;
+        this.skill = skill;
+        this.useable = useable;
+        this.cost = cost;
+    }
 
 }
 

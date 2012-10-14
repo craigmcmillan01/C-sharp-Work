@@ -10,6 +10,7 @@ namespace TextAdventureCode_01
     public class UsefulMethods
     {
         public List<NPC> npcList = new List<NPC>();
+        public List<Weapon> weaponList = new List<Weapon>();
         public UsefulMethods() { }
 
         //write to xml file
@@ -114,6 +115,83 @@ namespace TextAdventureCode_01
 
             Console.WriteLine("name: " + name + "\nstrength: " + strength + "\nWeapon Skill " + weaponSkill + "\nattack: " + attack + "\nspeed: " + speed + "\nhealth: " + health + "\nlevel: " + level);
             Console.ReadKey();
+        }
+
+        public XDocument weaponDataSetUp()//set up info for xml file.....
+        {
+            //EXPLANATION this code was just to set up an outline for xml doc 
+            XDocument doc = new XDocument(
+                       new XDeclaration("1.0", "utf-8", "yes"),
+                       new XComment("this is a list of all NPC's in the game"),
+                        new XElement("weaponData",
+                       new XElement("weapon",
+                           new XElement("name", "SuperSword"),
+                           new XElement("condition", 1),
+                           new XElement("weight", 1),
+                           new XElement("skill", 1),
+                           new XElement("damage", 3),
+                           new XElement("cost", 10),
+                           new XElement("useable", false)),
+                        new XElement("weapon",
+                           new XElement("name", "SuperSword"),
+                           new XElement("condition", 1),
+                           new XElement("weight", 1),
+                           new XElement("skill", 1),
+                           new XElement("damage", 3),
+                           new XElement("cost", 10),
+                           new XElement("useable", false)))
+                       );
+            return doc;
+        }
+
+        public void saveWeaponData(string fileName)//save data to xml file. 
+        {
+            XDocument doc = weaponDataSetUp();
+            doc.Save(fileName);
+        }
+
+        public void addWeaponToList(XDocument doc)//add data from NPC.xml to NPC list
+        {
+            string name;
+            int condition, weight, skill, cost, damage;
+            bool useable;
+
+            var data = from item in doc.Descendants("weapon")
+                       select new
+                       {
+                           name = item.Element("name").Value,
+                           condition = item.Element("condition").Value,
+                           weight = item.Element("weight").Value,
+                           skill = item.Element("skill").Value,
+                           damage = item.Element("damage").Value,
+                           cost = item.Element("cost").Value,
+                           useable = item.Element("useable").Value
+                       };
+            foreach (var p in data)
+            {
+                name = p.name;
+                condition = Convert.ToInt32(p.condition);
+                weight = Convert.ToInt32(p.weight);
+                skill = Convert.ToInt32(p.skill);
+                damage = Convert.ToInt32(p.damage);
+                cost = Convert.ToInt32(p.cost);
+                useable = Convert.ToBoolean(p.useable);
+                Weapon w = new Weapon(name, condition, weight, skill, damage, cost, useable);
+                weaponList.Add(w);
+            }
+        }
+
+        public void displayWeapons() //display NPcs in list to console
+        {
+            Console.WriteLine("loading weapons..........\n");
+            Console.ReadKey();
+
+            foreach (Weapon c in weaponList) // Debug statement to check NPC's are being created properly
+            {
+                Console.WriteLine("name: " + c.name + "\ncondition: " + c.condition + "\nweight " + c.weight + "\nskill: " + c.skill + "\ndamage: " + c.damage + "\ncost: " + c.cost + "\nuseable: " + c.useable);
+                Console.WriteLine("\n");
+            }
+            Console.ReadLine();
         }
     }
 }

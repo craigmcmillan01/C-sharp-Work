@@ -22,6 +22,11 @@ namespace TextAdventureCode_01
             Player player = new Player(name);
             printPlayerStats(player);
             //=================================================================================
+            //================Set up weapons===================================================
+            //odd.saveWeaponData("Weapons.xml");
+            XDocument weaponDoc = XDocument.Load("weapons.xml");
+            odd.addWeaponToList(weaponDoc);
+            odd.displayWeapons();
             //================Debug statements for NPC's=======================================
             //odd.displayNpcs();
             //Console.Clear();
