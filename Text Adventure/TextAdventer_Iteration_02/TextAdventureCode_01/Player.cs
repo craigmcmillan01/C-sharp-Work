@@ -5,6 +5,7 @@ using System.Text;
 
 public class Player : Character
 {
+    private List<Item> inventory = new List<Item>();
 	public Player()	{ }
 	public Player(string name, int strength, int weaponskill, int attack, int speed, int health, int level) : base(name, strength, weaponskill, attack, speed, health, level) { }
     public Player(string name)
@@ -14,7 +15,8 @@ public class Player : Character
 
 	public override void addItem(Item i)
 	{
-		throw new NotImplementedException();
+        inventory.Add(i);
+        i.ownedByUser = true;
 	}
 
 	public override void useItem(Item i)
@@ -29,7 +31,12 @@ public class Player : Character
 
 	public override void showInventory()
 	{
-		throw new NotImplementedException();
+        Console.WriteLine("\nShowing " + this.name + "'s inventory");
+        Console.WriteLine("your weapons are: ");
+        foreach (Weapon w in inventory)
+        {
+            Console.WriteLine(w.name + " ");
+        }
 	}
 
     public void defaultPlayer(string name)

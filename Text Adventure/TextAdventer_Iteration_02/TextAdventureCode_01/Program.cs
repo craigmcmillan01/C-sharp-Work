@@ -6,21 +6,24 @@ using System.Xml.Linq;
 
 namespace TextAdventureCode_01
 {
-	class Program
-	{
-	   //static List<NPC> npcList = new List<NPC>();
-		static void Main(string[] args)
-		{
+    class Program
+    {
+       //static List<NPC> npcList = new List<NPC>();
+        static void Main(string[] args)
+        {
             //==================Set up NPC's==================================================
             UsefulMethods odd = new UsefulMethods();
-			XDocument npcPlayers = XDocument.Load("NPC.xml"); //Load NPC's in
+            XDocument npcPlayers = XDocument.Load("NPC.xml"); //Load NPC's in
             odd.addNpcToList(npcPlayers);
+            NPC n = new NPC();
+            n = odd.getRandomNPC();
+            Console.WriteLine(n.name);
             //================================================================================
             //=================Set up Player==================================================
             Console.WriteLine("please select a name for your player:");
             string name = Console.ReadLine();
             Player player = new Player(name);
-            printPlayerStats(player);
+            //printPlayerStats(player);
             //=================================================================================
             //================Set up weapons===================================================
             //odd.saveWeaponData("Weapons.xml");
@@ -28,10 +31,20 @@ namespace TextAdventureCode_01
             odd.addWeaponToList(weaponDoc);
             //=================================================================================
             //===================Debug statements for weapons==================================
-            odd.displayWeapons();
-            Console.Clear();
-            Weapon w = odd.getRandomWeapon();
-            Console.WriteLine(w.name);
+           // odd.displayWeapons();
+            //Console.Clear();
+            //int length = odd.weaponList.Count;
+            //for (int i = 0; i < length; i++)
+            //{
+            //    Weapon w = odd.getRandomWeapon();
+            //   // Console.WriteLine("random weapon = " + w.name);
+            //    player.addItem(w);
+            //}
+            //player.showInventory();
+            //=================================================================================
+            //==================Set up missions================================================
+            Mission m = new Mission();
+            m.Mission_1(odd, player);
             Console.ReadLine();
             //================================================================================
             //================Debug statements for NPC's=======================================
@@ -39,14 +52,14 @@ namespace TextAdventureCode_01
             //Console.Clear();
             //Console.WriteLine("Random NPC from list");
             //odd.getRandomNPC();  
-   		    //===================================================================================
-		}		
+            //===================================================================================
+        }		
         static void printPlayerStats(Player player)
         {
             Console.WriteLine("\nyour stats are: \n" + "name: " + player.name + "\nstrength: " + player.strength + "\nWeapon Skill " + player.weaponSkill + "\nattack: " + player.attack + "\nspeed: " + player.speed + "\nhealth: " + player.health + "\nlevel: " + player.level);
             Console.ReadLine();
         }
-	}
+    }
 }
 
 

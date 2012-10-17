@@ -22,10 +22,10 @@ public class Mission
 		 */
 	}
 
-	public virtual void Mission_1()
+	public virtual void Mission_1(UsefulMethods odd, Player player)
 	{
-		throw new System.NotImplementedException();
-		//EXPLANATION each mission will contain 1 or more enviroments
+        Environment e1 = new Environment(odd);
+        e1.play(e1, odd, player);
 	}
 
 	public virtual void Mission_2()

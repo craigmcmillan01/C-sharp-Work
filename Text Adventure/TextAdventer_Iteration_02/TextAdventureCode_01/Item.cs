@@ -11,6 +11,7 @@ public abstract class Item
 	public virtual int skill { get; set; }
 	public virtual bool useable { get; set; }
 	public virtual int cost { get; set; }
+    public virtual bool ownedByUser { get; set; }
 
 	public Item(){ }
     public Item(string name, int condition, int weight, int skill, bool useable, int cost)
@@ -21,6 +22,7 @@ public abstract class Item
         this.skill = skill;
         this.useable = useable;
         this.cost = cost;
+        this.ownedByUser = false;
     }
 
 }

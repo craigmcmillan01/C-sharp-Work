@@ -5,8 +5,7 @@ using System.Text;
 using System.Xml.Linq;
 
 
-namespace TextAdventureCode_01
-{
+
     public class UsefulMethods
     {
         public List<NPC> npcList = new List<NPC>();
@@ -96,25 +95,17 @@ namespace TextAdventureCode_01
             Console.ReadLine();
         }
 
-        public void getRandomNPC() //return random npc from list
+        public NPC getRandomNPC() //return random npc from list
         {
-            string name;
-            int strength, weaponSkill, attack, speed, health, level;
+            NPC npc = new NPC();
 
             int listLength = npcList.Count;
             Random rand = new Random();
-            int randNum = rand.Next(0, listLength);
+            int randNum = rand.Next(0, 6);
 
-            name = npcList.ElementAt(randNum).name;
-            strength = npcList.ElementAt(randNum).strength;
-            weaponSkill = npcList.ElementAt(randNum).weaponSkill;
-            attack = npcList.ElementAt(randNum).attack;
-            speed = npcList.ElementAt(randNum).speed;
-            health = npcList.ElementAt(randNum).health;
-            level = npcList.ElementAt(randNum).level;
-
-            Console.WriteLine("name: " + name + "\nstrength: " + strength + "\nWeapon Skill " + weaponSkill + "\nattack: " + attack + "\nspeed: " + speed + "\nhealth: " + health + "\nlevel: " + level);
-            Console.ReadKey();
+            npc = npcList.ElementAt(randNum);
+            return npc;
+           
         }
 
         public XDocument weaponDataSetUp()//set up info for xml file.....
@@ -196,13 +187,25 @@ namespace TextAdventureCode_01
 
         public Weapon getRandomWeapon() //return random npc from list
         {
-            Weapon w;
-            int listLength = npcList.Count;
+            Weapon w = new Weapon();
+            int listLength = weaponList.Count;
             Random rand = new Random();
-            int randNum = rand.Next(0, listLength);
-               
-            w = weaponList.ElementAt(randNum);
+            
+            bool t = false;
+
+            while (t == false)
+            {
+                int randNum = rand.Next(0, listLength);
+                w = weaponList.ElementAt(randNum);
+                if (w.ownedByUser == false)
+                {
+                    t = true;
+                    return w;
+                }
+                else
+                    t = false;
+            }
             return w;
         }
     }
-}
+
