@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="6c02b432-5d07-46aa-aae3-2e2bd0f6cdb0"
+  name="CaseStudy_02 - diagrams" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="67ee2ed1-0229-423c-a4ab-b4fae0dc18aa"
+        name="Free Patient"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="fd1a40ab-8509-4ac0-a1f1-79e8f2781941"
+            isDerived="false"
+            sourceEndRoleName="Free Patient"
+            targetEndRoleName="Request Appointment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="01bed4f9-1e05-4ed4-b647-1d4ad6d5eb1f"
+              LastKnownName="Request Appointment"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fa019cb-fb75-4ac4-b6ab-795fe5e1a67d"
+                  name="Free Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d93bb3ec-7705-4f08-a7d7-b5838272a418"
+                  name="Request Appointment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="01bed4f9-1e05-4ed4-b647-1d4ad6d5eb1f"
+        name="Request Appointment"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="f6d5fa1d-56a5-4afd-846c-0fb47ace1d43">
+            <useCaseMoniker
+              Id="80943f75-6931-4220-9c78-a5dc51af58b4"
+              LastKnownName="Confirm Appointment"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="308037e1-d010-42c4-b6c7-f3adb2c8afda"
+            LastKnownName="Book Appointment"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7e9c3c35-9222-4f83-a857-bdbfc7f60cc2"
+        name="Private Patient"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="27bd004a-0ebf-4807-96ab-943422698e8a"
+            isDerived="false"
+            sourceEndRoleName="Private Patient"
+            targetEndRoleName="Request Appointment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="01bed4f9-1e05-4ed4-b647-1d4ad6d5eb1f"
+              LastKnownName="Request Appointment"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ad59bea-b033-4ed8-a9f8-987a414a9e93"
+                  name="Private Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a279046b-4ee8-4665-bb3d-8bef2ed61bc8"
+                  name="Request Appointment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="308037e1-d010-42c4-b6c7-f3adb2c8afda"
+        name="Book Appointment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="80943f75-6931-4220-9c78-a5dc51af58b4"
+        name="Confirm Appointment"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6804a09d-f060-4cc4-9444-28d40459cd65">
+            <useCaseMoniker
+              Id="9fe97bef-2ec5-4ffd-94cb-6a5ad8c861a7"
+              LastKnownName="Check available appointment"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+          <include
+            Id="53515b91-9134-4612-8eb1-2353f776aeb1">
+            <useCaseMoniker
+              Id="41583ffd-8e19-4e5a-845d-d2bfb4197636"
+              LastKnownName="get Doctor / nurse"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+          <include
+            Id="d218635d-0620-419d-ac02-e976804e560c">
+            <useCaseMoniker
+              Id="1b45d27c-240b-41dc-8395-d8702ba53f64"
+              LastKnownName="refuse appointment"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="308037e1-d010-42c4-b6c7-f3adb2c8afda"
+            LastKnownName="Book Appointment"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5b2b38ed-0a4d-4f64-b893-0a0c5479ac00"
+        name="Receptionist"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d38cd842-7b62-42f0-92f6-74adb9e6fa51"
+            isDerived="false"
+            sourceEndRoleName="Receptionist"
+            targetEndRoleName="Confirm Appointment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="80943f75-6931-4220-9c78-a5dc51af58b4"
+              LastKnownName="Confirm Appointment"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f18e6b78-1013-4b0a-9dc9-71072b3a941a"
+                  name="Receptionist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8f39faf-406e-474b-8d26-11cc1d6ce151"
+                  name="Confirm Appointment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9fe97bef-2ec5-4ffd-94cb-6a5ad8c861a7"
+        name="Check available appointment"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="308037e1-d010-42c4-b6c7-f3adb2c8afda"
+            LastKnownName="Book Appointment"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="41583ffd-8e19-4e5a-845d-d2bfb4197636"
+        name="get Doctor / nurse"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="308037e1-d010-42c4-b6c7-f3adb2c8afda"
+            LastKnownName="Book Appointment"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b45d27c-240b-41dc-8395-d8702ba53f64"
+        name="refuse appointment"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="308037e1-d010-42c4-b6c7-f3adb2c8afda"
+            LastKnownName="Book Appointment"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+        name="See Patient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b3510ed6-5c3d-45df-b97a-5001fea193fb"
+        name="Doctor"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ad8aa2d8-4811-444b-bbae-96adfd6aab77"
+            isDerived="false"
+            sourceEndRoleName="Doctor"
+            targetEndRoleName="See patient"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6deb6727-4e32-4542-89f1-4b8eab7d7a44"
+              LastKnownName="See patient"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e7028c5-3442-42b9-9640-5243f337d808"
+                  name="Doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ed8026c-9c51-4e11-8480-bc4dba779794"
+                  name="See patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9f3848df-7ada-4763-ab33-a4008b7b6384"
+        name="Nurse"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9c8b9951-64ba-4063-a274-eb649b1db67f"
+            isDerived="false"
+            sourceEndRoleName="Nurse"
+            targetEndRoleName="See patient"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6deb6727-4e32-4542-89f1-4b8eab7d7a44"
+              LastKnownName="See patient"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="22e542c7-d59d-424d-be20-7a9db7919115"
+                  name="Nurse"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="62bf830d-0eb9-4a74-a329-52bbc3b7b1ff"
+                  name="See patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="aae2de3a-d5c7-488b-b33f-bb7509b26b37"
+        name="Patient"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e4711435-bd2e-4b2b-939c-c0b081fe837b"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="See doctor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1a4ae7b6-be97-4d3d-9d13-3566ea479111"
+              LastKnownName="See doctor"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a9ff58bd-adcd-4b6c-b4d2-4df58c671e5e"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dea915ee-1ffe-4610-9f09-85c2d03ebe9e"
+                  name="See doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1a4ae7b6-be97-4d3d-9d13-3566ea479111"
+        name="See doctor"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="171442b3-73a2-4a64-a659-c1288db2ebb7">
+            <useCaseMoniker
+              Id="86f5860c-83a2-4f2b-8b50-a9eed2b2efc3"
+              LastKnownName="Recive Prescription"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+          <include
+            Id="d77524f5-0f9d-41ce-ae0f-d64fd5189c49">
+            <useCaseMoniker
+              Id="bf3a8c82-e6c4-463a-9450-7ead1a9c8aa5"
+              LastKnownName="Recive Bill"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6deb6727-4e32-4542-89f1-4b8eab7d7a44"
+        name="See patient"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="98c8a8d4-52f3-4334-9686-81a548c6620f">
+            <useCaseMoniker
+              Id="053581a8-6708-47e5-9dd3-4540bd1bb70c"
+              LastKnownName="Medical Records"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+          <include
+            Id="cafeaf21-0065-47b7-8f24-fb0e8f7a95e2">
+            <useCaseMoniker
+              Id="92c88c55-b049-43ec-b006-1d9c2a1f55f1"
+              LastKnownName="Issue Bill"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+          <include
+            Id="c3e93870-6fd5-4524-ac00-a551324e644b">
+            <useCaseMoniker
+              Id="c3d6c381-550d-4b07-9c18-c80d1f136323"
+              LastKnownName="Issue Prescription"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="053581a8-6708-47e5-9dd3-4540bd1bb70c"
+        name="Medical Records"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5c7d5ee6-79cb-4e25-a5a1-84a005a871df">
+            <useCaseMoniker
+              Id="d0b23b25-5064-4d55-8719-e31e05bf6a45"
+              LastKnownName="Review Records"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+          <include
+            Id="eccb361c-250c-4059-b38f-7bd7bacd5144">
+            <useCaseMoniker
+              Id="4571da49-d515-490b-a569-cde0406f733d"
+              LastKnownName="Update Records"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3d6c381-550d-4b07-9c18-c80d1f136323"
+        name="Issue Prescription"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="92c88c55-b049-43ec-b006-1d9c2a1f55f1"
+        name="Issue Bill"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d0b23b25-5064-4d55-8719-e31e05bf6a45"
+        name="Review Records"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4571da49-d515-490b-a569-cde0406f733d"
+        name="Update Records"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="86f5860c-83a2-4f2b-8b50-a9eed2b2efc3"
+        name="Recive Prescription"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bf3a8c82-e6c4-463a-9450-7ead1a9c8aa5"
+        name="Recive Bill"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95c6703d-490b-41a4-b3b6-e7253bf608c7"
+            LastKnownName="See Patient"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="69a5ff74-e883-47c8-972b-a5daf6748876"
+        name="Private Patient"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="cea1feb3-1a53-47ec-ad59-c12537e654c8"
+            isDerived="false"
+            sourceEndRoleName="Private Patient"
+            targetEndRoleName="Recive Bill"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bf3a8c82-e6c4-463a-9450-7ead1a9c8aa5"
+              LastKnownName="Recive Bill"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="68a4c200-55be-476d-97d5-a3a3da679c84"
+                  name="Private Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e01f5ec-eb2d-4a78-84fa-338976c5f3d8"
+                  name="Recive Bill"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="7ff6489c-f48a-4ce9-88d3-a6b94d508242"
+        name="Payments"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="cf64add3-ae3a-460d-8a97-6cb4db9f37c7"
+        name="Doctor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="751c3823-1923-45db-b343-df98f0773db7"
+        name="Private Patient"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="73f65313-343c-44ee-bc70-5394c1321943"
+            isDerived="false"
+            sourceEndRoleName="Private Patient"
+            targetEndRoleName="Pay Bill"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a979204c-c5dc-484f-a0cb-996c5dfb2788"
+              LastKnownName="Pay Bill"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f1f04bc-1b9e-4df8-ba4c-71830b094911"
+                  name="Private Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eba2c2ef-c4df-4947-82ec-515c5e5060ab"
+                  name="Pay Bill"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e8283bb2-9a89-4c16-9a7e-b12afa421ad4"
+        name="Receptionist"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="dc72c7f9-492d-4be6-b233-68b9a134d224"
+            isDerived="false"
+            sourceEndRoleName="Receptionist"
+            targetEndRoleName="Accept Payment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e4f9b7ed-437c-4cd7-a1d6-709a11265312"
+              LastKnownName="Accept Payment"
+              LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02bbc11d-423a-4d21-a328-d2f8f3b21a5f"
+                  name="Receptionist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="14c07d78-7383-4891-85a2-66249d0cf562"
+                  name="Accept Payment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a979204c-c5dc-484f-a0cb-996c5dfb2788"
+        name="Pay Bill"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="7ff6489c-f48a-4ce9-88d3-a6b94d508242"
+            LastKnownName="Payments"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e4f9b7ed-437c-4cd7-a1d6-709a11265312"
+        name="Accept Payment"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="7ff6489c-f48a-4ce9-88d3-a6b94d508242"
+            LastKnownName="Payments"
+            LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="873de2b7-9de9-4fbd-9a57-f76c55bb8a51"
+        name="BookAppointment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="cbc82925-04ac-4b2a-b19d-bc4b7d2d0090"
+            name="Patient"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="a77ad7af-8036-4e8e-8b75-322576f2a8a7"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="7d945784-6787-4c2d-b581-7cc0d0595dfc"
+            name="Receptionist"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="c9a50136-6ccd-4bff-9901-87c4e8d1772a"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <initialNode
+            Id="2fc8927e-b07a-4bc0-8aab-5a6ae1720893"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3be5c082-ee72-4f99-9d51-20a16de2bfab"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1822baa4-168b-486b-8b4b-505c2cb76dd9"
+                  LastKnownName="Request Appointment"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="1822baa4-168b-486b-8b4b-505c2cb76dd9"
+            name="Request Appointment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9efb9d8b-9720-422c-99f5-f5133f1116ff"
+                guard="Private Patient?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="88d6d9a9-392b-4084-8861-be5056dd9a7e"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="88d6d9a9-392b-4084-8861-be5056dd9a7e"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e600165c-1a55-4096-ad06-90d025ba001d"
+                guard="Yes"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cb304442-12e9-4191-bb66-9279aadeeb6e"
+                  LastKnownName="Check Payment History"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="30b4eb41-b4e0-4832-aace-57c32bf4ff34"
+                guard="No"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="9f4c45ac-6af5-41d3-8579-4e2f6ea92808"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="cb304442-12e9-4191-bb66-9279aadeeb6e"
+            name="Check Payment History"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="08440a1f-9c61-48c6-b9db-59dc2fdf69f2"
+                guard="OutStanding Payemts?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="068a3c0d-40d8-42b4-ab0b-df8975e8db2b"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d920b95f-5e0a-42e9-b0b5-8ad5e08c1093"
+            name="Doctor or Nurse"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1c6c6945-f851-47db-a395-8c3f10316601"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f59f6f33-23b5-4bef-90d4-1edff68687bb"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="9f4c45ac-6af5-41d3-8579-4e2f6ea92808"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="97410cd8-d721-4903-9bc3-66e4748711f2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d920b95f-5e0a-42e9-b0b5-8ad5e08c1093"
+                  LastKnownName="Doctor or Nurse"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode
+            Id="068a3c0d-40d8-42b4-ab0b-df8975e8db2b"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8d10d667-7888-4dad-a3b1-f255acc70217"
+                guard="Yes"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b3f27c19-1f85-497d-80a2-3166d0fad7b6"
+                  LastKnownName="Request Payment"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5d67fb5b-4a88-41c7-995b-ae772db4273c"
+                guard="No"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="9f4c45ac-6af5-41d3-8579-4e2f6ea92808"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="b3f27c19-1f85-497d-80a2-3166d0fad7b6"
+            name="Request Payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="38154fce-48c5-4d8e-8794-a43966a23a67"
+                guard="Will Pay?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="4bb92e8e-4cbd-417b-8814-ef702df3a41f"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="4bb92e8e-4cbd-417b-8814-ef702df3a41f"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="13db17f7-2e36-4889-baf0-9710b556db22"
+                guard="No"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3ff1ae34-ba4a-4cd8-919b-6abbefc977ac"
+                  LastKnownName="Refuse Appointment"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="82cea9ca-d785-4d4c-88d9-14b5aa54879e"
+                guard="Yes"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="9f4c45ac-6af5-41d3-8579-4e2f6ea92808"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="3ff1ae34-ba4a-4cd8-919b-6abbefc977ac"
+            name="Refuse Appointment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e6bd7c5e-8f81-42a0-ba3c-e90e979944ce"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="4a8aa2a2-f497-4fc4-9ad4-be9287d0c5cf"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="f59f6f33-23b5-4bef-90d4-1edff68687bb"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f26e8956-d3ba-42ae-8e89-c2b7fe71169e"
+                guard="Wants Doctor"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="69a5b0c6-6351-4a39-b827-866a70bcad8a"
+                  LastKnownName="List of Doctors"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c95127dc-6a5b-4e33-abfd-1a16f7ec8efd"
+                guard="Wants Nurse"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="117af1ff-87be-41ef-a581-23c178dda814"
+                  LastKnownName="List of Nurse's"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8200ad09-a639-4aa4-bffb-817f93e05ad6"
+                guard="Not Specified"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ef333442-4e2b-4bef-8e32-e949fd512044"
+                  LastKnownName="Next Available Data"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="69a5b0c6-6351-4a39-b827-866a70bcad8a"
+            name="List of Doctors"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="003da0b5-291d-41b6-93a2-d3138e25bb83"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ffb9e815-2033-4297-9488-69b345713a27"
+                  LastKnownName="Doctors Schedual"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="117af1ff-87be-41ef-a581-23c178dda814"
+            name="List of Nurse's"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="91ba3bae-38b1-4c52-b242-1946f16aab50"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="50b47525-85b3-4d8c-afee-7fca50c9691a"
+                  LastKnownName="Nurses Schedual"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ef333442-4e2b-4bef-8e32-e949fd512044"
+            name="Next Available Data"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f5feefca-7a15-4ead-bc6b-8db684557540"
+                guard="Date and time ok?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f71ac41e-1f1d-4e08-9326-3446e82906d6"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ffb9e815-2033-4297-9488-69b345713a27"
+            name="Doctors Schedual"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="32801c47-96c7-4ada-942f-46d225eca2f5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ef333442-4e2b-4bef-8e32-e949fd512044"
+                  LastKnownName="Next Available Data"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="50b47525-85b3-4d8c-afee-7fca50c9691a"
+            name="Nurses Schedual"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ed2ebe8f-f0ae-44ea-85d0-543beaebecc7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ef333442-4e2b-4bef-8e32-e949fd512044"
+                  LastKnownName="Next Available Data"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="f71ac41e-1f1d-4e08-9326-3446e82906d6"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a97b28d9-ce0c-4880-9d0c-450650c745a5"
+                guard="Yes"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="05ebd5ab-9792-4b1d-89a3-cf685269a380"
+                  LastKnownName="Appointment Booked"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="112073ab-bc59-4d05-92e3-91014b562189"
+                guard="No"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ef333442-4e2b-4bef-8e32-e949fd512044"
+                  LastKnownName="Next Available Data"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="05ebd5ab-9792-4b1d-89a3-cf685269a380"
+            name="Appointment Booked"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d3c683d9-0f89-4efd-b891-db9c8834ba4d"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="4a8aa2a2-f497-4fc4-9ad4-be9287d0c5cf"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="4a8aa2a2-f497-4fc4-9ad4-be9287d0c5cf"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

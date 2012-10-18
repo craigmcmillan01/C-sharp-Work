@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="2bd0db55-3c7e-4235-af34-d89e41c67dca" name="UMLUseCaseDiagram1" linkedPackageId="87508323-f091-4ad0-8439-df31e6c28643" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="65db62f5-bef2-47b0-94aa-e3420176b6fd">
+      <profileInstance Id="c300fba8-c603-458f-8bf0-e656af634009" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f125f17b-2c08-4cab-8d65-c3713f23d3a7">
+      <profileInstance Id="00bea1fb-3d58-4786-b4a2-afcdc0062040" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="acc72590-38c4-45ba-b333-fc474ede9400" name="Free Patient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="67ee2ed1-0229-423c-a4ab-b4fae0dc18aa" />
+        <targetEnds>
+          <association Id="96acbb25-15fb-44fd-b17e-27d9426da2d6" isDerived="false" sourceEndRoleName="Free Patient" targetEndRoleName="Request Appointment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0aa4ee13-4874-41fd-8ca0-b36632e8c969" LastKnownName="Request Appointment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38c4ec79-764b-4cc3-8a02-b0bfcf1d225f" name="Free Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1fa019cb-fb75-4ac4-b6ab-795fe5e1a67d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2443349-ca30-4703-b35f-baf03ad1dc2f" name="Request Appointment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d93bb3ec-7705-4f08-a7d7-b5838272a418" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd1a40ab-8509-4ac0-a1f1-79e8f2781941" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0aa4ee13-4874-41fd-8ca0-b36632e8c969" name="Request Appointment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="01bed4f9-1e05-4ed4-b647-1d4ad6d5eb1f" />
+        <additions>
+          <include Id="38f85533-2807-4842-afc3-8daa54ef4902">
+            <useCaseMoniker Id="685538c7-0ddc-45db-8412-073fb610c3d9" LastKnownName="Confirm Appointment" />
+            <elementDefinition Id="f6d5fa1d-56a5-4afd-846c-0fb47ace1d43" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7de81959-bd2c-4dad-8e21-1032346de44e" LastKnownName="Book Appointment" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3b7b9c7e-a72e-4984-b844-c6a8350d0758" name="Private Patient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e9c3c35-9222-4f83-a857-bdbfc7f60cc2" />
+        <targetEnds>
+          <association Id="237fdeea-9c02-40fd-8851-b39acc544857" isDerived="false" sourceEndRoleName="Private Patient" targetEndRoleName="Request Appointment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0aa4ee13-4874-41fd-8ca0-b36632e8c969" LastKnownName="Request Appointment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ac36cea-daa7-4d9e-8e6f-6c38988038a7" name="Private Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ad59bea-b033-4ed8-a9f8-987a414a9e93" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0bacf55e-54e5-4b33-a901-f01d3c8b8672" name="Request Appointment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a279046b-4ee8-4665-bb3d-8bef2ed61bc8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="27bd004a-0ebf-4807-96ab-943422698e8a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="7de81959-bd2c-4dad-8e21-1032346de44e" name="Book Appointment" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="308037e1-d010-42c4-b6c7-f3adb2c8afda" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="685538c7-0ddc-45db-8412-073fb610c3d9" name="Confirm Appointment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80943f75-6931-4220-9c78-a5dc51af58b4" />
+        <additions>
+          <include Id="56d00071-1db4-4396-a5d7-7032de323195">
+            <useCaseMoniker Id="02b25e0d-001a-4f78-ba1c-d48f9d682bee" LastKnownName="Check available appointment" />
+            <elementDefinition Id="6804a09d-f060-4cc4-9444-28d40459cd65" />
+          </include>
+          <include Id="ca03f9d8-59e4-4a59-9412-6334a903e4f3">
+            <useCaseMoniker Id="9915663c-b7ee-4eb7-9073-f58c123863d5" LastKnownName="get Doctor / nurse" />
+            <elementDefinition Id="53515b91-9134-4612-8eb1-2353f776aeb1" />
+          </include>
+          <include Id="983175c5-b4c1-4cab-ab05-d8b99901be86">
+            <useCaseMoniker Id="672a7bb5-9ad0-4e69-95a1-312fde2e08f9" LastKnownName="refuse appointment" />
+            <elementDefinition Id="d218635d-0620-419d-ac02-e976804e560c" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7de81959-bd2c-4dad-8e21-1032346de44e" LastKnownName="Book Appointment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="72794b34-1215-4373-a86d-fd6b8859c440" name="Receptionist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5b2b38ed-0a4d-4f64-b893-0a0c5479ac00" />
+        <targetEnds>
+          <association Id="0d28652f-7a45-4dae-a0b0-645e7a26f95a" isDerived="false" sourceEndRoleName="Receptionist" targetEndRoleName="Confirm Appointment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="685538c7-0ddc-45db-8412-073fb610c3d9" LastKnownName="Confirm Appointment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ff6923b-fcc0-490c-884b-eeaaa6299c2c" name="Receptionist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f18e6b78-1013-4b0a-9dc9-71072b3a941a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac32cd09-c234-4e70-9831-90c2923e2dd7" name="Confirm Appointment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f8f39faf-406e-474b-8d26-11cc1d6ce151" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d38cd842-7b62-42f0-92f6-74adb9e6fa51" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="02b25e0d-001a-4f78-ba1c-d48f9d682bee" name="Check available appointment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9fe97bef-2ec5-4ffd-94cb-6a5ad8c861a7" />
+        <subjects>
+          <subsystemMoniker Id="7de81959-bd2c-4dad-8e21-1032346de44e" LastKnownName="Book Appointment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9915663c-b7ee-4eb7-9073-f58c123863d5" name="get Doctor / nurse" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41583ffd-8e19-4e5a-845d-d2bfb4197636" />
+        <subjects>
+          <subsystemMoniker Id="7de81959-bd2c-4dad-8e21-1032346de44e" LastKnownName="Book Appointment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="672a7bb5-9ad0-4e69-95a1-312fde2e08f9" name="refuse appointment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b45d27c-240b-41dc-8395-d8702ba53f64" />
+        <subjects>
+          <subsystemMoniker Id="7de81959-bd2c-4dad-8e21-1032346de44e" LastKnownName="Book Appointment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" name="See Patient" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="95c6703d-490b-41a4-b3b6-e7253bf608c7" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e7cfb3ef-c8a6-421a-92f4-1df05db6960e" name="Doctor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b3510ed6-5c3d-45df-b97a-5001fea193fb" />
+        <targetEnds>
+          <association Id="e0a8e18e-2410-4fe4-901e-01f2dbf9ec6c" isDerived="false" sourceEndRoleName="Doctor" targetEndRoleName="See patient" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5d0d0603-0030-4e20-ad53-3a611ad432fd" LastKnownName="See patient" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2023c1b9-00ab-4aec-a1f4-211d01ace883" name="Doctor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7e7028c5-3442-42b9-9640-5243f337d808" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="08a79c28-517d-4ac5-9539-70962efac23a" name="See patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0ed8026c-9c51-4e11-8480-bc4dba779794" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ad8aa2d8-4811-444b-bbae-96adfd6aab77" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f5cf3445-5352-4ca9-827c-9d1f59b473f0" name="Nurse" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f3848df-7ada-4763-ab33-a4008b7b6384" />
+        <targetEnds>
+          <association Id="d379b677-1ab2-4602-aff6-c6c5edd849b3" isDerived="false" sourceEndRoleName="Nurse" targetEndRoleName="See patient" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5d0d0603-0030-4e20-ad53-3a611ad432fd" LastKnownName="See patient" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a71225d8-1ea3-4153-8dfe-182dfd2edf26" name="Nurse" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="22e542c7-d59d-424d-be20-7a9db7919115" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28e2b995-9368-4639-8b1d-22dfa522b66c" name="See patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="62bf830d-0eb9-4a74-a329-52bbc3b7b1ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9c8b9951-64ba-4063-a274-eb649b1db67f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="712c45d7-9fe1-4cb8-af25-48ab23aff61e" name="Patient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aae2de3a-d5c7-488b-b33f-bb7509b26b37" />
+        <targetEnds>
+          <association Id="ddfcc2cc-e655-41b1-b777-49b8c62a3173" isDerived="false" sourceEndRoleName="Patient" targetEndRoleName="See doctor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1a267e89-aadb-41eb-ab03-3af4a914e76a" LastKnownName="See doctor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b70fa1aa-7684-4ad4-9f88-2fefd1ff8d60" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a9ff58bd-adcd-4b6c-b4d2-4df58c671e5e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7425381b-018f-4c04-b4ff-28ea9e5c10bf" name="See doctor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dea915ee-1ffe-4610-9f09-85c2d03ebe9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e4711435-bd2e-4b2b-939c-c0b081fe837b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="1a267e89-aadb-41eb-ab03-3af4a914e76a" name="See doctor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a4ae7b6-be97-4d3d-9d13-3566ea479111" />
+        <additions>
+          <include Id="a2f5642e-143a-4053-a13b-cc8b80fafc09">
+            <useCaseMoniker Id="d49b2921-3505-4a12-897b-46c3706929fe" LastKnownName="Recive Prescription" />
+            <elementDefinition Id="171442b3-73a2-4a64-a659-c1288db2ebb7" />
+          </include>
+          <include Id="c6fa6fa5-d2f1-4ad6-9ee3-55e131150790">
+            <useCaseMoniker Id="75a4f356-7ea1-448d-8597-35bbf64ce2e8" LastKnownName="Recive Bill" />
+            <elementDefinition Id="d77524f5-0f9d-41ce-ae0f-d64fd5189c49" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5d0d0603-0030-4e20-ad53-3a611ad432fd" name="See patient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6deb6727-4e32-4542-89f1-4b8eab7d7a44" />
+        <additions>
+          <include Id="d7a1b539-0b41-4d17-aaa7-cec463479ae6">
+            <useCaseMoniker Id="0e973d34-c50c-47a1-ba35-a21dc516ebb1" LastKnownName="Medical Records" />
+            <elementDefinition Id="98c8a8d4-52f3-4334-9686-81a548c6620f" />
+          </include>
+          <include Id="64980cfb-1873-4e83-b91c-a07490acf9f8">
+            <useCaseMoniker Id="3e50dc30-79f4-4796-9d6c-5c2c6d087a24" LastKnownName="Issue Bill" />
+            <elementDefinition Id="cafeaf21-0065-47b7-8f24-fb0e8f7a95e2" />
+          </include>
+          <include Id="27b25104-9031-4f50-bdf1-66cf50cdc8ba">
+            <useCaseMoniker Id="b2b91a50-c119-4bed-9c74-b3af84adae63" LastKnownName="Issue Prescription" />
+            <elementDefinition Id="c3e93870-6fd5-4524-ac00-a551324e644b" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0e973d34-c50c-47a1-ba35-a21dc516ebb1" name="Medical Records" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="053581a8-6708-47e5-9dd3-4540bd1bb70c" />
+        <additions>
+          <include Id="5d866654-ba66-4d73-9e16-67d112f62025">
+            <useCaseMoniker Id="2dc4fead-e8bb-496a-af20-9b419c645188" LastKnownName="Review Records" />
+            <elementDefinition Id="5c7d5ee6-79cb-4e25-a5a1-84a005a871df" />
+          </include>
+          <include Id="ee940068-4e87-43b5-876d-dcc354a5c12c">
+            <useCaseMoniker Id="77e435cf-a52e-4314-97fc-88bb6d67f135" LastKnownName="Update Records" />
+            <elementDefinition Id="eccb361c-250c-4059-b38f-7bd7bacd5144" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b2b91a50-c119-4bed-9c74-b3af84adae63" name="Issue Prescription" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c3d6c381-550d-4b07-9c18-c80d1f136323" />
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3e50dc30-79f4-4796-9d6c-5c2c6d087a24" name="Issue Bill" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92c88c55-b049-43ec-b006-1d9c2a1f55f1" />
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2dc4fead-e8bb-496a-af20-9b419c645188" name="Review Records" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0b23b25-5064-4d55-8719-e31e05bf6a45" />
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="77e435cf-a52e-4314-97fc-88bb6d67f135" name="Update Records" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4571da49-d515-490b-a569-cde0406f733d" />
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d49b2921-3505-4a12-897b-46c3706929fe" name="Recive Prescription" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="86f5860c-83a2-4f2b-8b50-a9eed2b2efc3" />
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="75a4f356-7ea1-448d-8597-35bbf64ce2e8" name="Recive Bill" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bf3a8c82-e6c4-463a-9450-7ead1a9c8aa5" />
+        <subjects>
+          <subsystemMoniker Id="275490b0-b7c7-4fbf-96fe-2eff9a682c8e" LastKnownName="See Patient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="9f363506-19b8-476e-9f93-73618c7abb46" name="Private Patient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69a5ff74-e883-47c8-972b-a5daf6748876" />
+        <targetEnds>
+          <association Id="87833a31-deb4-4fcc-9c15-6bf999621ba3" isDerived="false" sourceEndRoleName="Private Patient" targetEndRoleName="Recive Bill" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="75a4f356-7ea1-448d-8597-35bbf64ce2e8" LastKnownName="Recive Bill" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eec3a72b-c976-4407-b2c2-9801c0684973" name="Private Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="68a4c200-55be-476d-97d5-a3a3da679c84" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2679aa42-f346-47f7-925c-12901c130973" name="Recive Bill" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2e01f5ec-eb2d-4a78-84fa-338976c5f3d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cea1feb3-1a53-47ec-ad59-c12537e654c8" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="682c3e70-60ed-4046-a933-b135b365750b" name="Payments" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7ff6489c-f48a-4ce9-88d3-a6b94d508242" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9c29704b-fd25-4331-b5e1-d441cbb6e849" name="Private Patient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="751c3823-1923-45db-b343-df98f0773db7" />
+        <targetEnds>
+          <association Id="4d515f40-7a96-4023-815b-ea31e8632f5a" isDerived="false" sourceEndRoleName="Private Patient" targetEndRoleName="Pay Bill" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a251318f-eab5-4af5-adda-c34a0c65d9c4" LastKnownName="Pay Bill" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="431ec048-6b09-4f42-b6a0-97c9b2e705bc" name="Private Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8f1f04bc-1b9e-4df8-ba4c-71830b094911" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b212df14-6198-4f41-b122-90beb3db269b" name="Pay Bill" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eba2c2ef-c4df-4947-82ec-515c5e5060ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="73f65313-343c-44ee-bc70-5394c1321943" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0da296f5-65a9-46a9-8502-2c0dd1be4fd8" name="Receptionist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8283bb2-9a89-4c16-9a7e-b12afa421ad4" />
+        <targetEnds>
+          <association Id="72fb1a5f-b99d-4ded-a949-b6c6275b7687" isDerived="false" sourceEndRoleName="Receptionist" targetEndRoleName="Accept Payment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a743030c-f7f6-4e67-a42c-b154919b6277" LastKnownName="Accept Payment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61ea712c-2fe5-4d6b-9d51-f2a08e051b3c" name="Receptionist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="02bbc11d-423a-4d21-a328-d2f8f3b21a5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8864a22a-0708-44af-af7b-9cecea2b98b3" name="Accept Payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="14c07d78-7383-4891-85a2-66249d0cf562" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc72c7f9-492d-4be6-b233-68b9a134d224" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="a251318f-eab5-4af5-adda-c34a0c65d9c4" name="Pay Bill" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a979204c-c5dc-484f-a0cb-996c5dfb2788" />
+        <subjects>
+          <subsystemMoniker Id="682c3e70-60ed-4046-a933-b135b365750b" LastKnownName="Payments" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a743030c-f7f6-4e67-a42c-b154919b6277" name="Accept Payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e4f9b7ed-437c-4cd7-a1d6-709a11265312" />
+        <subjects>
+          <subsystemMoniker Id="682c3e70-60ed-4046-a933-b135b365750b" LastKnownName="Payments" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="87508323-f091-4ad0-8439-df31e6c28643" name="CaseStudy_02 - diagrams">
+    <elementDefinition Id="6c02b432-5d07-46aa-aae3-2e2bd0f6cdb0" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e0318327-fa9d-495a-94e9-4c97592fc4ea" name="BookAppointment" linkedPackageId="2ab2de96-3288-432b-a9cd-447ff47214f8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="cf8a33ad-167a-4880-a7dd-4a71910a497f">
+      <profileInstance Id="827f1090-3a91-4853-8ec0-7c765b7d5081" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ce24e11b-4446-49df-b433-d5f531560b30">
+      <profileInstance Id="aea3b3e0-3bae-4470-8dad-215420c9799b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="98f8b457-2c54-480f-aa0f-b7ae3860aaeb" name="BookAppointment" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="873de2b7-9de9-4fbd-9a57-f76c55bb8a51" />
+        <nodes>
+          <objectNode Id="23a2d7e5-b01b-4125-b1a3-beb1c8a2e8fc" name="Patient" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="cbc82925-04ac-4b2a-b19d-bc4b7d2d0090" />
+            <upperBound>
+              <literalInteger Id="2cbe095f-9ca0-4987-aedb-9be1b902d112" name="2147483647" value="2147483647">
+                <elementDefinition Id="a77ad7af-8036-4e8e-8b75-322576f2a8a7" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="05838654-7526-439c-a718-e17b9e6c3e98" name="Receptionist" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="7d945784-6787-4c2d-b581-7cc0d0595dfc" />
+            <upperBound>
+              <literalInteger Id="2a0fefc9-3202-4064-afa0-f39274ae952a" name="2147483647" value="2147483647">
+                <elementDefinition Id="c9a50136-6ccd-4bff-9901-87c4e8d1772a" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="48cc21aa-6f2c-4da6-af7a-3da3f9948e49" name="Initial1" isLeaf="false">
+            <elementDefinition Id="2fc8927e-b07a-4bc0-8aab-5a6ae1720893" />
+            <flowNodeTargets>
+              <controlFlow Id="75713e85-aca0-4498-8ce0-e9c25617a37d" isLeaf="false">
+                <opaqueActionMoniker Id="dfb42bcf-b393-4e07-b0c2-13e2fa762eda" LastKnownName="Request Appointment" />
+                <elementDefinition Id="3be5c082-ee72-4f99-9d51-20a16de2bfab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="dfb42bcf-b393-4e07-b0c2-13e2fa762eda" name="Request Appointment" isLeaf="false">
+            <elementDefinition Id="1822baa4-168b-486b-8b4b-505c2cb76dd9" />
+            <flowNodeTargets>
+              <controlFlow Id="8d0bb4bd-6ec4-4c87-b3fb-c5e222881909" guard="Private Patient?" isLeaf="false">
+                <decisionNodeMoniker Id="8a0633d6-983d-44a0-9072-926e6e7aab74" LastKnownName="Decision1" />
+                <elementDefinition Id="9efb9d8b-9720-422c-99f5-f5133f1116ff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8a0633d6-983d-44a0-9072-926e6e7aab74" name="Decision1" isLeaf="false">
+            <elementDefinition Id="88d6d9a9-392b-4084-8861-be5056dd9a7e" />
+            <flowNodeTargets>
+              <controlFlow Id="21390c36-3e59-4575-831f-d500bbf43310" guard="Yes" isLeaf="false">
+                <opaqueActionMoniker Id="59bcd852-279a-4959-be34-5bcf723057a8" LastKnownName="Check Payment History" />
+                <elementDefinition Id="e600165c-1a55-4096-ad06-90d025ba001d" />
+              </controlFlow>
+              <controlFlow Id="6decee03-eba2-4055-aafd-6a5baf547f5c" guard="No" isLeaf="false">
+                <mergeNodeMoniker Id="261b9172-6a87-49f5-9159-06036b58e6e3" LastKnownName="Merge1" />
+                <elementDefinition Id="30b4eb41-b4e0-4832-aace-57c32bf4ff34" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="59bcd852-279a-4959-be34-5bcf723057a8" name="Check Payment History" isLeaf="false">
+            <elementDefinition Id="cb304442-12e9-4191-bb66-9279aadeeb6e" />
+            <flowNodeTargets>
+              <controlFlow Id="d79a039f-c0eb-489b-b18a-4776364e75ed" guard="OutStanding Payemts?" isLeaf="false">
+                <decisionNodeMoniker Id="4d62211c-c14e-4655-b9d2-59e4e60b6295" LastKnownName="Decision2" />
+                <elementDefinition Id="08440a1f-9c61-48c6-b9db-59dc2fdf69f2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5002db24-43f7-442a-8d6f-9a1793b34d48" name="Doctor or Nurse" isLeaf="false">
+            <elementDefinition Id="d920b95f-5e0a-42e9-b0b5-8ad5e08c1093" />
+            <flowNodeTargets>
+              <controlFlow Id="18aba7df-c427-4e6f-ac10-1360b10e4e8a" isLeaf="false">
+                <decisionNodeMoniker Id="eb2a2966-ac7a-4655-a669-1ce403164a9b" LastKnownName="Decision4" />
+                <elementDefinition Id="1c6c6945-f851-47db-a395-8c3f10316601" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="261b9172-6a87-49f5-9159-06036b58e6e3" name="Merge1" isLeaf="false">
+            <elementDefinition Id="9f4c45ac-6af5-41d3-8579-4e2f6ea92808" />
+            <flowNodeTargets>
+              <controlFlow Id="68e9ed04-d86f-4790-bf8a-1482a9ce7260" isLeaf="false">
+                <opaqueActionMoniker Id="5002db24-43f7-442a-8d6f-9a1793b34d48" LastKnownName="Doctor or Nurse" />
+                <elementDefinition Id="97410cd8-d721-4903-9bc3-66e4748711f2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode Id="4d62211c-c14e-4655-b9d2-59e4e60b6295" name="Decision2" isLeaf="false">
+            <elementDefinition Id="068a3c0d-40d8-42b4-ab0b-df8975e8db2b" />
+            <flowNodeTargets>
+              <controlFlow Id="63152bc6-3477-4a50-8a22-ff0b12bff4e8" guard="Yes" isLeaf="false">
+                <opaqueActionMoniker Id="0b34eb7e-fae5-4a99-a78a-52168ba2faa4" LastKnownName="Request Payment" />
+                <elementDefinition Id="8d10d667-7888-4dad-a3b1-f255acc70217" />
+              </controlFlow>
+              <controlFlow Id="60dc73a9-b7f0-4d8d-8d88-8ff6d390d384" guard="No" isLeaf="false">
+                <mergeNodeMoniker Id="261b9172-6a87-49f5-9159-06036b58e6e3" LastKnownName="Merge1" />
+                <elementDefinition Id="5d67fb5b-4a88-41c7-995b-ae772db4273c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="0b34eb7e-fae5-4a99-a78a-52168ba2faa4" name="Request Payment" isLeaf="false">
+            <elementDefinition Id="b3f27c19-1f85-497d-80a2-3166d0fad7b6" />
+            <flowNodeTargets>
+              <controlFlow Id="0eb8a59d-0f50-4ecb-93f4-ed776138f5ca" guard="Will Pay?" isLeaf="false">
+                <decisionNodeMoniker Id="52003fa6-805c-4f43-9a94-85208d07dba1" LastKnownName="Decision3" />
+                <elementDefinition Id="38154fce-48c5-4d8e-8794-a43966a23a67" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="52003fa6-805c-4f43-9a94-85208d07dba1" name="Decision3" isLeaf="false">
+            <elementDefinition Id="4bb92e8e-4cbd-417b-8814-ef702df3a41f" />
+            <flowNodeTargets>
+              <controlFlow Id="dae6c6d6-fc7a-40ae-8534-b0f057bf5719" guard="No" isLeaf="false">
+                <opaqueActionMoniker Id="0233902c-d095-407c-ab11-7afabe79d364" LastKnownName="Refuse Appointment" />
+                <elementDefinition Id="13db17f7-2e36-4889-baf0-9710b556db22" />
+              </controlFlow>
+              <controlFlow Id="753edcae-60f0-4ec2-9c3f-23eb44c16f02" guard="Yes" isLeaf="false">
+                <mergeNodeMoniker Id="261b9172-6a87-49f5-9159-06036b58e6e3" LastKnownName="Merge1" />
+                <elementDefinition Id="82cea9ca-d785-4d4c-88d9-14b5aa54879e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="0233902c-d095-407c-ab11-7afabe79d364" name="Refuse Appointment" isLeaf="false">
+            <elementDefinition Id="3ff1ae34-ba4a-4cd8-919b-6abbefc977ac" />
+            <flowNodeTargets>
+              <controlFlow Id="e61fc8ec-48b2-4cbe-acd5-5ad5f0ca3711" isLeaf="false">
+                <activityFinalNodeMoniker Id="e26aa05d-35c9-422a-b253-b2deaf8343ba" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e6bd7c5e-8f81-42a0-ba3c-e90e979944ce" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="eb2a2966-ac7a-4655-a669-1ce403164a9b" name="Decision4" isLeaf="false">
+            <elementDefinition Id="f59f6f33-23b5-4bef-90d4-1edff68687bb" />
+            <flowNodeTargets>
+              <controlFlow Id="ccd2548b-418d-4d1e-b279-3205c6cd7c4a" guard="Wants Doctor" isLeaf="false">
+                <opaqueActionMoniker Id="e417b648-0b61-42a3-aa1c-99d19e0386b7" LastKnownName="List of Doctors" />
+                <elementDefinition Id="f26e8956-d3ba-42ae-8e89-c2b7fe71169e" />
+              </controlFlow>
+              <controlFlow Id="700064da-8299-458c-9bff-38d2e08dbd4a" guard="Wants Nurse" isLeaf="false">
+                <opaqueActionMoniker Id="e430d556-9e99-4abf-88f5-f3f96252df8e" LastKnownName="List of Nurse's" />
+                <elementDefinition Id="c95127dc-6a5b-4e33-abfd-1a16f7ec8efd" />
+              </controlFlow>
+              <controlFlow Id="11b94f7a-af59-40d4-9cb5-f02048d3c158" guard="Not Specified" isLeaf="false">
+                <opaqueActionMoniker Id="d6126ee4-3ede-4c63-b6f2-aa2e8d16718e" LastKnownName="Next Available Data" />
+                <elementDefinition Id="8200ad09-a639-4aa4-bffb-817f93e05ad6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="e417b648-0b61-42a3-aa1c-99d19e0386b7" name="List of Doctors" isLeaf="false">
+            <elementDefinition Id="69a5b0c6-6351-4a39-b827-866a70bcad8a" />
+            <flowNodeTargets>
+              <controlFlow Id="d150bbc8-20fa-48c7-8653-3be143216fdc" isLeaf="false">
+                <opaqueActionMoniker Id="be342c2a-097c-4cb9-8e89-ec5c3af7cb72" LastKnownName="Doctors Schedual" />
+                <elementDefinition Id="003da0b5-291d-41b6-93a2-d3138e25bb83" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e430d556-9e99-4abf-88f5-f3f96252df8e" name="List of Nurse's" isLeaf="false">
+            <elementDefinition Id="117af1ff-87be-41ef-a581-23c178dda814" />
+            <flowNodeTargets>
+              <controlFlow Id="a3c934a4-a200-47cb-93b2-84f0e7808dd5" isLeaf="false">
+                <opaqueActionMoniker Id="fcd26025-c553-4874-af3c-7c629af64995" LastKnownName="Nurses Schedual" />
+                <elementDefinition Id="91ba3bae-38b1-4c52-b242-1946f16aab50" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d6126ee4-3ede-4c63-b6f2-aa2e8d16718e" name="Next Available Data" isLeaf="false">
+            <elementDefinition Id="ef333442-4e2b-4bef-8e32-e949fd512044" />
+            <flowNodeTargets>
+              <controlFlow Id="3dec7509-5636-496a-a2cb-5be6c8aaa68b" guard="Date and time ok?" isLeaf="false">
+                <decisionNodeMoniker Id="2e1277a9-fd94-4142-ab3e-efc024c751ad" LastKnownName="Decision5" />
+                <elementDefinition Id="f5feefca-7a15-4ead-bc6b-8db684557540" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="be342c2a-097c-4cb9-8e89-ec5c3af7cb72" name="Doctors Schedual" isLeaf="false">
+            <elementDefinition Id="ffb9e815-2033-4297-9488-69b345713a27" />
+            <flowNodeTargets>
+              <controlFlow Id="a669e90f-8490-48cc-aadd-4a3af8e32240" isLeaf="false">
+                <opaqueActionMoniker Id="d6126ee4-3ede-4c63-b6f2-aa2e8d16718e" LastKnownName="Next Available Data" />
+                <elementDefinition Id="32801c47-96c7-4ada-942f-46d225eca2f5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fcd26025-c553-4874-af3c-7c629af64995" name="Nurses Schedual" isLeaf="false">
+            <elementDefinition Id="50b47525-85b3-4d8c-afee-7fca50c9691a" />
+            <flowNodeTargets>
+              <controlFlow Id="776e9a4a-eef0-4db5-b476-bdc19ce69ddd" isLeaf="false">
+                <opaqueActionMoniker Id="d6126ee4-3ede-4c63-b6f2-aa2e8d16718e" LastKnownName="Next Available Data" />
+                <elementDefinition Id="ed2ebe8f-f0ae-44ea-85d0-543beaebecc7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="2e1277a9-fd94-4142-ab3e-efc024c751ad" name="Decision5" isLeaf="false">
+            <elementDefinition Id="f71ac41e-1f1d-4e08-9326-3446e82906d6" />
+            <flowNodeTargets>
+              <controlFlow Id="db89dc1d-97e0-469e-8c4f-0a4de27343d2" guard="Yes" isLeaf="false">
+                <opaqueActionMoniker Id="e06d8985-0537-465e-89ee-e3bfdf6ec579" LastKnownName="Appointment Booked" />
+                <elementDefinition Id="a97b28d9-ce0c-4880-9d0c-450650c745a5" />
+              </controlFlow>
+              <controlFlow Id="226b0c8e-c0ee-4cc8-a5ca-73527adee174" guard="No" isLeaf="false">
+                <opaqueActionMoniker Id="d6126ee4-3ede-4c63-b6f2-aa2e8d16718e" LastKnownName="Next Available Data" />
+                <elementDefinition Id="112073ab-bc59-4d05-92e3-91014b562189" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="e06d8985-0537-465e-89ee-e3bfdf6ec579" name="Appointment Booked" isLeaf="false">
+            <elementDefinition Id="05ebd5ab-9792-4b1d-89a3-cf685269a380" />
+            <flowNodeTargets>
+              <controlFlow Id="082703c2-d2d5-40da-a0e0-15485eedc48d" isLeaf="false">
+                <activityFinalNodeMoniker Id="e26aa05d-35c9-422a-b253-b2deaf8343ba" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="d3c683d9-0f89-4efd-b891-db9c8834ba4d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="e26aa05d-35c9-422a-b253-b2deaf8343ba" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="4a8aa2a2-f497-4fc4-9ad4-be9287d0c5cf" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="2ab2de96-3288-432b-a9cd-447ff47214f8" name="CaseStudy_02 - diagrams">
+    <elementDefinition Id="6c02b432-5d07-46aa-aae3-2e2bd0f6cdb0" />
+  </package>
+</activityRootModel>
