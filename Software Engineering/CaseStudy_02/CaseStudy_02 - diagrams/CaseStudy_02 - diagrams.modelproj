@@ -24,6 +24,13 @@
       <SubType>Content</SubType>
       <DependentUpon>BookAppointment.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="seePatient.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="seePatient.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>seePatient.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="UMLUseCaseDiagram1.usecasediagram">
       <SubType>Content</SubType>
     </Content>

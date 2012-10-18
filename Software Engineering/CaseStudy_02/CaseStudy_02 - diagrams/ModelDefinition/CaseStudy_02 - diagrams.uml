@@ -1178,6 +1178,401 @@
         </nodes>
       </activity>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="7638567b-03ed-46ce-a4d8-e1bc8876bcd3"
+        name="seePatient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="8cfb2871-1e93-4360-83b1-b9a88fa83be1"
+            name="Doctor/Nurse"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="22c4b915-26e6-4287-849e-48560dd5703a"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <initialNode
+            Id="c2ffe950-713d-4849-89ab-7f69b93f6e86"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fb069055-73be-4f2e-9a4b-6dfb4dc88527"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e004a7cd-c7ab-4c9e-aa1c-bfc25b2a2466"
+                  LastKnownName="Next Appointment"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="e004a7cd-c7ab-4c9e-aa1c-bfc25b2a2466"
+            name="Next Appointment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="63a6a2b7-3401-4911-b228-95aca3be1fce"
+                guard="Patient Attends?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="3e3a57a4-86b5-422e-841a-2d86e20efe49"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="aaa2b8b0-3815-4ef1-9e67-baaa77ac4ee8"
+            name="Begin Appointment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3457c4c5-cd43-4c53-8497-a4a2f4e72d66"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="9795a0dd-c9ba-4e70-823d-2e6df65c36f8"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="96ff8f9f-6c2e-4a65-bc10-49210505073a"
+            name="Missed Appointment Note"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4ec1c21c-0888-479a-8e44-2e97fe62d530"
+                guard="Add To"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="33469de3-c65c-4e13-ab32-dd77ee879c10"
+                  LastKnownName="Update Medical Records"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="3e3a57a4-86b5-422e-841a-2d86e20efe49"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cf6de2c5-a986-4316-9e21-ab89b8592629"
+                guard="Yes"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aaa2b8b0-3815-4ef1-9e67-baaa77ac4ee8"
+                  LastKnownName="Begin Appointment"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9bb5f02a-43b7-4955-88a5-685d05fc8c4c"
+                guard="No"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="96ff8f9f-6c2e-4a65-bc10-49210505073a"
+                  LastKnownName="Missed Appointment Note"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <forkNode
+            Id="9795a0dd-c9ba-4e70-823d-2e6df65c36f8"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="209c4fcd-9335-4ef1-93c2-c6a1cc66e566"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f7fbb484-a44d-414e-9d3b-fbe66e84e35d"
+                  LastKnownName="Date / Time of Appointment"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c00ac0b6-56fb-496a-ad4a-275b51b3390b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="43d25f1b-0fa5-4459-91f1-c37d6885bb2b"
+                  LastKnownName="Doctors notes"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode
+            Id="b0cda052-b5b1-4f64-97a1-d42a0f2c1651"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d1ed1f9c-0bd3-44f1-92df-52a5c4bfb537"
+                guard="Prescription Needed?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ce595706-376c-4488-8b7e-9a3b38739dcc"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="f7fbb484-a44d-414e-9d3b-fbe66e84e35d"
+            name="Date / Time of Appointment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e891cc6a-7af6-4339-aea9-064cbae26c66"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="b0cda052-b5b1-4f64-97a1-d42a0f2c1651"
+                  LastKnownName="Join1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="43d25f1b-0fa5-4459-91f1-c37d6885bb2b"
+            name="Doctors notes"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c8ad1240-9170-4f30-a0d5-d446ee0f9c76"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="b0cda052-b5b1-4f64-97a1-d42a0f2c1651"
+                  LastKnownName="Join1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="33469de3-c65c-4e13-ab32-dd77ee879c10"
+            name="Update Medical Records"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="85ffe960-7123-45a1-9d61-cd6306236c1f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="46271038-501c-493c-ba63-3e87dcb6ae2a"
+                  LastKnownName="Patient Type"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="ce595706-376c-4488-8b7e-9a3b38739dcc"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dc6996a4-8a5c-409a-925b-80b686713fe0"
+                guard="Yes"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="952c76f9-fb27-49e7-a14d-f7986badab8c"
+                  LastKnownName="Fork2"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b737b96d-cc5b-4bfb-ac7a-a74f085037f2"
+                guard="No"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="33469de3-c65c-4e13-ab32-dd77ee879c10"
+                  LastKnownName="Update Medical Records"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <forkNode
+            Id="952c76f9-fb27-49e7-a14d-f7986badab8c"
+            name="Fork2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cf155e4a-9e34-48f0-9f5b-ed4ed27b56aa"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="21ca6d76-7d01-4ec1-9d43-744347e099b4"
+                  LastKnownName="Doctors Name"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5e6eb91c-be9d-496b-a065-d9c7cbeebebf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1e1712b5-5a22-4034-89a1-f7ed5417621f"
+                  LastKnownName="Patient Details"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="38838181-5120-40e2-bcb2-c201bf5d6267"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cefd7f51-7446-48ae-85c1-74bad9dfbca5"
+                  LastKnownName="Insturctions"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="21ca6d76-7d01-4ec1-9d43-744347e099b4"
+            name="Doctors Name"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="67b60d0b-9e60-423d-8cda-26c12bc8dd5c"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="f75880bf-da76-42e0-b0b9-7aad7d4b22f7"
+                  LastKnownName="Join2"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1e1712b5-5a22-4034-89a1-f7ed5417621f"
+            name="Patient Details"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="599f9ade-d7f7-4ce0-bdc7-026d6a15fdf0"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="f75880bf-da76-42e0-b0b9-7aad7d4b22f7"
+                  LastKnownName="Join2"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cefd7f51-7446-48ae-85c1-74bad9dfbca5"
+            name="Insturctions"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6d6a2fb8-3292-419c-87b1-90a007b89d5d"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="f75880bf-da76-42e0-b0b9-7aad7d4b22f7"
+                  LastKnownName="Join2"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="f75880bf-da76-42e0-b0b9-7aad7d4b22f7"
+            name="Join2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fbaee3e3-54fe-4a79-b525-ff8b825c0d64"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3cdeaf49-1805-434f-b0d5-6d1b7ac067cf"
+                  LastKnownName="Print and Sign"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="3cdeaf49-1805-434f-b0d5-6d1b7ac067cf"
+            name="Print and Sign"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ee481814-91eb-4a6d-ac5f-488d77e63e30"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="38dfb4b8-99c7-4a9e-af93-ecbf16bed586"
+                  LastKnownName="Give Prescription"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="335402ab-dbcb-4bbd-9284-1c31ed836aa2"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f8b40a4f-d23a-46ed-95a9-e3f468f83af7"
+                guard="Yes"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="83b1c329-58e9-4081-9204-5a144d331467"
+                  LastKnownName="Issues Bill"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="83b1c329-58e9-4081-9204-5a144d331467"
+            name="Issues Bill"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9480cb35-8755-4d71-ac37-46db08d8d0cc"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ec8e3341-a533-41ed-921b-ac49c5494870"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="46271038-501c-493c-ba63-3e87dcb6ae2a"
+            name="Patient Type"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b6f9ef7a-efdd-4811-bd01-38a572f14593"
+                guard="Private Patient?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="335402ab-dbcb-4bbd-9284-1c31ed836aa2"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="38dfb4b8-99c7-4a9e-af93-ecbf16bed586"
+            name="Give Prescription"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e637a87a-8754-4f08-8e28-558e925c85ae"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="33469de3-c65c-4e13-ab32-dd77ee879c10"
+                  LastKnownName="Update Medical Records"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="ec8e3341-a533-41ed-921b-ac49c5494870"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
