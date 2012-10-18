@@ -207,6 +207,10 @@
                 <opaqueActionMoniker Id="1fd5e3e0-cbab-4cf3-a83c-f08ee0698b8f" LastKnownName="Issues Bill" />
                 <elementDefinition Id="f8b40a4f-d23a-46ed-95a9-e3f468f83af7" />
               </controlFlow>
+              <controlFlow Id="108e013b-69cc-4f89-acb7-fc34fa0b283a" guard="No" isLeaf="false">
+                <activityFinalNodeMoniker Id="caddb5f4-df95-4235-b732-009076e013f7" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="5eea467e-1097-49f3-a144-fa1de23cb883" />
+              </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction Id="1fd5e3e0-cbab-4cf3-a83c-f08ee0698b8f" name="Issues Bill" isLeaf="false">

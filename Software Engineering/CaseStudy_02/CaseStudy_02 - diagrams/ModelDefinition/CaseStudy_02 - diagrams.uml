@@ -1518,6 +1518,15 @@
                   LastKnownName="Issues Bill"
                   LastKnownLocation="CaseStudy_02 - diagrams.uml" />
               </controlFlow>
+              <controlFlow
+                Id="5eea467e-1097-49f3-a144-fa1de23cb883"
+                guard="No"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ec8e3341-a533-41ed-921b-ac49c5494870"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CaseStudy_02 - diagrams.uml" />
+              </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction
