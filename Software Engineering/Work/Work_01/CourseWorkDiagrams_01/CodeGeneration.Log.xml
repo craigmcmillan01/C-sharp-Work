@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/craig/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/c4p532zb.gqf/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log">
+  <Message Timestamp="2012-10-23T13:28:03" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2012-10-23T13:28:03" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2012-10-23T13:28:03" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-10-23T13:28:03" Importance="Diagnostic" Text="ProjectPath = ..\CourseWorkDiagrams_01Lib\CourseWorkDiagrams_01Lib.csproj" />
+  <Message Timestamp="2012-10-23T13:28:03" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-10-23T13:28:03" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-10-23T13:28:03" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-10-23T13:28:03" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-10-23T13:28:03" Importance="Medium" Text="CourseWorkDiagrams_01's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'CourseWorkDiagrams_01::BankStaff' -  (Subsystem) " />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="'CourseWorkDiagrams_01::BankStaff' -  (Subsystem): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="ProjectPath = ..\CourseWorkDiagrams_01Lib\CourseWorkDiagrams_01Lib.csproj" />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="TemplateFilePath = %LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Users\craig\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\c4p532zb.gqf\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Medium" Text="CourseWorkDiagrams_01's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'CourseWorkDiagrams_01::BankStaff' -  (Subsystem) " />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="Diagnostic" Text="'CourseWorkDiagrams_01::BankStaff' -  (Subsystem): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-10-23T13:28:11" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.5, 8.5" name="UseCase_01">
+  <useCaseModelRootMoniker Id="29151b96-4034-4647-819b-5f07dd2ec174" />
+  <nestedChildShapes>
+    <actorShape Id="760cd6fc-703d-45fb-aae2-31a398baf9dd" absoluteBounds="3.625, 1.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="7f3e4c60-82e6-4e6a-bdc5-50d01bdfc048" LastKnownName="Customer" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="e62815f7-65ed-4ffb-8bfd-c08cbbd7dffd" absoluteBounds="2.75, 1.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c3f8c2ef-83ec-494c-81e9-4ff2fd717d62" LastKnownName="Deposit Money" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="acf233a0-d358-492d-b621-fb63057bd837" absoluteBounds="2.625, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="6acea7f4-88ef-42ee-8812-46f6eb705e22" LastKnownName="Withdraw Money" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="03a05be9-b19a-4660-aa25-3eabdcbe2f89" absoluteBounds="2.5, 3.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f41fbbe3-69cb-4b87-a8b7-6db67a00abef" LastKnownName="Pay Mortgage" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="047a8a0d-65f4-46e7-8c32-877a8f54e01b" absoluteBounds="2.5, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3bb3c926-7caf-4a7e-91ea-abe6c9cb4938" LastKnownName="Request a statement" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="3a13a9db-a097-433c-b614-12eb634fff88" absoluteBounds="5.5, 1.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="00054388-ce3e-4026-a391-8e27013c631e" LastKnownName="Request New  Account" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.125 : 1.52941176470588); (5.51329141583321 : 1.69274016656861)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="eedbf98c-4ef6-4327-b90c-4dacc1f15cdc" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="760cd6fc-703d-45fb-aae2-31a398baf9dd" />
+        <useCaseShapeMoniker Id="3a13a9db-a097-433c-b614-12eb634fff88" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="a7b332e7-65fe-431c-930b-cd502e08f8ed" absoluteBounds="3.375, 3.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="0b5119e2-100f-4146-8dab-d3de85c47516" LastKnownName="Login" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="01e2c0a9-1008-44de-a04c-0b095a9ac7cd" absoluteBounds="2.75, 5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="622d4fce-af1e-4025-9e8e-0f7663cfff3b" LastKnownName="Request Pin change" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.83333333333333 : 1.75); (3.29152273992687 : 5.00086356043878)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="91656b29-dfd2-4093-9d4c-42fb27c6538c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="760cd6fc-703d-45fb-aae2-31a398baf9dd" />
+        <useCaseShapeMoniker Id="01e2c0a9-1008-44de-a04c-0b095a9ac7cd" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="9a1ca383-a8d6-4d2b-aadf-db9dd9411c9f" absoluteBounds="2.625, 4.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="708b81b1-2958-4209-a191-6f87c0767568" LastKnownName="Enter Pin number" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <commentShape Id="d1b7d182-c954-495b-912f-ecd8e509ab98" absoluteBounds="5, 0.75, 2, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="cfe72317-2aa7-44d1-a76e-27b861aaedb3" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="5784b751-5154-47df-918f-ea58abfbeeea" absoluteBounds="2.25, 0.75, 2.75, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="b62f30c8-7a89-460e-a869-70adb6f98039" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="e0349b22-f8be-4e9b-86ae-4960639da4ee" absoluteBounds="7, 0.75, 2.75, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="dc6b2529-b149-43b0-a7b5-d307da4c237b" />
+      <relativeChildShapes />
+    </commentShape>
+    <actorShape Id="916ade4c-30c3-4b56-a295-275d898e3e48" absoluteBounds="8.125, 1.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="3bfc4b03-712c-4109-b7a8-cb98e7d08fad" LastKnownName="Chief Clerk" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="3ed662f4-00a3-4487-a559-caa594b8a91a" absoluteBounds="7.375, 1.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e060450b-df20-4877-9a23-c3c05bec401f" LastKnownName="Calculate interest on accounts" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="e6cd225e-4df9-4a25-90b5-9f10f0915a7c" absoluteBounds="10.5, 1.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d6ce9eb0-cb8e-4acc-b35a-189190a5bdd2" LastKnownName="Change customer Pin" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="eac9f839-b7d5-4279-a048-baa87acbd2d6" absoluteBounds="8.625, 2.125, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fe6214ef-af3b-41b7-aa55-baead52a7e37" LastKnownName="Alter intersest rates" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="a97ca258-6ee5-49c5-956f-988aa1268854" absoluteBounds="7.375, 2.75, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="1919c9f1-b021-4490-bd1a-df3cca043ecf" LastKnownName="Request Status Report" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="8b9f0ab1-ae10-46f4-abee-cd9fac2682ba" absoluteBounds="9.875, 2.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a21f17d9-0c26-4dd4-97f3-b9d0fca87f77" LastKnownName="view customer details" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="0cbb5bf7-b3ba-4de9-9485-511fcdccca90" absoluteBounds="11.125, 2, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fa3a8908-7528-4db0-9ca1-6e19f3899d3f" LastKnownName="Close customer account" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="a830da95-dc88-4629-9343-d221f6c32851" absoluteBounds="9.875, 1.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fd6bbc35-deb8-468c-886b-e9a7ba154628" LastKnownName="Open customer account" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <commentShape Id="566a3a0c-f980-4cd2-beb5-28f397f96653" absoluteBounds="9.75, 0.75, 2.5, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="066fe679-e870-48f6-9319-05d1aaefdb6b" />
+      <relativeChildShapes />
+    </commentShape>
+    <useCaseShape Id="58348d4a-9f03-40fc-b1ba-bf2dc58e8b2e" absoluteBounds="11.125, 3, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="90a815cb-5985-427a-8094-f5c3463f8089" LastKnownName="Update customer details" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="075abc65-7457-4ef3-bfd8-0ada1fa4c308" absoluteBounds="10, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="837fb61c-ec73-4df3-8ab5-26ed3ee89a40" LastKnownName="Produce a statement" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <commentShape Id="68311b51-a7eb-47f0-a892-4a45accb51dd" absoluteBounds="9.25, 5.75, 1.25, 0.5" customColor="251, 247, 200">
+      <commentMoniker Id="d403d10c-b2d0-4bba-8202-4a8d0fe3814e" />
+      <relativeChildShapes />
+    </commentShape>
+    <actorShape Id="00739b4d-273c-437a-972a-161e64a02035" absoluteBounds="11.625, 4.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="55c616e4-6e18-407f-b31f-4ac491ad4cab" LastKnownName="Clerk" />
+      <relativeChildShapes />
+    </actorShape>
+    <rectangleShape Id="410da7bd-488f-4f6e-8cc3-13f2c44dd311" absoluteBounds="7, 0.625, 2.75, 5" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+    <rectangleShape Id="fd10edc3-4eac-4601-811b-d224b41e38c6" absoluteBounds="9.75, 0.625, 2.5, 5" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+    <rectangleShape Id="9851a815-245d-48b4-9330-5b737266f3cf" absoluteBounds="5, 0.625, 2, 3.125" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+    <rectangleShape Id="9cf2faac-b36e-4662-83e6-ffa60edd8c61" absoluteBounds="2.25, 0.625, 2.75, 5" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+  </nestedChildShapes>
+</useCaseDiagram>

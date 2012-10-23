@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="bedb46a4-5546-4634-b544-5317886484b5" name="CustomerSystem" linkedPackageId="123fcd80-9b70-45ee-b2fb-3b4aaf12d5b9" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="029fd0b8-9c02-43ca-ae76-266eedc372ce">
+      <profileInstance Id="ae02a2e2-cfd6-4497-98a7-2142a298f16c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="98a5e3c1-b583-4a19-9d07-dcdf5de0f5de">
+      <profileInstance Id="5c55cff7-152d-4466-bb51-e94dd60bf1e3" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b76145af-f60d-446b-93bb-88f324376226" name="Customer System" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2a65b77-7862-4aa0-879a-d7a093f35df6" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e10c4d65-3bfc-4489-a65a-5fa6eeef1a31" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f22e2829-f77e-45e6-ac1e-56e9b32fe417" />
+        <targetEnds>
+          <association Id="16b507a6-2198-41c0-bd42-217af3fceb03" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Request New  Account" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="df37fbd4-987e-40e8-8274-59de7166dee8" LastKnownName="Request New  Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a65698bc-e572-47cc-839f-3398c17cc0d0" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b3ddae3-eba4-4bbd-860c-354c0f8fea3e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e3576ff4-2f7a-4151-a886-abd20f1350e8" name="Request New  Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8700a82-8a09-42c2-95c3-095c4917f539" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="279876b8-e735-48ec-8fb2-151c8a1b5d26" />
+          </association>
+          <association Id="d72eb936-66f8-47ea-b53a-28f4a3f99748" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Request Pin change" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="48c79e1e-c9fc-47f0-8373-860b17b5231b" LastKnownName="Request Pin change" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="074fbdd1-8030-4409-b020-dcc76f04445f" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="94599868-a3bf-4aaa-8b5a-a4a5911f1b56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a08d0d2-0852-4ee4-bcb9-9cc8aa68257c" name="Request Pin change" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="68f45244-b0c6-44ab-a9af-09a62937c3bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="11d17bda-fb60-4d16-a1ec-d5892d72bd76" />
+          </association>
+          <association Id="985ea8e7-ca38-4225-8353-e30ae39ab143" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Update Mortgage Account" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="10b5fee6-82f2-4474-b53c-14e73de52cf1" LastKnownName="Update Mortgage Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c932461-1722-4461-861d-d33c44a2661f" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cd40af23-c5eb-4b25-836b-56c314e0ca73" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77ae0a7b-d542-4829-b65e-3bb0e458adf6" name="Update Mortgage Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="349279f3-751c-4a35-ba5e-f4a92d70b391" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="04b661fa-6598-435f-b796-601a83a399bd" />
+          </association>
+          <association Id="724c5c19-5bde-48b2-b411-e8e00369091b" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Update Savings Account" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dcf122ff-8ddb-4ec4-bd6e-79eb6019b9a8" LastKnownName="Update Savings Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f428d331-6e24-460f-8246-553ea99f4561" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7a6c0605-a88d-4175-806d-eac047eab80d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e6f2081-048f-4fea-8cd5-cca20ab6bbda" name="Update Savings Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bafc1e20-bfca-4297-8cee-60a7e3fdcdc8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0b98e8f4-2c26-4e62-9aa6-5c4a8de6c1ec" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="c4ebf939-c1b1-49c3-aacf-84988771c520" name="Deposit Money" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c73b0171-22eb-4967-9e39-986e87b9d5c0" />
+        <subjects>
+          <subsystemMoniker Id="b76145af-f60d-446b-93bb-88f324376226" LastKnownName="Customer System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="528a839c-ec36-4f1e-ab20-d530e2fbbb11" name="Withdraw Money" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d3207968-2ba0-4ead-b69d-e2d86b1e4868" />
+        <subjects>
+          <subsystemMoniker Id="b76145af-f60d-446b-93bb-88f324376226" LastKnownName="Customer System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="df37fbd4-987e-40e8-8274-59de7166dee8" name="Request New  Account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59ebab2b-85b3-4610-a8dc-d415d6a0a5fb" />
+        <subjects>
+          <subsystemMoniker Id="b76145af-f60d-446b-93bb-88f324376226" LastKnownName="Customer System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="51c5c956-f18b-44a9-b0af-78b8a08e96e3" name="Request a statement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10098649-4a37-4641-8ce5-676f34b55858" />
+        <subjects>
+          <subsystemMoniker Id="b76145af-f60d-446b-93bb-88f324376226" LastKnownName="Customer System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ee274581-b2e8-4039-9459-a663ea3689d9" name="Pay Mortgage" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d44523a1-6fe5-4e75-8dd6-81430031947c" />
+        <subjects>
+          <subsystemMoniker Id="b76145af-f60d-446b-93bb-88f324376226" LastKnownName="Customer System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="48c79e1e-c9fc-47f0-8373-860b17b5231b" name="Request Pin change" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8d4198d4-3d9e-4ad3-998c-1015d0c6d581" />
+        <subjects>
+          <subsystemMoniker Id="b76145af-f60d-446b-93bb-88f324376226" LastKnownName="Customer System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="dcf122ff-8ddb-4ec4-bd6e-79eb6019b9a8" name="Update Savings Account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9c76a84-3dbf-44bb-bf41-302316f75b13" />
+        <additions>
+          <include Id="2031e0c6-ef77-4e24-b201-6506644d44f8">
+            <useCaseMoniker Id="528a839c-ec36-4f1e-ab20-d530e2fbbb11" LastKnownName="Withdraw Money" />
+            <elementDefinition Id="85e7c5ac-3be4-49fe-bece-3c62678ac020" />
+          </include>
+          <include Id="d5bd6ae3-e401-465c-8eb0-5929288de28a">
+            <useCaseMoniker Id="c4ebf939-c1b1-49c3-aacf-84988771c520" LastKnownName="Deposit Money" />
+            <elementDefinition Id="047ac192-4a14-4726-9b88-25418c5e7d2f" />
+          </include>
+          <include Id="69aad4fe-ccf0-426c-8ef7-7658e120e212">
+            <useCaseMoniker Id="51c5c956-f18b-44a9-b0af-78b8a08e96e3" LastKnownName="Request a statement" />
+            <elementDefinition Id="0f2e542c-14da-4d68-8701-035339026b9d" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="b76145af-f60d-446b-93bb-88f324376226" LastKnownName="Customer System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="10b5fee6-82f2-4474-b53c-14e73de52cf1" name="Update Mortgage Account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a51f423-4808-466e-bfe7-6a6d44c1b4bb" />
+        <additions>
+          <include Id="31a7a483-d4a3-485f-a004-d58bac13dfce">
+            <useCaseMoniker Id="ee274581-b2e8-4039-9459-a663ea3689d9" LastKnownName="Pay Mortgage" />
+            <elementDefinition Id="99eab699-8688-42d0-a746-6c36ab171261" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="b76145af-f60d-446b-93bb-88f324376226" LastKnownName="Customer System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="123fcd80-9b70-45ee-b2fb-3b4aaf12d5b9" name="CourseWorkDiagrams_01">
+    <elementDefinition Id="62decbda-0373-486b-b7b9-834c5fe00380" />
+  </package>
+</useCaseModelRoot>
