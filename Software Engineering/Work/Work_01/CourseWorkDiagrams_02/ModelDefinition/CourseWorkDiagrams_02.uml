@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="9d749026-f9ae-47f1-96cb-1c24c40bbd7b"
   name="CourseWorkDiagrams_02" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="b0c61080-4a9e-4811-8440-73fa3543d25f">
+      <body>Made the assumption that if password or username is entered incorrectly x amount of times then user will be locked out of system and password reset. </body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <actor
@@ -1012,6 +1018,704 @@
             LastKnownLocation="CourseWorkDiagrams_02.uml" />
         </subjects>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="dfcc14d7-e399-4c8b-883e-3fcba1573797"
+        name="UIActivity_01"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="7ad8bf5e-d0ee-4c75-a6db-a9fa16b00f09"
+            name="Security System"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="f7e50117-c9c6-4934-a224-ec076ce80cbf"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="4d23843a-ad1f-43f2-b21e-2a0940739d46"
+            name="User"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="f4ff7fdb-eaf3-4b4d-9634-57c9a4f9a0b4"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <initialNode
+            Id="0cae8749-f74a-42bb-a2e2-2ee1ed9908e9"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4d943e1d-3149-46da-9b83-e3181073aa7d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fe3ae9e6-e0ee-4151-8363-c14967dbc54c"
+                  LastKnownName="Prompt for username and password"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <forkNode
+            Id="c9cba1d2-daf7-4e04-ba19-40acee0f1ef4"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="955326d6-3086-4a60-8e55-f0f05ebd7f4a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9c791dc9-27ac-4a49-9091-c6dbad3eae7d"
+                  LastKnownName="Enter UserName"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a0476dc7-f9d1-4129-ba7d-26e6f215a78e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3156362d-0b4b-4dac-baae-7a865abf7f2c"
+                  LastKnownName="Enter Password"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="9c791dc9-27ac-4a49-9091-c6dbad3eae7d"
+            name="Enter UserName"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b88b8508-da61-4987-abf6-97da48e8a626"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="0b45e895-f879-4e3a-bf80-1cf4b6660b1e"
+                  LastKnownName="Join1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3156362d-0b4b-4dac-baae-7a865abf7f2c"
+            name="Enter Password"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="91b6adb2-1194-47dc-97f6-4755ab79865d"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="0b45e895-f879-4e3a-bf80-1cf4b6660b1e"
+                  LastKnownName="Join1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="0b45e895-f879-4e3a-bf80-1cf4b6660b1e"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="79b9bc96-c5e3-4fb3-9890-2e097f0a305d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2b25c6ab-059f-4abc-bbf8-d9308347ec38"
+                  LastKnownName="Verify Password"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="2b25c6ab-059f-4abc-bbf8-d9308347ec38"
+            name="Verify Password"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1fc32059-f941-4967-b69c-61852a847f35"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="62ab7696-e68b-43a9-96a4-968bf79d7865"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="62ab7696-e68b-43a9-96a4-968bf79d7865"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3bdac1db-22b2-43f4-9243-492d9554043e"
+                guard="Incorrect"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8c8ff10f-ddf3-47d1-8daa-120cfde059f9"
+                  LastKnownName="Display Error Message"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="32f85d00-5308-4524-9539-6d4510025134"
+                guard="Correct"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c1bddfbe-f8eb-40a7-87cc-90a1d1f31428"
+                  LastKnownName="Allow entry to system"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="8c8ff10f-ddf3-47d1-8daa-120cfde059f9"
+            name="Display Error Message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="302a6139-e5d8-4660-8778-f74db1c2f3eb"
+                guard="Count &lt; x"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fe3ae9e6-e0ee-4151-8363-c14967dbc54c"
+                  LastKnownName="Prompt for username and password"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a30cd9e3-5fc5-440c-9c90-5bae7b41e87e"
+                guard="Count &gt;= x"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ff54b105-c764-4915-be5a-ff1e830344df"
+                  LastKnownName="Lock user out of system"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c1bddfbe-f8eb-40a7-87cc-90a1d1f31428"
+            name="Allow entry to system"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bd6474c3-27ac-4f86-b555-1df68b520741"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="368ff36d-81f9-4640-b3a6-a608cc9c4913"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fe3ae9e6-e0ee-4151-8363-c14967dbc54c"
+            name="Prompt for username and password"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="89e251df-4387-424b-bff9-38f1cfa6b0e4"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="c9cba1d2-daf7-4e04-ba19-40acee0f1ef4"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ff54b105-c764-4915-be5a-ff1e830344df"
+            name="Lock user out of system"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="098313ee-a2eb-467a-8a01-aad9c76bbdd2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="22c71a18-d683-411b-b802-570e92edc709"
+                  LastKnownName="Display error message"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="22c71a18-d683-411b-b802-570e92edc709"
+            name="Display error message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5da8c017-ff04-472e-a943-be1ad55f1f99"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="368ff36d-81f9-4640-b3a6-a608cc9c4913"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="368ff36d-81f9-4640-b3a6-a608cc9c4913"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="72fa1115-cd96-4af4-ad46-63907ee91f78"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="b8b271c4-308f-4ca3-a07a-e3e9a4f14a84"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode
+            Id="b8b271c4-308f-4ca3-a07a-e3e9a4f14a84"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="be4790e6-ba97-48af-ad82-6d18b3730cc0"
+        name="CustomerActivity_01"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="56015674-b5fe-4ff1-a16b-7fe50f422579"
+            name="Customer"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="a97a11d4-3977-4ff1-a518-d5d1ecb746ce"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="b038dc91-76c8-4585-9f2d-52a2a9b6013c"
+            name="Security System"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="0e94d906-2c00-45f0-8c79-7ca2bb8687fc"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="5be6cf52-d9a5-40b3-a7b7-37861b7ccf63"
+            name="Select operation"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5f29ac00-50d0-46ce-858e-3166f6945583"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c61f126d-83f3-4679-a0b1-b4e99845ce2e"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="c61f126d-83f3-4679-a0b1-b4e99845ce2e"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2b146f69-dfd1-4028-8899-b466257a32fc"
+                guard="New account selected"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e52e4d6a-c55e-442b-a672-e803b68f0f5b"
+                  LastKnownName="Request New Account"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="cf0ebc3f-3049-4859-9770-e2baed5ee380"
+                guard="Update mortage"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="12224067-0b22-4956-b90c-23cf922a608e"
+                  LastKnownName="Update Mortage Account"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b6a3b886-ff33-4861-8d2c-fad4b8f6cc21"
+                guard="Update savings selected"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="28d696ee-3c18-4a8c-9282-3c7922d2c59e"
+                  LastKnownName="Update Savings Account"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="337b6b40-97c8-44bc-b659-2b8f2d3239b9"
+                guard="Request new pin"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ae0d6890-33c9-4327-af6a-0122d4a4ea40"
+                  LastKnownName="Request Pin Change"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="e52e4d6a-c55e-442b-a672-e803b68f0f5b"
+            name="Request New Account"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="04fdf5e9-9c3a-4c3c-94d4-c071910f7267"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="47c17b6d-4907-4745-b62b-bf249c833e28"
+                  LastKnownName="New Account Request"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="12224067-0b22-4956-b90c-23cf922a608e"
+            name="Update Mortage Account"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d0fd4a67-4c0d-4931-a3c5-42a60ac3a6bf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="61a06767-79f8-4ace-b5f5-eaad6a8ecaec"
+                  LastKnownName="Make deposit"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="28d696ee-3c18-4a8c-9282-3c7922d2c59e"
+            name="Update Savings Account"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4ed7981e-59eb-4e90-a095-26d1f35c97ce"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f83321e0-9b4c-427c-8354-dfb01d6fadf5"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ae0d6890-33c9-4327-af6a-0122d4a4ea40"
+            name="Request Pin Change"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="43237df8-7b10-4630-8bc1-516d1eed6504"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="6331ff4a-c606-4ef8-ba3c-4588c60e9eb0"
+                  LastKnownName="New Pin Request"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="eb03438b-97c4-4234-b0e1-74500d7e05d8"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4542be23-3f2b-47f2-abae-5749d27e459e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5be6cf52-d9a5-40b3-a7b7-37861b7ccf63"
+                  LastKnownName="Select operation"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <sendSignalAction
+            Id="47c17b6d-4907-4745-b62b-bf249c833e28"
+            name="New Account Request"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ef072b40-9f64-41c3-8b79-96b3d9bdce8a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="a8e78e8a-3be0-434e-807e-cd048e483250"
+                  LastKnownName="Clerk"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="a8e78e8a-3be0-434e-807e-cd048e483250"
+            name="Clerk"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="eacc5f5d-902e-461f-9a15-6cf99a8d79bb"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="61a06767-79f8-4ace-b5f5-eaad6a8ecaec"
+            name="Make deposit"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9d242e08-01ae-4003-9bdb-2e39a420a1f7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="809ba62b-2f49-419f-aeb8-7ed2f4c10f04"
+                  LastKnownName="Update Accounts"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="6331ff4a-c606-4ef8-ba3c-4588c60e9eb0"
+            name="New Pin Request"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="5098fbac-0cfd-41a2-9299-2139f6e9efdf"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="e82e60d8-15fd-4708-9bc1-06ab6f0bb9f3"
+                  LastKnownName="Clerk"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="e82e60d8-15fd-4708-9bc1-06ab6f0bb9f3"
+            name="Clerk"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="bf6edbd4-77c2-4a44-aaa7-9e649f0e86d3"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="0964b2c3-dbf5-4db4-a41e-4ab5e06c1711"
+            name="Bank System"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="85bbc6d9-4769-4248-941f-ef59c6a7e575"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="809ba62b-2f49-419f-aeb8-7ed2f4c10f04"
+            name="Update Accounts"
+            isLeaf="false" />
+          <decisionNode
+            Id="f83321e0-9b4c-427c-8354-dfb01d6fadf5"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="441cffdf-9051-4334-99aa-4f5f2ed9b94f"
+                guard="Request A Statement"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bbbee30d-30aa-4732-a23b-05b946d053b6"
+                  LastKnownName="Request Statement"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b609f01b-c6aa-481d-bc11-d83819821c74"
+                guard="Withdraw or deposit"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a6c21961-2ea2-4415-b75d-3185b09b0f57"
+                  LastKnownName="Prompt for pin"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="bbbee30d-30aa-4732-a23b-05b946d053b6"
+            name="Request Statement"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="62c48938-f10a-450f-95bb-97988bb6e80c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="919106de-5200-4358-984c-b19d243b6b3d"
+                  LastKnownName="Get statement information"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="919106de-5200-4358-984c-b19d243b6b3d"
+            name="Get statement information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2c834d62-14dd-48e3-a41e-0f11d2f39a1d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cf955044-3995-45ee-89c3-2441493ed07f"
+                  LastKnownName="Display Statement to user"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cf955044-3995-45ee-89c3-2441493ed07f"
+            name="Display Statement to user"
+            isLeaf="false" />
+          <opaqueAction
+            Id="a6c21961-2ea2-4415-b75d-3185b09b0f57"
+            name="Prompt for pin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6c3cbe8b-01bb-4c73-a261-c9fae2100f4b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9cd7be99-0e51-4f0b-a853-7abb7701ab50"
+                  LastKnownName="Enter Pin"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9cd7be99-0e51-4f0b-a853-7abb7701ab50"
+            name="Enter Pin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6e23a2c3-7664-4336-b585-ca4a120dcacc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ee30be1e-d7a3-4a15-9ac1-3d27fbe0199d"
+                  LastKnownName="Verify Password"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ee30be1e-d7a3-4a15-9ac1-3d27fbe0199d"
+            name="Verify Password"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1a1d70cb-0f9d-4d3e-a157-8f5e8e23bcbf"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="4ea725d4-a51c-47ba-aa02-b5a83d27e9c0"
+                  LastKnownName="Decision11"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="4ea725d4-a51c-47ba-aa02-b5a83d27e9c0"
+            name="Decision11"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1824292d-5e1a-4374-b3b0-10807e984b5f"
+                guard="Incorrect"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dfb24ddf-e33d-4350-b615-3ada89392cdb"
+                  LastKnownName="Display Error Message"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="dfb24ddf-e33d-4350-b615-3ada89392cdb"
+            name="Display Error Message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="40313ead-eafb-4a8a-8d4f-e50fea3032a1"
+                guard="Count &gt;= x"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="05580972-8cd5-489e-8615-a5ecf453ded5"
+                  LastKnownName="Change user pin"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="05580972-8cd5-489e-8615-a5ecf453ded5"
+            name="Change user pin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d14901a0-ebb9-4b11-a825-51e6566a937e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="588200ad-e2e7-47b1-bc70-b90cdd0ddd28"
+                  LastKnownName="Display error message"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="588200ad-e2e7-47b1-bc70-b90cdd0ddd28"
+            name="Display error message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d87ba970-c8f2-4c14-b5f9-801c8af437a1"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="6331ff4a-c606-4ef8-ba3c-4588c60e9eb0"
+                  LastKnownName="New Pin Request"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
