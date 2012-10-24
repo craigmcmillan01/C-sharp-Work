@@ -21,6 +21,20 @@
       <SubType>Content</SubType>
       <DependentUpon>BankStaffSystem.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="BankStaff_01.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BankStaff_01.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BankStaff_01.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="ChiefClerk_01.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChiefClerk_01.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChiefClerk_01.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="CustomerActivity_01.activitydiagram">
       <SubType>Content</SubType>
     </Content>

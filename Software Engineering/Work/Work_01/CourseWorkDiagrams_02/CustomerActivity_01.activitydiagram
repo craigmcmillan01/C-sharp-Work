@@ -107,6 +107,12 @@
           </sendSignalAction>
           <objectNode Id="f09e8543-f4d5-40d9-8704-58f3be6da552" name="Clerk" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="a8e78e8a-3be0-434e-807e-cd048e483250" />
+            <objectFlowTargets>
+              <objectFlow Id="298c9235-e0d9-48aa-8a50-7f783e6b8d01" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <mergeNodeMoniker Id="0685e303-4c27-4cf6-8a2a-f5b28a5f4818" LastKnownName="Merge1" />
+                <elementDefinition Id="77f7ddf1-bf06-4fae-84e4-d2290effa1e0" />
+              </objectFlow>
+            </objectFlowTargets>
             <upperBound>
               <literalInteger Id="20eac95e-de88-441e-9260-87a2f19016c0" name="2147483647" value="2147483647">
                 <elementDefinition Id="eacc5f5d-902e-461f-9a15-6cf99a8d79bb" />
@@ -133,6 +139,12 @@
           </sendSignalAction>
           <objectNode Id="da34e0c6-7211-4e11-bf46-5f92f626acdc" name="Clerk" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="e82e60d8-15fd-4708-9bc1-06ab6f0bb9f3" />
+            <objectFlowTargets>
+              <objectFlow Id="903100af-6946-4615-8d7a-ff0c7ef06397" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <mergeNodeMoniker Id="0685e303-4c27-4cf6-8a2a-f5b28a5f4818" LastKnownName="Merge1" />
+                <elementDefinition Id="9d427ad1-51c4-4329-a85e-02dbd160b727" />
+              </objectFlow>
+            </objectFlowTargets>
             <upperBound>
               <literalInteger Id="b134e25f-203c-464c-84a8-20962fc15cee" name="2147483647" value="2147483647">
                 <elementDefinition Id="bf6edbd4-77c2-4a44-aaa7-9e649f0e86d3" />
@@ -149,6 +161,12 @@
           </objectNode>
           <opaqueAction Id="16f16d6e-eb65-410f-902a-136afc7d35db" name="Update Accounts" isLeaf="false">
             <elementDefinition Id="809ba62b-2f49-419f-aeb8-7ed2f4c10f04" />
+            <flowNodeTargets>
+              <controlFlow Id="05a92c91-1e5d-4b71-a993-bec9fe5ea038" isLeaf="false">
+                <mergeNodeMoniker Id="0685e303-4c27-4cf6-8a2a-f5b28a5f4818" LastKnownName="Merge1" />
+                <elementDefinition Id="e508b637-fe2f-4a07-878c-2e2c988d3c55" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <decisionNode Id="3c26b6a9-bee9-4cc6-b51c-57f87321ed72" name="Decision2" isLeaf="false">
             <elementDefinition Id="f83321e0-9b4c-427c-8354-dfb01d6fadf5" />
@@ -183,6 +201,12 @@
           </opaqueAction>
           <opaqueAction Id="9cc9b96d-b495-4f71-b50b-55c2349f93a5" name="Display Statement to user" isLeaf="false">
             <elementDefinition Id="cf955044-3995-45ee-89c3-2441493ed07f" />
+            <flowNodeTargets>
+              <controlFlow Id="2d324c4e-91de-4a0b-953d-5816a7e337a7" isLeaf="false">
+                <mergeNodeMoniker Id="0685e303-4c27-4cf6-8a2a-f5b28a5f4818" LastKnownName="Merge1" />
+                <elementDefinition Id="50bff7ca-2521-447a-8911-3a667b23b22c" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="099c54be-75f4-426d-baca-790412f49d50" name="Prompt for pin" isLeaf="false">
             <elementDefinition Id="a6c21961-2ea2-4415-b75d-3185b09b0f57" />
@@ -218,14 +242,22 @@
                 <opaqueActionMoniker Id="5efca3d4-f10f-4c66-aacc-d8983b47f036" LastKnownName="Display Error Message" />
                 <elementDefinition Id="1824292d-5e1a-4374-b3b0-10807e984b5f" />
               </controlFlow>
+              <controlFlow Id="c70435a3-ebe6-499b-acf7-73d0a4c2d7a4" guard="Correct" isLeaf="false">
+                <opaqueActionMoniker Id="f2f74487-c64c-43bb-b5db-3539314198f5" LastKnownName="Make selection" />
+                <elementDefinition Id="150a7b19-8609-4c5c-a6cc-55cf9c6302cf" />
+              </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction Id="5efca3d4-f10f-4c66-aacc-d8983b47f036" name="Display Error Message" isLeaf="false">
             <elementDefinition Id="dfb24ddf-e33d-4350-b615-3ada89392cdb" />
             <flowNodeTargets>
-              <controlFlow Id="c70a8196-711e-49d0-9565-6757ebfd890a" guard="Count &gt;= x" isLeaf="false">
+              <controlFlow Id="c70a8196-711e-49d0-9565-6757ebfd890a" guard="Count &gt;= 3" isLeaf="false">
                 <opaqueActionMoniker Id="41b30496-c337-430d-9827-56137a059720" LastKnownName="Change user pin" />
                 <elementDefinition Id="40313ead-eafb-4a8a-8d4f-e50fea3032a1" />
+              </controlFlow>
+              <controlFlow Id="d6c04932-4959-4aaa-9afe-a8a6a82136ee" guard="Count &lt; 3" isLeaf="false">
+                <opaqueActionMoniker Id="099c54be-75f4-426d-baca-790412f49d50" LastKnownName="Prompt for pin" />
+                <elementDefinition Id="d188f7b4-dc38-4d1f-9221-12a9929ff0e9" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -247,6 +279,89 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <opaqueAction Id="f2f74487-c64c-43bb-b5db-3539314198f5" name="Make selection" isLeaf="false">
+            <elementDefinition Id="963d19ee-b70e-487f-a76a-1abab2875e10" />
+            <flowNodeTargets>
+              <controlFlow Id="10c2ad2a-9984-4d06-a88d-101c3203a792" isLeaf="false">
+                <decisionNodeMoniker Id="47248d08-0339-4159-87ca-7180c0795418" LastKnownName="Decision3" />
+                <elementDefinition Id="c96ed408-c13d-4030-9b88-da0f5aa9ec97" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="47248d08-0339-4159-87ca-7180c0795418" name="Decision3" isLeaf="false">
+            <elementDefinition Id="f4089ff3-d8cb-4498-9608-293a2f4f58e5" />
+            <flowNodeTargets>
+              <controlFlow Id="263a52e3-d0e6-4340-a4d1-4e81340495a8" guard="Withdraw" isLeaf="false">
+                <opaqueActionMoniker Id="bc98c6b3-4609-4703-8232-92e492430f38" LastKnownName="Withdraw  money" />
+                <elementDefinition Id="c56a370b-0c4c-40b4-bc6e-ae4c39c3c983" />
+              </controlFlow>
+              <controlFlow Id="d3cc1200-8a26-49a9-ae15-c10b72425e3b" guard="Deposit" isLeaf="false">
+                <opaqueActionMoniker Id="c7d1d45c-d847-4c58-af13-6e3a4c9e6e6d" LastKnownName="Deposit Money" />
+                <elementDefinition Id="c046d110-49d9-4531-b3cb-089792f8c806" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="bc98c6b3-4609-4703-8232-92e492430f38" name="Withdraw  money" isLeaf="false">
+            <elementDefinition Id="8899fac9-f9d9-410f-985f-4b3442983c04" />
+            <flowNodeTargets>
+              <controlFlow Id="5a8494ea-f6c5-4415-b934-e3b7375a3804" isLeaf="false">
+                <opaqueActionMoniker Id="d177bf49-edfc-4ffd-a7d5-e6c048516ec4" LastKnownName="Update account" />
+                <elementDefinition Id="52c4192b-2d7e-432b-acee-b3c7b0a8ed75" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c7d1d45c-d847-4c58-af13-6e3a4c9e6e6d" name="Deposit Money" isLeaf="false">
+            <elementDefinition Id="5b05a509-f88c-4afe-9319-edc40c66d675" />
+            <flowNodeTargets>
+              <controlFlow Id="e64fe553-a701-49f1-9186-bc9210d5c63a" isLeaf="false">
+                <opaqueActionMoniker Id="d177bf49-edfc-4ffd-a7d5-e6c048516ec4" LastKnownName="Update account" />
+                <elementDefinition Id="700fefbd-8cc5-4434-a54a-618f980857b4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d177bf49-edfc-4ffd-a7d5-e6c048516ec4" name="Update account" isLeaf="false">
+            <elementDefinition Id="5d0ca663-d1e7-4cf3-a35b-499c9d3a6031" />
+            <flowNodeTargets>
+              <controlFlow Id="2d0094c5-a68c-415e-b3ce-e955c2579650" isLeaf="false">
+                <mergeNodeMoniker Id="0685e303-4c27-4cf6-8a2a-f5b28a5f4818" LastKnownName="Merge1" />
+                <elementDefinition Id="29017358-dcfc-495e-90c8-6f6c51c51df8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="0685e303-4c27-4cf6-8a2a-f5b28a5f4818" name="Merge1" isLeaf="false">
+            <elementDefinition Id="12bf9c30-0ebf-4b57-9d82-f36cecb23039" />
+            <flowNodeTargets>
+              <controlFlow Id="ceab84cb-5b8b-4397-ba1b-98d715d9b30e" isLeaf="false">
+                <opaqueActionMoniker Id="4df0d090-378b-4117-a4b7-a16d98edc762" LastKnownName="Perform new operation?" />
+                <elementDefinition Id="b11b5ed9-7111-4b2f-9f44-6956b1327f06" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="4df0d090-378b-4117-a4b7-a16d98edc762" name="Perform new operation?" isLeaf="false">
+            <elementDefinition Id="f31ce6eb-49fa-432d-9c26-a5e107e39da4" />
+            <flowNodeTargets>
+              <controlFlow Id="128c809b-ce64-434d-8f4d-cf30da617f29" isLeaf="false">
+                <decisionNodeMoniker Id="c1337987-7900-4bd6-a2fe-b9691f604e52" LastKnownName="Decision4" />
+                <elementDefinition Id="50debd76-0c10-460f-b229-bc258e972ebe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="c1337987-7900-4bd6-a2fe-b9691f604e52" name="Decision4" isLeaf="false">
+            <elementDefinition Id="e7428a6c-058d-4e52-997a-f098525bc7f5" />
+            <flowNodeTargets>
+              <controlFlow Id="a14c1d91-41f7-4f1f-a5f7-2fb9dbc4308d" guard="No" isLeaf="false">
+                <activityFinalNodeMoniker Id="36ad0eac-bb60-4af9-be21-6b2fa2d4721c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ea86530f-286e-4e5b-b720-3feaa488d48b" />
+              </controlFlow>
+              <controlFlow Id="6f72b982-b222-47c7-8839-d1b4999f1747" guard="Yes" isLeaf="false">
+                <opaqueActionMoniker Id="fc614a30-fdcb-40f7-9596-73aaaf921820" LastKnownName="Select operation" />
+                <elementDefinition Id="9ae937bd-4f93-4d33-9a5b-e81f89c31ca8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="36ad0eac-bb60-4af9-be21-6b2fa2d4721c" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="eab90ed0-4630-4052-93bf-908da87d365a" />
+          </activityFinalNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
