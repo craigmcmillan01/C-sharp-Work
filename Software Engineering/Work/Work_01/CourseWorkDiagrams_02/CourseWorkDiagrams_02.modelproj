@@ -28,6 +28,13 @@
       <SubType>Content</SubType>
       <DependentUpon>BankStaff_01.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="BankSystem_01.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BankSystem_01.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BankSystem_01.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ChiefClerk_01.activitydiagram">
       <SubType>Content</SubType>
     </Content>
