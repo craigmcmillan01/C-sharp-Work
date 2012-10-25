@@ -53,7 +53,7 @@
         <OperationElementListCompartment Id="50f1503a-1896-4f36-84ee-38a95ed20898" absoluteBounds="11.765, 2.2066406026482586, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(10.375 : 1.81640623509884); (11.75 : 1.81640623509884)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(10.375 : 1.81640623509884); (11.75 : 1.81640623509884)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="3d376ae2-cec5-47fc-99ce-d85a127f4b29" />
       <relativeChildShapes />
       <nodes>
@@ -95,5 +95,16 @@
         <classShapeMoniker Id="9c736ef7-f38c-4d90-a30a-7444391b8742" />
       </nodes>
     </generalizationConnector>
+    <classShape Id="2dbfb753-24e0-42c1-9fe1-aff5faa91274" absoluteBounds="8.875, 5.25, 1.5, 1.8632812052965164" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="9cb0cb9c-a1b3-4d5a-be3d-535105968b84" LastKnownName="SecuritySystem" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="72148e25-07fc-4b8c-9554-00d97959c0e0" absoluteBounds="8.89, 5.64, 1.4700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="a4557d9d-548a-4892-b7f2-48de0ef56396" absoluteBounds="8.89, 6.171484357615312, 1.4700000000000002, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <commentShape Id="712dfb75-1e1b-4940-b0a8-27e55d8a6694" absoluteBounds="10.5, 5.25, 1.25, 1" customColor="251, 247, 200">
+      <commentMoniker Id="e879a534-4f1a-4dc7-8437-e2ed08ae919d" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

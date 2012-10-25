@@ -6,6 +6,10 @@
       <body>Making the assumption the ID numbers will include letters and numbers. Chief clerks will start with A, clerks with B and customers with C
 i.e A0001, B0001, C0001 etc</body>
     </comment>
+    <comment Id="e879a534-4f1a-4dc7-8437-e2ed08ae919d">
+      <elementDefinition Id="e7cf278a-0968-4aaf-a962-e8312ac2684f" />
+      <body>The security system will make use of the singleton pattern so that there is only ever 1 instanace of it in the system</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
@@ -366,6 +370,49 @@ i.e A0001, B0001, C0001 etc</body>
     <packageHasNamedElement>
       <referencedType Id="9e2db23b-7964-4087-aa00-3e91a2c652e8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
         <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9cb0cb9c-a1b3-4d5a-be3d-535105968b84" name="SecuritySystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3a4c2ced-5018-4201-900a-f4558633a37b" />
+        <ownedAttributesInternal>
+          <property Id="d7798221-4ba8-4413-b426-42b417013b0c" name="bankStaff" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34e56b3f-acf6-4758-80e1-b193637463d4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e066b650-6b6f-49a3-bc64-4b2e4f1281ef" LastKnownName="BankStaff" />
+            </type_NamedElement>
+          </property>
+          <property Id="f5f2b96d-b691-489e-b35a-b429f0b7fc86" name="customer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ffb15be-0754-4869-897c-fdab350816af" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="70d908cb-92dd-4f46-bb25-959f881a0bed" LastKnownName="Customer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ff1bed2f-0f59-4611-b968-ca2d25d44a07" name="getInstance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ea70eb9c-1696-41db-bd5b-7628dc0fb767" />
+          </operation>
+          <operation Id="f5aba40c-0aa1-42e0-a953-cfa38d9e135a" name="verifyPin" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a677fde5-6e1b-48b5-b1bb-cdd8f0eac52c" />
+          </operation>
+          <operation Id="37551e4c-dc4b-4da1-8bb0-39293082551f" name="verifyID" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48c4b95b-254c-4fea-8352-bef979e598a3" />
+          </operation>
+          <operation Id="6b21079f-5f56-4ad2-b2d1-d00d494819a8" name="verifyPassword" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4d99ae81-c704-4873-a76a-3c459ebb2694" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e066b650-6b6f-49a3-bc64-4b2e4f1281ef" name="BankStaff" isAbstract="false" isLeaf="false" cachedFullName="CourseWorkDiagrams_02::BankStaff">
+        <elementDefinition Id="e484907f-16b9-4f8f-a4ef-18e705c5d50b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="70d908cb-92dd-4f46-bb25-959f881a0bed" name="Customer" isAbstract="false" isLeaf="false" cachedFullName="CourseWorkDiagrams_02::Customer">
+        <elementDefinition Id="0724832f-adb7-4012-8748-62af400d331f" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

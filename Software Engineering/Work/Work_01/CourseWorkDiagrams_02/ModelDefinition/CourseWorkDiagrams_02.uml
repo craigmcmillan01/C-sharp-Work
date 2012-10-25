@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="9d749026-f9ae-47f1-96cb-1c24c40bbd7b"
   name="CourseWorkDiagrams_02" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -12,6 +12,10 @@
       Id="a5ce6eeb-84dc-4d1f-aeeb-961d2fffad8a">
       <body>Making the assumption the ID numbers will include letters and numbers. Chief clerks will start with A, clerks with B and customers with C
 i.e A0001, B0001, C0001 etc</body>
+    </comment>
+    <comment
+      Id="e7cf278a-0968-4aaf-a962-e8312ac2684f">
+      <body>The security system will make use of the singleton pattern so that there is only ever 1 instanace of it in the system</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -3766,6 +3770,87 @@ i.e A0001, B0001, C0001 etc</body>
       <undefinedType
         Id="2b6a82bd-8fc9-461e-84a4-5bf8f7087c7f"
         name="Double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3a4c2ced-5018-4201-900a-f4558633a37b"
+        name="SecuritySystem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="34e56b3f-acf6-4758-80e1-b193637463d4"
+            name="bankStaff"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="e484907f-16b9-4f8f-a4ef-18e705c5d50b"
+                LastKnownName="BankStaff"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0ffb15be-0754-4869-897c-fdab350816af"
+            name="customer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0724832f-adb7-4012-8748-62af400d331f"
+                LastKnownName="Customer"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ea70eb9c-1696-41db-bd5b-7628dc0fb767"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a677fde5-6e1b-48b5-b1bb-cdd8f0eac52c"
+            name="verifyPin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="48c4b95b-254c-4fea-8352-bef979e598a3"
+            name="verifyID"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4d99ae81-c704-4873-a76a-3c459ebb2694"
+            name="verifyPassword"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
