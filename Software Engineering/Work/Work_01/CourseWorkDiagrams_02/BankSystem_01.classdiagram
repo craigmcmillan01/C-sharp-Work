@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="478fb5a0-d00b-477e-90ef-16e6cc31c32b" name="BankSystem_01" linkedPackageId="dec56481-d6b6-4d60-a003-a40877fcbf2d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="478fb5a0-d00b-477e-90ef-16e6cc31c32b" name="BankSystem_01" linkedPackageId="dec56481-d6b6-4d60-a003-a40877fcbf2d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="2f8f46e9-4b1d-4a84-8a0f-d05a0e57c7c7">
       <elementDefinition Id="a5ce6eeb-84dc-4d1f-aeeb-961d2fffad8a" />
@@ -60,6 +60,29 @@ i.e A0001, B0001, C0001 etc</body>
               <operationHasOwnedParameters>
                 <parameter Id="be223cc0-acc6-4f96-8d33-606197d80ab0" name="String name" direction="In" isUnique="false">
                   <elementDefinition Id="84cd2c04-7e29-4fec-8881-d4617bc650a9" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0fa53e04-b24a-4394-b1b9-008c9b6a1790" name="login" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf02e178-5929-4581-98a6-a8167dabffc3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e3d4d069-3a55-4d41-a67c-93c33d757927" direction="Return" isUnique="false">
+                  <elementDefinition Id="9649b60f-c1d2-47b2-bbe1-c632af23d998" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bf35ed12-0a2f-4af9-8e4f-fd4c214e3751" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ee6732c7-0284-487f-bcfd-ae46a6a13dce" name="String staffID" direction="In" isUnique="false">
+                  <elementDefinition Id="9d447ef8-a735-4ed8-aa34-57e1a3fff7ae" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="959c98dd-9bbc-4589-8124-89a0c2bdcfe9" name="String password" direction="In" isUnique="false">
+                  <elementDefinition Id="9cc519ee-8aa1-45b8-afcd-75bc6b0e3d38" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -218,6 +241,29 @@ i.e A0001, B0001, C0001 etc</body>
           </operation>
           <operation Id="c39bb8ce-3d7e-40c5-9987-448a81b30754" name="getStatement" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="a6a2373b-4afd-4fc0-ad5f-724cf2632af9" />
+          </operation>
+          <operation Id="974be208-dba1-40ca-abf3-de2bb6fc631a" name="login" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c759d2f0-6799-421c-b4cf-e3fbb118b9ab" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9e9693c4-ea80-4970-adce-2cf34871b07f" name="String customerID" direction="In" isUnique="false">
+                  <elementDefinition Id="7687d69f-562d-48f7-b579-2749d8cd3281" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4fa3b1d6-45a1-45e2-b873-06e879d9aa16" name="String password" direction="In" isUnique="false">
+                  <elementDefinition Id="c4de668d-a5eb-4379-8de3-25e066a61fa7" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ae49f7a2-6e4f-47e6-ae4d-c8cf162e945a" direction="Return">
+                  <elementDefinition Id="3e0b4eba-962b-43aa-bb5c-3bce5fdd123e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cafcc620-3849-4cd1-b7f9-64230068ff96" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -413,6 +459,16 @@ i.e A0001, B0001, C0001 etc</body>
     <packageHasNamedElement>
       <referencedType Id="70d908cb-92dd-4f46-bb25-959f881a0bed" name="Customer" isAbstract="false" isLeaf="false" cachedFullName="CourseWorkDiagrams_02::Customer">
         <elementDefinition Id="0724832f-adb7-4012-8748-62af400d331f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bf35ed12-0a2f-4af9-8e4f-fd4c214e3751" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cafcc620-3849-4cd1-b7f9-64230068ff96" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
