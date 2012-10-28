@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9c9824fa-7efc-4e7f-b09e-b0076bdf31dd}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>CourseWorkDiagrams_03</Name>
+    <RootNamespace>CourseWorkDiagrams_03</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="BankStaffSystem.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BankStaffSystem.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="BankStaff_01.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BankStaff_01.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="BankSystem_01.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BankSystem_01.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ChiefClerk_01.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChiefClerk_01.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="CustomerActivity_01.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CustomerActivity_01.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="CustomerSystem.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CustomerSystem.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UIActivity_01.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UIActivity_01.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UIActivity_01.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase_01.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase_01.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase_01.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UserInterface.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserInterface.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UserInterface.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="BankStaffSystem.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BankStaff_01.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BankSystem_01.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChiefClerk_01.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CustomerActivity_01.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CustomerSystem.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\CourseWorkDiagrams_03.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

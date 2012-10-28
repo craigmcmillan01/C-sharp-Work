@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0e840b1c-ed47-4619-954a-ee5fcef7b5d5" name="UserInterface" linkedPackageId="07aec4c5-03c6-4879-b6ac-788d0948eed9" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7ce197b5-3171-47f0-844f-1e636d107644" name="Customer1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a39a417-947f-49f6-92c4-1f5af28c184a" />
+        <targetEnds>
+          <association Id="ffd9a352-91ef-42a6-b8c4-063e8d0cdd76" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7fb81048-5e05-4943-8ecd-0c6836427fb2" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9d833d0d-5a0d-45b5-8757-bae578f8c31f" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="960d0498-cc3f-49f3-907f-5dd941974708" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2db9ac0-d1c0-41f4-8859-e43a6b7a6c19" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="78a76039-6b36-44a8-9319-3d4fa5e38612" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f9270f92-eed9-4355-ab4e-f2cf3d7348d5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="d42f90f1-4f66-408f-ad7f-1d28905da373" name="Clerk1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6fe4eb8e-7e37-404b-93d7-5952ef094b4c" />
+        <targetEnds>
+          <association Id="7636f333-3b0f-4bbb-8d40-73f6609b01a7" isDerived="false" sourceEndRoleName="Clerk" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7fb81048-5e05-4943-8ecd-0c6836427fb2" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="08b33ab8-dc3e-4d29-9feb-ce9903c1fc99" name="Clerk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aa42fe3f-7fe4-45df-ad10-b9c5dd71c501" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b463084-762f-4a8c-81bf-7eaa03790b92" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5a62c6f6-c7c8-4b91-84fe-a488c771f568" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d746ce6a-f70c-4a0b-895b-cf61ef1b28d4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="24d21e2f-73df-436b-bffc-83bf37d23262" name="Chief Clerk1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd1fd1f4-cd09-4aa9-af49-d1bdd6d09da4" />
+        <targetEnds>
+          <association Id="d9563a22-cc4e-4cb9-90e4-77bb5f003039" isDerived="false" sourceEndRoleName="Chief Clerk" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7fb81048-5e05-4943-8ecd-0c6836427fb2" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1606543-91dd-433d-a4b2-bef7df180e71" name="Chief Clerk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="37c42cf4-cd70-4bb7-9642-028871da897c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64a2916c-f3d7-441c-a4bd-a4e3f54de8b2" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3f595be2-49c4-476d-a9e4-38505c9ee0db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8ec34c3e-2cb1-463f-9be5-558e71e60e46" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="83ccf60c-a2aa-4eb4-a9c6-6df066014cd6" name="UserInterface/Login" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a11071d3-1dff-4246-b471-026c6b5f6133" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7fb81048-5e05-4943-8ecd-0c6836427fb2" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a69a2b1d-53a6-4709-b00b-5749b1af5934" />
+        <additions>
+          <include Id="585d2798-2d67-480a-bcf9-e1076379eea6">
+            <useCaseMoniker Id="847fba4e-071f-47e5-ba16-5cfc9f94b058" LastKnownName="Enter UserName" />
+            <elementDefinition Id="220e2fd5-3af4-480b-a544-c985673442c4" />
+          </include>
+          <include Id="a964dd08-88b0-41d5-871a-48e6d80a6253">
+            <useCaseMoniker Id="ff6572b6-d108-424a-aa7c-d5ba780951a3" LastKnownName="Enter Pin Number" />
+            <elementDefinition Id="f625872e-299f-469d-bc19-6d8c9707028d" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="83ccf60c-a2aa-4eb4-a9c6-6df066014cd6" LastKnownName="UserInterface/Login" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="847fba4e-071f-47e5-ba16-5cfc9f94b058" name="Enter UserName" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69edfa57-3e01-445d-9b3b-e234d341fd08" />
+        <subjects>
+          <subsystemMoniker Id="83ccf60c-a2aa-4eb4-a9c6-6df066014cd6" LastKnownName="UserInterface/Login" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ff6572b6-d108-424a-aa7c-d5ba780951a3" name="Enter Pin Number" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03839788-1143-4693-83b4-d7da47bbc7e1" />
+        <subjects>
+          <subsystemMoniker Id="83ccf60c-a2aa-4eb4-a9c6-6df066014cd6" LastKnownName="UserInterface/Login" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="07aec4c5-03c6-4879-b6ac-788d0948eed9" name="CourseWorkDiagrams_02">
+    <elementDefinition Id="9d749026-f9ae-47f1-96cb-1c24c40bbd7b" />
+  </package>
+</useCaseModelRoot>

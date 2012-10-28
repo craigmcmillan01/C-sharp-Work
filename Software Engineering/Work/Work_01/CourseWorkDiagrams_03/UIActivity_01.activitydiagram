@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="f84ec5d8-b830-4d4b-84e0-bc4e322906a2" name="UIActivity_01" linkedPackageId="f4498a4e-eedf-46fa-ac16-2a4d8ec480d0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="6b82ce67-d17f-462a-bc3a-30516e5ff244">
+      <elementDefinition Id="b0c61080-4a9e-4811-8440-73fa3543d25f" />
+      <body>Made the assumption that if password or username is entered incorrectly x amount of times then user will be locked out of system and password reset. </body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="9e2032e0-dd8b-4f89-9504-803d651edeb7" name="UIActivity_01" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="dfcc14d7-e399-4c8b-883e-3fcba1573797" />
+        <nodes>
+          <objectNode Id="f4e5c137-efca-4803-9629-38106cd8b78d" name="Security System" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="7ad8bf5e-d0ee-4c75-a6db-a9fa16b00f09" />
+            <upperBound>
+              <literalInteger Id="c377a082-9832-4d90-af60-2d0f13c76846" name="2147483647" value="2147483647">
+                <elementDefinition Id="f7e50117-c9c6-4934-a224-ec076ce80cbf" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="fbfca5fb-4a6d-4b79-8df8-52572c416395" name="User" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="4d23843a-ad1f-43f2-b21e-2a0940739d46" />
+            <upperBound>
+              <literalInteger Id="bde13994-ac62-4277-ad09-9d700b7b8b21" name="2147483647" value="2147483647">
+                <elementDefinition Id="f4ff7fdb-eaf3-4b4d-9634-57c9a4f9a0b4" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="95da4f95-1ec5-436f-8697-c6ff870afba4" name="Initial1" isLeaf="false">
+            <elementDefinition Id="0cae8749-f74a-42bb-a2e2-2ee1ed9908e9" />
+            <flowNodeTargets>
+              <controlFlow Id="dfe50ad6-44d1-43a6-95fd-a55cd7613bc3" isLeaf="false">
+                <opaqueActionMoniker Id="eaf93e00-3e73-488c-8b02-9d301f8e29d2" LastKnownName="Prompt for username and password" />
+                <elementDefinition Id="4d943e1d-3149-46da-9b83-e3181073aa7d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <forkNode Id="ccffc8d8-58db-4b23-9f83-6cfa43e42b08" name="Fork1" isLeaf="false">
+            <elementDefinition Id="c9cba1d2-daf7-4e04-ba19-40acee0f1ef4" />
+            <flowNodeTargets>
+              <controlFlow Id="4b3ebd78-2839-4e42-a422-0314dcc1ee0a" isLeaf="false">
+                <opaqueActionMoniker Id="95c1d2a1-2130-4d9f-ab83-28a8a233c36e" LastKnownName="Enter UserName" />
+                <elementDefinition Id="955326d6-3086-4a60-8e55-f0f05ebd7f4a" />
+              </controlFlow>
+              <controlFlow Id="90384d7b-effc-4381-b1c0-bf5ab6ad8a9a" isLeaf="false">
+                <opaqueActionMoniker Id="8e48d906-12d4-4bf2-895b-54975158bd69" LastKnownName="Enter Password" />
+                <elementDefinition Id="a0476dc7-f9d1-4129-ba7d-26e6f215a78e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="95c1d2a1-2130-4d9f-ab83-28a8a233c36e" name="Enter UserName" isLeaf="false">
+            <elementDefinition Id="9c791dc9-27ac-4a49-9091-c6dbad3eae7d" />
+            <flowNodeTargets>
+              <controlFlow Id="29f70bdf-7234-4569-9476-58d903db4521" isLeaf="false">
+                <joinNodeMoniker Id="909c6822-a8fe-42f7-9669-fed20ed7bf15" LastKnownName="Join1" />
+                <elementDefinition Id="b88b8508-da61-4987-abf6-97da48e8a626" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8e48d906-12d4-4bf2-895b-54975158bd69" name="Enter Password" isLeaf="false">
+            <elementDefinition Id="3156362d-0b4b-4dac-baae-7a865abf7f2c" />
+            <flowNodeTargets>
+              <controlFlow Id="7e68e08c-34b5-4fcf-be76-4fe8e21a0b15" isLeaf="false">
+                <joinNodeMoniker Id="909c6822-a8fe-42f7-9669-fed20ed7bf15" LastKnownName="Join1" />
+                <elementDefinition Id="91b6adb2-1194-47dc-97f6-4755ab79865d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="909c6822-a8fe-42f7-9669-fed20ed7bf15" name="Join1" isLeaf="false">
+            <elementDefinition Id="0b45e895-f879-4e3a-bf80-1cf4b6660b1e" />
+            <flowNodeTargets>
+              <controlFlow Id="5938077c-c02b-4308-9b5e-3f18d69f57c9" isLeaf="false">
+                <opaqueActionMoniker Id="7cf3909a-80d8-4482-9822-48cec256ff0d" LastKnownName="Verify Password" />
+                <elementDefinition Id="79b9bc96-c5e3-4fb3-9890-2e097f0a305d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="7cf3909a-80d8-4482-9822-48cec256ff0d" name="Verify Password" isLeaf="false">
+            <elementDefinition Id="2b25c6ab-059f-4abc-bbf8-d9308347ec38" />
+            <flowNodeTargets>
+              <controlFlow Id="1317a989-aee9-45a7-978f-a03ee5ba3fe9" isLeaf="false">
+                <decisionNodeMoniker Id="060eab01-59bf-45a3-a7cb-0efe0238270d" LastKnownName="Decision1" />
+                <elementDefinition Id="1fc32059-f941-4967-b69c-61852a847f35" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="060eab01-59bf-45a3-a7cb-0efe0238270d" name="Decision1" isLeaf="false">
+            <elementDefinition Id="62ab7696-e68b-43a9-96a4-968bf79d7865" />
+            <flowNodeTargets>
+              <controlFlow Id="0d42d938-6525-458a-8b61-6268db572600" guard="Incorrect" isLeaf="false">
+                <opaqueActionMoniker Id="857f7457-b114-4661-9f1c-95405bfeba93" LastKnownName="Display Error Message" />
+                <elementDefinition Id="3bdac1db-22b2-43f4-9243-492d9554043e" />
+              </controlFlow>
+              <controlFlow Id="1b77119f-72f0-40b5-a099-77ddef661d1d" guard="Correct" isLeaf="false">
+                <opaqueActionMoniker Id="728f20a0-bc48-4eab-b242-a2a28da94e2d" LastKnownName="Allow entry to system" />
+                <elementDefinition Id="32f85d00-5308-4524-9539-6d4510025134" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="857f7457-b114-4661-9f1c-95405bfeba93" name="Display Error Message" isLeaf="false">
+            <elementDefinition Id="8c8ff10f-ddf3-47d1-8daa-120cfde059f9" />
+            <flowNodeTargets>
+              <controlFlow Id="18ca525a-39ad-4ff7-b118-5fdc3cc969a3" guard="Count &lt; x" isLeaf="false">
+                <opaqueActionMoniker Id="eaf93e00-3e73-488c-8b02-9d301f8e29d2" LastKnownName="Prompt for username and password" />
+                <elementDefinition Id="302a6139-e5d8-4660-8778-f74db1c2f3eb" />
+              </controlFlow>
+              <controlFlow Id="4d7fa7f3-fffe-4913-8216-9a2d656e91df" guard="Count &gt;= x" isLeaf="false">
+                <opaqueActionMoniker Id="64ed76ee-6bbb-4e27-b416-ccc5f0422821" LastKnownName="Lock user out of system" />
+                <elementDefinition Id="a30cd9e3-5fc5-440c-9c90-5bae7b41e87e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="728f20a0-bc48-4eab-b242-a2a28da94e2d" name="Allow entry to system" isLeaf="false">
+            <elementDefinition Id="c1bddfbe-f8eb-40a7-87cc-90a1d1f31428" />
+            <flowNodeTargets>
+              <controlFlow Id="a6675742-150f-41c6-ba3d-82784178def8" isLeaf="false">
+                <mergeNodeMoniker Id="fa1d602b-8edf-4682-9a0a-c1d88ae32462" LastKnownName="Merge1" />
+                <elementDefinition Id="bd6474c3-27ac-4f86-b555-1df68b520741" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="eaf93e00-3e73-488c-8b02-9d301f8e29d2" name="Prompt for username and password" isLeaf="false">
+            <elementDefinition Id="fe3ae9e6-e0ee-4151-8363-c14967dbc54c" />
+            <flowNodeTargets>
+              <controlFlow Id="dd1ce37e-fbdb-4df7-a3a7-f946c3401cef" isLeaf="false">
+                <forkNodeMoniker Id="ccffc8d8-58db-4b23-9f83-6cfa43e42b08" LastKnownName="Fork1" />
+                <elementDefinition Id="89e251df-4387-424b-bff9-38f1cfa6b0e4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="64ed76ee-6bbb-4e27-b416-ccc5f0422821" name="Lock user out of system" isLeaf="false">
+            <elementDefinition Id="ff54b105-c764-4915-be5a-ff1e830344df" />
+            <flowNodeTargets>
+              <controlFlow Id="118f71e2-250b-4a46-9dc4-546e3638a396" isLeaf="false">
+                <opaqueActionMoniker Id="41ea0773-e9c8-4a26-ab38-df1c78c9cda1" LastKnownName="Display error message" />
+                <elementDefinition Id="098313ee-a2eb-467a-8a01-aad9c76bbdd2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="41ea0773-e9c8-4a26-ab38-df1c78c9cda1" name="Display error message" isLeaf="false">
+            <elementDefinition Id="22c71a18-d683-411b-b802-570e92edc709" />
+            <flowNodeTargets>
+              <controlFlow Id="42ada45c-0e5c-4805-9c43-fb052f187c65" isLeaf="false">
+                <mergeNodeMoniker Id="fa1d602b-8edf-4682-9a0a-c1d88ae32462" LastKnownName="Merge1" />
+                <elementDefinition Id="5da8c017-ff04-472e-a943-be1ad55f1f99" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="fa1d602b-8edf-4682-9a0a-c1d88ae32462" name="Merge1" isLeaf="false">
+            <elementDefinition Id="368ff36d-81f9-4640-b3a6-a608cc9c4913" />
+            <flowNodeTargets>
+              <controlFlow Id="1a7ceef1-9b91-43b3-b674-7de4821c2c2d" isLeaf="false">
+                <activityFinalNodeMoniker Id="9ddfbc31-7383-48fd-b30d-e7b2208aa932" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="72fa1115-cd96-4af4-ad46-63907ee91f78" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode Id="9ddfbc31-7383-48fd-b30d-e7b2208aa932" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="b8b271c4-308f-4ca3-a07a-e3e9a4f14a84" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="f4498a4e-eedf-46fa-ac16-2a4d8ec480d0" name="CourseWorkDiagrams_02">
+    <elementDefinition Id="9d749026-f9ae-47f1-96cb-1c24c40bbd7b" />
+  </package>
+</activityRootModel>

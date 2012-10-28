@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="29151b96-4034-4647-819b-5f07dd2ec174" name="UseCase_01" linkedPackageId="b1ca8f10-98a1-4a72-ad76-c733b4346666" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="cfe72317-2aa7-44d1-a76e-27b861aaedb3">
+      <elementDefinition Id="3042c4cc-f9fb-4d7e-afc2-5fc02ac96bdf" />
+      <body>Possible customer use cases</body>
+    </comment>
+    <comment Id="b62f30c8-7a89-460e-a869-70adb6f98039">
+      <elementDefinition Id="08f6e7ee-8395-41a4-abc0-d7071bdf3b81" />
+      <body>Customer Use cases</body>
+    </comment>
+    <comment Id="dc6b2529-b149-43b0-a7b5-d307da4c237b">
+      <elementDefinition Id="bd451d8d-efd6-44b7-a06a-3e271d789266" />
+      <body>Chief Clerk use cases</body>
+    </comment>
+    <comment Id="066fe679-e870-48f6-9319-05d1aaefdb6b">
+      <elementDefinition Id="c43af65f-f911-4de0-a274-7f6a68e0b5a7" />
+      <body>Clerk use cases</body>
+    </comment>
+    <comment Id="d403d10c-b2d0-4bba-8202-4a8d0fe3814e">
+      <elementDefinition Id="87fa8471-85ae-4384-964b-12cfd5823154" />
+      <body>Chief clerk can do everything a normal clerk can do also</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="48b429ca-b377-4fcd-9a2a-c9ada98b6650">
+      <profileInstance Id="7e84f939-f57f-4b8c-a90e-de305cfb238f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="62b04cd2-19e4-4dc4-ab77-f04cef95a822">
+      <profileInstance Id="a9c64ec5-0990-49eb-a760-0fd003d33652" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7f3e4c60-82e6-4e6a-bdc5-50d01bdfc048" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f22e2829-f77e-45e6-ac1e-56e9b32fe417" />
+        <targetEnds>
+          <association Id="eedbf98c-4ef6-4327-b90c-4dacc1f15cdc" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Request New  Account" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="00054388-ce3e-4026-a391-8e27013c631e" LastKnownName="Request New  Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db2749b6-4602-44f5-b86f-e506c65a0d12" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b3ddae3-eba4-4bbd-860c-354c0f8fea3e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="914252ff-c688-40e4-8311-97deebede020" name="Request New  Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8700a82-8a09-42c2-95c3-095c4917f539" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="279876b8-e735-48ec-8fb2-151c8a1b5d26" />
+          </association>
+          <association Id="91656b29-dfd2-4093-9d4c-42fb27c6538c" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Request Pin change" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="622d4fce-af1e-4025-9e8e-0f7663cfff3b" LastKnownName="Request Pin change" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8dd4d9c4-2e79-4594-acd8-afe2ce635fd7" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="94599868-a3bf-4aaa-8b5a-a4a5911f1b56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0ad2c16-d30b-47d9-b7ef-f741365aa8b7" name="Request Pin change" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="68f45244-b0c6-44ab-a9af-09a62937c3bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="11d17bda-fb60-4d16-a1ec-d5892d72bd76" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c3f8c2ef-83ec-494c-81e9-4ff2fd717d62" name="Deposit Money" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c73b0171-22eb-4967-9e39-986e87b9d5c0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6acea7f4-88ef-42ee-8812-46f6eb705e22" name="Withdraw Money" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d3207968-2ba0-4ead-b69d-e2d86b1e4868" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f41fbbe3-69cb-4b87-a8b7-6db67a00abef" name="Pay Mortgage" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d44523a1-6fe5-4e75-8dd6-81430031947c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3bb3c926-7caf-4a7e-91ea-abe6c9cb4938" name="Request a statement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10098649-4a37-4641-8ce5-676f34b55858" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="00054388-ce3e-4026-a391-8e27013c631e" name="Request New  Account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59ebab2b-85b3-4610-a8dc-d415d6a0a5fb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0b5119e2-100f-4146-8dab-d3de85c47516" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2a4f2af-df5b-49b9-8d6c-e321c531ccd8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="622d4fce-af1e-4025-9e8e-0f7663cfff3b" name="Request Pin change" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8d4198d4-3d9e-4ad3-998c-1015d0c6d581" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="708b81b1-2958-4209-a191-6f87c0767568" name="Enter Pin number" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d5dc594a-a704-4e18-9145-e5e1a26581ed" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3bfc4b03-712c-4109-b7a8-cb98e7d08fad" name="Chief Clerk" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8458ee3a-4d04-40b4-8ba0-05efc004a097" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e060450b-df20-4877-9a23-c3c05bec401f" name="Calculate interest on accounts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d1efdbe2-f177-4261-ac0f-2f9d40857819" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d6ce9eb0-cb8e-4acc-b35a-189190a5bdd2" name="Change customer Pin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8267a83b-307c-4fc6-a1e0-f19ca15d9168" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fe6214ef-af3b-41b7-aa55-baead52a7e37" name="Alter intersest rates" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="341842ed-e3c6-4754-8fcc-3d3a71ad9878" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1919c9f1-b021-4490-bd1a-df3cca043ecf" name="Request Status Report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="244c5e68-28f7-4de1-b9f2-3f154ac64e9d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a21f17d9-0c26-4dd4-97f3-b9d0fca87f77" name="view customer details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="17df7dc6-ed0d-4653-98b9-5c7094235f45" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa3a8908-7528-4db0-9ca1-6e19f3899d3f" name="Close customer account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4d5c820a-e54c-4ac1-86b9-fb9490bb9e88" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fd6bbc35-deb8-468c-886b-e9a7ba154628" name="Open customer account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0cd8f9ce-005a-4cf8-a7d3-d6e7444c7fdb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="90a815cb-5985-427a-8094-f5c3463f8089" name="Update customer details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5b1a7393-b6a2-4cd0-b948-177a4d5fe1fb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="837fb61c-ec73-4df3-8ab5-26ed3ee89a40" name="Produce a statement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90f6daba-62f9-4630-b2e8-256f850ce691" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="55c616e4-6e18-407f-b31f-4ac491ad4cab" name="Clerk" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5fa7ad25-a15c-417b-a19e-3520bc98e60a" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="b1ca8f10-98a1-4a72-ad76-c733b4346666" name="CourseWorkDiagrams_01">
+    <elementDefinition Id="62decbda-0373-486b-b7b9-834c5fe00380" />
+  </package>
+</useCaseModelRoot>
