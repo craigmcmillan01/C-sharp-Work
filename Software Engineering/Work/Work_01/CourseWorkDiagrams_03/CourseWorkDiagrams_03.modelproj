@@ -33,6 +33,9 @@
       <SubType>Content</SubType>
       <DependentUpon>ChiefClerk_01.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="CourseWorkDiagrams_02.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="CustomerActivity_01.activitydiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>CustomerActivity_01.activitydiagram</DependentUpon>
