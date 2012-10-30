@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="0c25f8aa-533e-4e45-905f-d5a521ae1569" name="ChiefClerk_02" linkedPackageId="785c9142-b4b5-4763-8833-faae1eca36cf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="d74c882f-3091-4734-a4ce-cf60326216bd" name="ChiefClerk_02" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="c943eafa-7db4-4d56-aa81-cd757d53dbaf" />
+        <nodes>
+          <objectNode Id="75a91958-afa6-443a-a63f-b9c77f7fa161" name="Cheif Clerk" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="9c483d29-06cc-4777-98b6-cf09c89546f9" />
+            <upperBound>
+              <literalInteger Id="a64b0972-9b94-4e96-b6a2-9448f7a9e0fe" name="2147483647" value="2147483647">
+                <elementDefinition Id="264b7b5a-237b-4628-ae7a-c26fae99e64c" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="df627fa0-20fd-41d3-9f15-d68b4e449f3a" name="Initial1" isLeaf="false">
+            <elementDefinition Id="855f0e13-79ff-44f4-893b-a654dd111ff5" />
+            <flowNodeTargets>
+              <controlFlow Id="755b27c5-314a-454a-ac31-64fbdae845c1" isLeaf="false">
+                <opaqueActionMoniker Id="40ecae7f-0f46-423a-a346-40ddc2cd70aa" LastKnownName="Select operation" />
+                <elementDefinition Id="79da1a84-bd1a-42d8-97e4-0d130f3b88ea" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="40ecae7f-0f46-423a-a346-40ddc2cd70aa" name="Select operation" isLeaf="false">
+            <elementDefinition Id="22508edc-6a75-4d1e-9673-dc43cf3a14a3" />
+            <flowNodeTargets>
+              <controlFlow Id="bec171d2-fb37-4cee-870a-5b04ed7d5888" isLeaf="false">
+                <decisionNodeMoniker Id="ccf84694-887d-44a4-9af2-4c6b287766de" LastKnownName="Decision1" />
+                <elementDefinition Id="89615bbc-22a0-442a-ae8d-000d49b5c681" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="ccf84694-887d-44a4-9af2-4c6b287766de" name="Decision1" isLeaf="false">
+            <elementDefinition Id="ac70c714-f5f7-41aa-a0f0-2b19a1b54522" />
+            <flowNodeTargets>
+              <controlFlow Id="ad1bcb53-7332-41c4-9328-c9af04427657" guard="Alter interest Rates?" isLeaf="false">
+                <decisionNodeMoniker Id="b7976f65-0606-47fd-83fe-152865793783" LastKnownName="Decision2" />
+                <elementDefinition Id="fc3d6472-71fd-460b-aec7-2a09215ec3e3" />
+              </controlFlow>
+              <controlFlow Id="7eba81dd-8613-4204-be6b-38c3ef33a6e4" guard="Calculate interest?" isLeaf="false">
+                <opaqueActionMoniker Id="ac45c768-d9e0-44c8-9daa-2d7c210819e5" LastKnownName="Enter Days since interest last paid" />
+                <elementDefinition Id="ae117cb1-37d1-4614-854a-db0bbd16c99c" />
+              </controlFlow>
+              <controlFlow Id="e140df26-7abf-411a-80fb-b3013fd73d68" guard="Request Report" isLeaf="false">
+                <opaqueActionMoniker Id="1552df24-31ff-4b0a-8b2f-71756368632d" LastKnownName="Generate Report" />
+                <elementDefinition Id="bf6a83eb-2531-4ef3-854a-2aa8ae97cd40" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <objectNode Id="b7548e30-868e-4888-97fd-f1d111829698" name="Bank system" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="128b1fd4-4ad2-4aa7-8296-d85ee9626be3" />
+            <upperBound>
+              <literalInteger Id="18a08c29-7603-4627-a1f2-a060189831cf" name="2147483647" value="2147483647">
+                <elementDefinition Id="1eb4a738-6d7b-4ee4-9177-1890ba7f8e3d" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="1552df24-31ff-4b0a-8b2f-71756368632d" name="Generate Report" isLeaf="false">
+            <elementDefinition Id="04c09e9a-841b-4eb1-9011-5e189041df0a" />
+            <flowNodeTargets>
+              <controlFlow Id="59f53d37-976c-4e72-8898-f1e3c3ded440" isLeaf="false">
+                <opaqueActionMoniker Id="29e52d19-1800-4a5e-8f96-70cf8af949b0" LastKnownName="Display Report" />
+                <elementDefinition Id="8ed371b4-7dc2-497e-a61b-ae7591d61aeb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="29e52d19-1800-4a5e-8f96-70cf8af949b0" name="Display Report" isLeaf="false">
+            <elementDefinition Id="28ec2386-9810-46b2-9c9c-588acdcbe208" />
+            <flowNodeTargets>
+              <controlFlow Id="5fa9691a-941d-4779-a346-aefd1edd20ad" isLeaf="false">
+                <mergeNodeMoniker Id="edcae96e-f2f1-454f-8b17-ce6f73155517" LastKnownName="Merge2" />
+                <elementDefinition Id="f098ffb0-3468-42b6-a9e9-1dfabcac200e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b7976f65-0606-47fd-83fe-152865793783" name="Decision2" isLeaf="false">
+            <elementDefinition Id="ea20ee72-734e-4dd3-9731-8cb490043ae4" />
+            <flowNodeTargets>
+              <controlFlow Id="a44ace6e-df82-4f26-8c37-dcd770125203" guard="Savings Account" isLeaf="false">
+                <opaqueActionMoniker Id="2f7d0153-4404-4e66-8da4-7a336ae7a59d" LastKnownName="Update savings interst rate" />
+                <elementDefinition Id="fac75e19-454c-48da-8491-589a86e79c89" />
+              </controlFlow>
+              <controlFlow Id="4a4fba64-dde8-4414-8c71-635556405525" guard="Mortage Account" isLeaf="false">
+                <opaqueActionMoniker Id="b7c55a9f-2a28-43e8-98ae-eef31b86d3ff" LastKnownName="Update mortage interest rate" />
+                <elementDefinition Id="185494da-33d5-4114-a9b1-1b76b2c1f5b3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="2f7d0153-4404-4e66-8da4-7a336ae7a59d" name="Update savings interst rate" isLeaf="false">
+            <elementDefinition Id="ca1db49c-5dcb-4e5e-9751-4c01c1bbf876" />
+            <flowNodeTargets>
+              <controlFlow Id="ae9a823f-598a-4e89-9d8e-2260ea40510e" isLeaf="false">
+                <mergeNodeMoniker Id="094e5815-49ac-453e-a6fd-f445a0f52e60" LastKnownName="Merge1" />
+                <elementDefinition Id="e448b65a-0e49-452f-9cf5-ad126b4619e4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b7c55a9f-2a28-43e8-98ae-eef31b86d3ff" name="Update mortage interest rate" isLeaf="false">
+            <elementDefinition Id="1c48a67f-8ae8-4e07-a39f-bd54cbeb56ee" />
+            <flowNodeTargets>
+              <controlFlow Id="2f7a362b-8fb5-41f1-9c48-6e7bd6d397f8" isLeaf="false">
+                <mergeNodeMoniker Id="094e5815-49ac-453e-a6fd-f445a0f52e60" LastKnownName="Merge1" />
+                <elementDefinition Id="41e5fbd7-d67b-4f25-8616-966d6187d2a7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="094e5815-49ac-453e-a6fd-f445a0f52e60" name="Merge1" isLeaf="false">
+            <elementDefinition Id="03f6238e-a7c1-45fe-b68c-dbcf51e8aaf7" />
+            <flowNodeTargets>
+              <controlFlow Id="35da86dd-9b8b-4242-8f25-5acc58eaca09" isLeaf="false">
+                <opaqueActionMoniker Id="ed5a0d14-cd5d-491a-aec0-5b6ffcbff5bd" LastKnownName="Save changes" />
+                <elementDefinition Id="b7acb8bb-467b-446b-b182-d16eb874563d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="ed5a0d14-cd5d-491a-aec0-5b6ffcbff5bd" name="Save changes" isLeaf="false">
+            <elementDefinition Id="bbe732ee-4083-44d1-9d99-860e2301daa3" />
+            <flowNodeTargets>
+              <controlFlow Id="fbc47ff3-a9de-466b-9ff3-23795a172f37" isLeaf="false">
+                <mergeNodeMoniker Id="edcae96e-f2f1-454f-8b17-ce6f73155517" LastKnownName="Merge2" />
+                <elementDefinition Id="6c027c45-7bb1-4f27-81b5-951b8d854811" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ac45c768-d9e0-44c8-9daa-2d7c210819e5" name="Enter Days since interest last paid" isLeaf="false">
+            <elementDefinition Id="ecf31643-3829-421c-98bb-4d7f07d8e13f" />
+            <flowNodeTargets>
+              <controlFlow Id="ddf074fd-e646-4bf4-b44b-8175dae96f64" isLeaf="false">
+                <opaqueActionMoniker Id="0387ac39-5aac-47ea-9c0e-9480eb751e96" LastKnownName="Calculate interest on all accounts" />
+                <elementDefinition Id="36d8f7bd-60ef-4988-8229-30a8d1814fb7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="0387ac39-5aac-47ea-9c0e-9480eb751e96" name="Calculate interest on all accounts" isLeaf="false">
+            <elementDefinition Id="2f3da3f0-d2f0-41c0-8fc8-6611212252c1" />
+            <flowNodeTargets>
+              <controlFlow Id="5332b137-9920-4963-aed4-0b978855237d" isLeaf="false">
+                <mergeNodeMoniker Id="edcae96e-f2f1-454f-8b17-ce6f73155517" LastKnownName="Merge2" />
+                <elementDefinition Id="d16dd1ba-f33e-48a3-979d-ac7a7a1cef0c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="edcae96e-f2f1-454f-8b17-ce6f73155517" name="Merge2" isLeaf="false">
+            <elementDefinition Id="69e2720a-4923-47a3-8f27-1038d5ac337f" />
+            <flowNodeTargets>
+              <controlFlow Id="4c13ae07-ae2c-4a1b-82ac-567293c98df3" isLeaf="false">
+                <opaqueActionMoniker Id="096edc86-f2b5-4ff5-aa2f-e37d22dbd0ce" LastKnownName="Perform more operations" />
+                <elementDefinition Id="cef1b461-c481-40f4-b218-3be1a5cade42" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="096edc86-f2b5-4ff5-aa2f-e37d22dbd0ce" name="Perform more operations" isLeaf="false">
+            <elementDefinition Id="63983f52-94d3-4e71-b47d-212776d7a22c" />
+            <flowNodeTargets>
+              <controlFlow Id="c2ca55b8-cf21-4daa-8dd2-50d9f9be58e0" isLeaf="false">
+                <decisionNodeMoniker Id="8477c875-378d-45a5-aa46-e6ed19131cad" LastKnownName="Decision3" />
+                <elementDefinition Id="7dde27aa-a955-44a9-ba74-3815230491c0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8477c875-378d-45a5-aa46-e6ed19131cad" name="Decision3" isLeaf="false">
+            <elementDefinition Id="52e8c59b-4ace-4df4-8a3b-55884282ed9b" />
+            <flowNodeTargets>
+              <controlFlow Id="3d1aaab5-1c9a-432b-b691-126027ecc3e8" guard="No?" isLeaf="false">
+                <activityFinalNodeMoniker Id="77fbbf74-fbba-498d-b933-90646ef37da4" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="33396ff3-d289-4bee-8e2e-526998407425" />
+              </controlFlow>
+              <controlFlow Id="329324e5-2544-4cfc-a135-c4fac56ea00e" guard="Yes?" isLeaf="false">
+                <opaqueActionMoniker Id="40ecae7f-0f46-423a-a346-40ddc2cd70aa" LastKnownName="Select operation" />
+                <elementDefinition Id="1b2f2797-e2e8-419a-ba51-36a1cbfb2f17" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="77fbbf74-fbba-498d-b933-90646ef37da4" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="bcaaf788-755c-4c33-8e45-1c7890626de5" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="785c9142-b4b5-4763-8833-faae1eca36cf" name="CourseWorkDiagrams_02">
+    <elementDefinition Id="9d749026-f9ae-47f1-96cb-1c24c40bbd7b" />
+  </package>
+</activityRootModel>

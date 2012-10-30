@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="5f1b2597-ad64-4c30-a432-ef2df21ff586" name="BankStaff_01" linkedPackageId="6c38c05d-e23e-4c9b-92af-24ca9ee9c42f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="5f1b2597-ad64-4c30-a432-ef2df21ff586" name="BankStaff_01" linkedPackageId="6c38c05d-e23e-4c9b-92af-24ca9ee9c42f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="a64aef2c-af5a-4445-9303-b363d80dd5cf" name="BankStaff_01" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -107,15 +107,6 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="a77fc003-59c1-4b45-aa08-24b5920b4c77" name="Update customer details" isLeaf="false">
-            <elementDefinition Id="8d24948b-2be0-4587-9563-b41aab2ecff0" />
-            <flowNodeTargets>
-              <controlFlow Id="eb38e2f6-f9cf-430a-9aab-370d0be20d8f" isLeaf="false">
-                <opaqueActionMoniker Id="aa9db0ab-8fc3-4061-b9de-693b51281cc0" LastKnownName="View customer details" />
-                <elementDefinition Id="dfb1c1fd-92e1-4b9a-bc89-ffbc2f836fad" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
           <decisionNode Id="1893cc9b-dd28-490b-957e-402eaff0d300" name="Decision2" isLeaf="false">
             <elementDefinition Id="e5f85a0b-6eb8-483e-a2a7-e86a295ac48f" />
             <flowNodeTargets>
@@ -139,10 +130,6 @@
               <controlFlow Id="57d38f2e-7944-48ac-8e22-53deac2026eb" guard="View details?" isLeaf="false">
                 <opaqueActionMoniker Id="aa9db0ab-8fc3-4061-b9de-693b51281cc0" LastKnownName="View customer details" />
                 <elementDefinition Id="6c8c65fb-c529-4b9e-9b45-d5e03e3f7eef" />
-              </controlFlow>
-              <controlFlow Id="cd0d40ff-a76a-415b-8dba-731ad0531a28" guard="Update Details?" isLeaf="false">
-                <opaqueActionMoniker Id="a77fc003-59c1-4b45-aa08-24b5920b4c77" LastKnownName="Update customer details" />
-                <elementDefinition Id="324cedc4-27bb-4ad4-ac64-13e4a21400d7" />
               </controlFlow>
               <controlFlow Id="27c2306e-7c18-45b8-9636-50702228b9c0" guard="Produce statement?" isLeaf="false">
                 <opaqueActionMoniker Id="c994e379-c19f-41d7-bec9-1a6042da12ae" LastKnownName="Produce a statement" />

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.125" name="CustomerSystem_02">
+  <useCaseModelRootMoniker Id="3d74ab44-33d9-4e92-9b46-924fd5449e8b" />
+  <nestedChildShapes>
+    <actorShape Id="9539d36e-f667-4b00-b4c7-e9ab14efee6f" absoluteBounds="0.625, 10.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="89fb88af-29eb-42ed-9226-b2b014375052" LastKnownName="Customer" />
+      <relativeChildShapes />
+    </actorShape>
+    <commentShape Id="d03f24f3-27cb-4a1c-940f-b0fe33649a73" absoluteBounds="3.875, 8.625, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="c4625b70-aacc-4043-a064-b37d1f5953d3" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="0ad727e6-a026-4a3d-ab2a-faaa8ab31b0a" absoluteBounds="4.25, 8.75, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="8b2c3822-cc69-4786-a3f4-6cf80d85ca96" />
+      <relativeChildShapes />
+    </commentShape>
+    <SubsystemShape Id="4c9c685e-db34-4b30-bbcf-049572a7437f" absoluteBounds="1.625, 7.875, 4.375, 6" customColor="White">
+      <subsystemMoniker Id="0bbcaadd-67ba-4f50-aa85-3b9187159a99" LastKnownName="Customer System" />
+      <nestedChildShapes>
+        <useCaseShape Id="0beed314-d6ad-40e7-96c9-0a6a3f4262f6" absoluteBounds="3.625, 12.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="bb8e4c0e-a0ef-4b23-a242-e89b6292a8d8" LastKnownName="Deposit Money" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="e9212c55-0d1f-45bf-91af-197a0068d7c1" absoluteBounds="3.5, 11.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="64204db7-ad09-4be6-ae57-dedb4a2fd349" LastKnownName="Withdraw Money" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="b1736768-8c00-47e2-905e-df8c4d087db0" absoluteBounds="3.625, 13.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="8365b8ac-8b54-4e61-9759-2cae692dd003" LastKnownName="Request a statement" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="644ce42c-3c5d-4185-9211-8913f23d402b" absoluteBounds="3.5, 10.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="4eec3f06-16fe-41c7-9911-0246409a8ff7" LastKnownName="Pay Mortgage" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="acb4088b-6c71-475b-b35f-48d9a55bc8da" absoluteBounds="1.875, 9.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="0f1d3480-cd93-4780-b1e4-d5ed8ab46838" LastKnownName="Request Pin change" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="1879391c-e70a-4db0-9002-41f6da7bfe84" absoluteBounds="1.875, 12.125, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="c54d088e-996f-4c9a-a0c2-41e10ba29ab5" LastKnownName="Update Savings Account" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="ca0e4b7d-f957-41a9-a348-2130099abf4b" absoluteBounds="1.875, 10.25, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="c505ba91-e509-4824-b785-0d05994643ba" LastKnownName="Update Mortgage Account" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <extendConnector edgePoints="[(3.625 : 12.5); (2.875 : 12.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="ffaafc07-b03c-4d65-a63c-ddcf2a4af86d" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" absoluteBounds="3.1100000000000003, 12.191996541023254, 0.5820833333333324, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="0beed314-d6ad-40e7-96c9-0a6a3f4262f6" />
+        <useCaseShapeMoniker Id="1879391c-e70a-4db0-9002-41f6da7bfe84" />
+      </nodes>
+    </extendConnector>
+    <extendConnector edgePoints="[(3.65977445031636 : 11.8081983729066); (2.7811618667958 : 12.2812974563407)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="f86f67bd-57c3-4a61-ad92-3c2b3d8da546" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" absoluteBounds="2.95, 11.982742726158531, 0.52083333333333348, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="e9212c55-0d1f-45bf-91af-197a0068d7c1" />
+        <useCaseShapeMoniker Id="1879391c-e70a-4db0-9002-41f6da7bfe84" />
+      </nodes>
+    </extendConnector>
+    <extendConnector edgePoints="[(3.77144660940673 : 13.1982233047034); (2.79102514716892 : 12.7080125735845)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="66054ab5-7151-40c4-8736-5e5eca3bcfe4" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" absoluteBounds="2.95, 12.867119668632284, 0.55665254495449057, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="b1736768-8c00-47e2-905e-df8c4d087db0" />
+        <useCaseShapeMoniker Id="1879391c-e70a-4db0-9002-41f6da7bfe84" />
+      </nodes>
+    </extendConnector>
+    <extendConnector edgePoints="[(3.5 : 10.625); (2.875 : 10.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="8ed74bd4-71d6-41c8-8c26-b4e89ef469df" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" absoluteBounds="3.1100000000000003, 10.316996541023254, 0.57166666666666588, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="644ce42c-3c5d-4185-9211-8913f23d402b" />
+        <useCaseShapeMoniker Id="ca0e4b7d-f957-41a9-a348-2130099abf4b" />
+      </nodes>
+    </extendConnector>
+    <useCaseAssociationConnector edgePoints="[(1.125 : 10.5625); (2.09764990188739 : 9.83301257358446)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="c64022f5-53b4-4ae3-b5c9-795b9ede5a36" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="9539d36e-f667-4b00-b4c7-e9ab14efee6f" />
+        <useCaseShapeMoniker Id="acb4088b-6c71-475b-b35f-48d9a55bc8da" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(1.08928571428571 : 11); (2.10462120434325 : 12.1845580717338)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="792f29fa-6c59-49ae-8fcb-f0a65c913584" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="9539d36e-f667-4b00-b4c7-e9ab14efee6f" />
+        <useCaseShapeMoniker Id="1879391c-e70a-4db0-9002-41f6da7bfe84" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(1.125 : 10.7291666666667); (1.87805813266319 : 10.6664118222781)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="08114c53-f139-4450-9a7e-65025dc774b8" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="9539d36e-f667-4b00-b4c7-e9ab14efee6f" />
+        <useCaseShapeMoniker Id="ca0e4b7d-f957-41a9-a348-2130099abf4b" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

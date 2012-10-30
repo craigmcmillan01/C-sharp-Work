@@ -21,6 +21,13 @@
       <SubType>Content</SubType>
       <DependentUpon>BankStaffSystem.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="BankStaffSystem_02.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BankStaffSystem_02.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BankStaffSystem_02.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="BankStaff_01.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -35,12 +42,26 @@
       <SubType>Content</SubType>
       <DependentUpon>BankSystem_01.classdiagram</DependentUpon>
     </Content>
+    <Content Include="BankSystem_02.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BankSystem_02.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BankSystem_02.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ChiefClerk_01.activitydiagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ChiefClerk_01.activitydiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>ChiefClerk_01.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="ChiefClerk_02.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChiefClerk_02.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChiefClerk_02.activitydiagram</DependentUpon>
     </Content>
     <Content Include="CustomerActivity_01.activitydiagram">
       <SubType>Content</SubType>
@@ -49,9 +70,23 @@
       <SubType>Content</SubType>
       <DependentUpon>CustomerActivity_01.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="CustomerActivity_02.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CustomerActivity_02.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CustomerActivity_02.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="CustomerSystem.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>CustomerSystem.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="CustomerSystem_02.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CustomerSystem_02.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CustomerSystem_02.usecasediagram</DependentUpon>
     </Content>
     <Content Include="UIActivity_01.activitydiagram">
       <SubType>Content</SubType>

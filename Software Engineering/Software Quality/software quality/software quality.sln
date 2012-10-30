@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE3_Metric_1", "SE3_Metric_1\SE3_Metric_1.csproj", "{B6CB0588-D10A-47AA-B9D6-31D450E16D24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE3_Metric_2", "SE3_Metric_2\SE3_Metric_2.csproj", "{9B06B4DA-74CF-44D7-96D4-AC79AD889748}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6CB0588-D10A-47AA-B9D6-31D450E16D24}.Debug|x86.ActiveCfg = Debug|x86
+		{B6CB0588-D10A-47AA-B9D6-31D450E16D24}.Debug|x86.Build.0 = Debug|x86
+		{B6CB0588-D10A-47AA-B9D6-31D450E16D24}.Release|x86.ActiveCfg = Release|x86
+		{B6CB0588-D10A-47AA-B9D6-31D450E16D24}.Release|x86.Build.0 = Release|x86
+		{9B06B4DA-74CF-44D7-96D4-AC79AD889748}.Debug|x86.ActiveCfg = Debug|x86
+		{9B06B4DA-74CF-44D7-96D4-AC79AD889748}.Debug|x86.Build.0 = Debug|x86
+		{9B06B4DA-74CF-44D7-96D4-AC79AD889748}.Release|x86.ActiveCfg = Release|x86
+		{9B06B4DA-74CF-44D7-96D4-AC79AD889748}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

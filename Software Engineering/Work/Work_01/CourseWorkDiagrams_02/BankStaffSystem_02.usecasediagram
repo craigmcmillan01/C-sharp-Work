@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="4cbd54fc-890b-41a3-9d68-e23ee43aca2a" name="BankStaffSystem_02" linkedPackageId="1eaacd90-4336-4816-bd19-eb9a9d3c7e06" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ca7a151f-fc9e-4eea-9b98-53bc67506dc4" name="Chief Clerk" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec46d9af-58de-49ad-89d2-24693b3eab93" />
+        <targetEnds>
+          <association Id="c8108a0b-abf1-418b-92d3-295e26d4f591" isDerived="false" sourceEndRoleName="Chief Clerk" targetEndRoleName="Interest Calculations" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3a36c87b-5f6a-43e8-8fd5-dc97ed64eff9" LastKnownName="Interest Calculations" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38638140-b4ad-450f-865d-5b7dc7eef9e1" name="Chief Clerk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16f2b5df-0673-4ab8-a711-c16278a3f2a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e59b4db0-ee2f-41aa-ac15-1e869f211cef" name="Interest Calculations" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eee7113b-da34-4084-a2f8-5d1ede81db5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea0d26ba-6f51-4405-b8c6-06ae1444235f" />
+          </association>
+          <association Id="0284cbec-41d1-4bca-a425-1c11942e1206" isDerived="false" sourceEndRoleName="Chief Clerk" targetEndRoleName="Request Status Report" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="11564d73-bbca-4d9b-8ba3-d48bf57f78c7" LastKnownName="Request Status Report" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64660feb-e2ba-44a6-9948-0e55360f044e" name="Chief Clerk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cf943ef1-f85b-4be2-bff1-1e152bda9347" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c4a11ab6-421d-4c0e-82ff-621cc90762c0" name="Request Status Report" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab113117-b61d-4b39-98f4-6d55d9ed3c15" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51850cd1-a72f-42a1-b47c-587f1e28fdfe" />
+          </association>
+          <association Id="a08cb4ec-62d2-4ea1-a0ee-58fe78b61157" isDerived="false" sourceEndRoleName="Chief Clerk" targetEndRoleName="Customer Support" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="df62fe9e-a585-430b-8068-e84a6659bf86" LastKnownName="Customer Support" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="44e80a6a-1b91-4a12-959d-46030c13d5ab" name="Chief Clerk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a328ad4b-cd42-46fe-ae97-c7db48fbee87" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c3e3603-8f78-4628-aeaf-9f48fb1ba852" name="Customer Support" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01fdfb7f-0798-41fc-9d70-94916c755674" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="04ca9191-9858-4a6c-a193-5f3c9c14d426" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c6d91a6d-1d37-4478-8c2b-d6185b402eee" name="Clerk" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5de387a3-446b-4685-beae-156c55da289b" />
+        <targetEnds>
+          <association Id="be5dff00-ab9c-42e0-af72-51d2b35bee29" isDerived="false" sourceEndRoleName="Clerk" targetEndRoleName="Customer Support" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="df62fe9e-a585-430b-8068-e84a6659bf86" LastKnownName="Customer Support" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1cf2291-e3d4-4ed7-a68d-3d4c5e8f48d8" name="Clerk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="74c6a3e8-a428-4bb4-b90c-4ccd6cf70abe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="831c7ecf-2df4-4c23-b694-eb20281b971f" name="Customer Support" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="886b83a0-1ebf-4199-96cf-ced1137b6df9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55be454c-dca9-4f3e-bef1-cb3aa952d178" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="d38958cc-74ff-4211-ac55-7783c46768f1" name="BankStaff" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="92d4e590-b025-49b3-b87a-3f8cb29084e0" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="df62fe9e-a585-430b-8068-e84a6659bf86" name="Customer Support" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7c239088-d52b-4b27-8f25-283262ec5ea1" />
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3a36c87b-5f6a-43e8-8fd5-dc97ed64eff9" name="Interest Calculations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="621c953e-9a48-4baa-a3a8-7e84c42b0fba" />
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="11564d73-bbca-4d9b-8ba3-d48bf57f78c7" name="Request Status Report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e335f7d-8f2a-42ef-be3b-6c43234da6bf" />
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="72e77f56-bc05-4089-8e00-e32cbe1d3f42" name="Calculate interest on accounts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e590be8f-34c2-4a0b-bafc-94312bb2bfd9" />
+        <extendedCases>
+          <extend Id="37c5394b-4a0f-4632-ae14-2b0ceae7aee7">
+            <useCaseMoniker Id="3a36c87b-5f6a-43e8-8fd5-dc97ed64eff9" LastKnownName="Interest Calculations" />
+            <elementDefinition Id="8498088e-c518-4eb9-a379-e499dbc1b68d" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b1d2d372-47a3-4cb3-884b-1e730780d16f" name="Alter intersest rates" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5322312c-655f-47fe-a741-8c83c5ec8e35" />
+        <extendedCases>
+          <extend Id="84b0c0d6-8f8e-4052-9d9b-0cb0711704ee">
+            <useCaseMoniker Id="3a36c87b-5f6a-43e8-8fd5-dc97ed64eff9" LastKnownName="Interest Calculations" />
+            <elementDefinition Id="c8fb1f21-6448-4cd0-9fa3-7d07e2e9036d" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d5625a95-db19-4e98-a27d-121b73280fc3" name="Amend Accounts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe9af3be-1a4c-4107-af6c-7a54d32df35c" />
+        <extendedCases>
+          <extend Id="b5622958-77d2-49b7-8ba7-27bdb5cd4f3e">
+            <useCaseMoniker Id="df62fe9e-a585-430b-8068-e84a6659bf86" LastKnownName="Customer Support" />
+            <elementDefinition Id="aa9fe87b-2c37-43af-9fd7-55d3e7c4154b" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="108793ad-a2f3-4260-962a-8e726eaccc9a" name="Manage Customers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="39ad2a4b-3881-4212-b780-25c81f87edda" />
+        <extendedCases>
+          <extend Id="76f98954-eca5-4fc9-877e-70a311827995">
+            <useCaseMoniker Id="df62fe9e-a585-430b-8068-e84a6659bf86" LastKnownName="Customer Support" />
+            <elementDefinition Id="3c098bdd-2aed-4fff-af01-d0bafd8cb576" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="33bf1852-cf47-4526-bdc7-5193f625e9cd" name="Change customer Pin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="faf15505-5b94-4b09-86df-742abcffb868" />
+        <extendedCases>
+          <extend Id="c0198f19-bee7-430a-b55e-c4e601087215">
+            <useCaseMoniker Id="108793ad-a2f3-4260-962a-8e726eaccc9a" LastKnownName="Manage Customers" />
+            <elementDefinition Id="160e55eb-88db-41dd-bb94-f4e1d2f96be0" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="5c76759e-6068-4c7d-8c4b-f00a00dd9bf5">
+            <useCaseMoniker Id="9b1200ab-383b-476d-bb88-b807622fcc6f" LastKnownName="Update customer details" />
+            <elementDefinition Id="4fd0a099-4d0d-42ee-8c70-909a9fe530a1" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0fcf28f-8651-404f-b70a-250f60b50379" name="Close customer account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d917737-aabb-41a2-9776-5560816d0aee" />
+        <extendedCases>
+          <extend Id="60df3f52-07e2-47a8-b4d2-340ffe7fe77c">
+            <useCaseMoniker Id="d5625a95-db19-4e98-a27d-121b73280fc3" LastKnownName="Amend Accounts" />
+            <elementDefinition Id="dc0d43a0-3182-460d-8f40-44df297b39aa" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="69e01e39-1079-42cd-acb2-ce5e3d91eedb" name="Open customer account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23898a0f-020b-4b83-bdf7-b4068ce9ad8d" />
+        <extendedCases>
+          <extend Id="6faa4dea-217a-409e-8d2c-dfaac5e6ab79">
+            <useCaseMoniker Id="d5625a95-db19-4e98-a27d-121b73280fc3" LastKnownName="Amend Accounts" />
+            <elementDefinition Id="97627d09-b0e4-42f6-b0d7-d0fcc0c63f1c" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8f20591c-68cf-4dd1-9707-c700bcc5baad" name="Produce a statement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="912ad7b9-8c9b-4b2c-88f6-98321abfd668" />
+        <extendedCases>
+          <extend Id="8cdef061-5b67-4299-8a2e-01529eca9672">
+            <useCaseMoniker Id="108793ad-a2f3-4260-962a-8e726eaccc9a" LastKnownName="Manage Customers" />
+            <elementDefinition Id="64856343-64f2-4b97-8059-681ca72a18a0" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9b1200ab-383b-476d-bb88-b807622fcc6f" name="Update customer details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="82893325-707e-4bdd-aaa6-d1be1a5cb70e" />
+        <extendedCases>
+          <extend Id="5ea7ed71-02d6-4150-965f-32b6ebb8fa63">
+            <useCaseMoniker Id="108793ad-a2f3-4260-962a-8e726eaccc9a" LastKnownName="Manage Customers" />
+            <elementDefinition Id="99ed7736-61df-4143-a3a8-3b9e0dbb6bbe" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="4614698f-2f1b-49a7-af6a-944103fa95a7">
+            <useCaseMoniker Id="6ddaf9f2-bd1d-461c-98be-632f1285112f" LastKnownName="view customer details" />
+            <elementDefinition Id="bfdeec60-0a5d-41c6-bc85-4c2d357aa0d0" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6ddaf9f2-bd1d-461c-98be-632f1285112f" name="view customer details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="df894025-deb0-41d0-b4f4-1e7fb5b08fa9" />
+        <extendedCases>
+          <extend Id="db727825-436a-4d3a-ac06-97525f7e947f">
+            <useCaseMoniker Id="108793ad-a2f3-4260-962a-8e726eaccc9a" LastKnownName="Manage Customers" />
+            <elementDefinition Id="66742e1d-0c35-4686-b98d-8f7c76d25949" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d38958cc-74ff-4211-ac55-7783c46768f1" LastKnownName="BankStaff" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="1eaacd90-4336-4816-bd19-eb9a9d3c7e06" name="CourseWorkDiagrams_02">
+    <elementDefinition Id="9d749026-f9ae-47f1-96cb-1c24c40bbd7b" />
+  </package>
+</useCaseModelRoot>

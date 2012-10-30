@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="a26824d9-7e81-4352-b2ff-b4db8af3a74d" name="CustomerActivity_01" linkedPackageId="46b763ca-7e04-4d10-8a89-60d29daf64d1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="a26824d9-7e81-4352-b2ff-b4db8af3a74d" name="CustomerActivity_01" linkedPackageId="46b763ca-7e04-4d10-8a89-60d29daf64d1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="ea587ce9-c67f-4555-a53d-2fdf3fb0d70a" name="CustomerActivity_01" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -33,10 +33,6 @@
           <decisionNode Id="a7cee084-1a72-4cdb-9b27-0d19e280d54a" name="Decision1" isLeaf="false">
             <elementDefinition Id="c61f126d-83f3-4679-a0b1-b4e99845ce2e" />
             <flowNodeTargets>
-              <controlFlow Id="a3104d5c-a089-414a-a9c1-64225e019a6b" guard="New account selected" isLeaf="false">
-                <opaqueActionMoniker Id="48755996-510f-4403-9efe-ca848eb1c3c7" LastKnownName="Request New Account" />
-                <elementDefinition Id="2b146f69-dfd1-4028-8899-b466257a32fc" />
-              </controlFlow>
               <controlFlow Id="688dc6b0-eae4-4b21-a053-d1947844fa69" guard="Update mortage" isLeaf="false">
                 <opaqueActionMoniker Id="c6b261e7-2df0-4e70-aa9e-f13136d8a4e3" LastKnownName="Update Mortage Account" />
                 <elementDefinition Id="cf0ebc3f-3049-4859-9770-e2baed5ee380" />
@@ -51,15 +47,6 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <opaqueAction Id="48755996-510f-4403-9efe-ca848eb1c3c7" name="Request New Account" isLeaf="false">
-            <elementDefinition Id="e52e4d6a-c55e-442b-a672-e803b68f0f5b" />
-            <flowNodeTargets>
-              <controlFlow Id="0ce54323-3906-4e48-8bfc-953d0cc6c6b1" isLeaf="false">
-                <sendSignalActionMoniker Id="70aab1a1-0912-4cd6-b270-e135411c461e" LastKnownName="New Account Request" />
-                <elementDefinition Id="04fdf5e9-9c3a-4c3c-94d4-c071910f7267" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
           <opaqueAction Id="c6b261e7-2df0-4e70-aa9e-f13136d8a4e3" name="Update Mortage Account" isLeaf="false">
             <elementDefinition Id="12224067-0b22-4956-b90c-23cf922a608e" />
             <flowNodeTargets>
@@ -96,29 +83,6 @@
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <sendSignalAction Id="70aab1a1-0912-4cd6-b270-e135411c461e" name="New Account Request" isLeaf="false">
-            <elementDefinition Id="47c17b6d-4907-4745-b62b-bf249c833e28" />
-            <objectFlowTargets>
-              <objectFlow Id="7e08af5a-9cab-438d-a194-8f836aa85a3d" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="f09e8543-f4d5-40d9-8704-58f3be6da552" LastKnownName="Clerk" />
-                <elementDefinition Id="ef072b40-9f64-41c3-8b79-96b3d9bdce8a" />
-              </objectFlow>
-            </objectFlowTargets>
-          </sendSignalAction>
-          <objectNode Id="f09e8543-f4d5-40d9-8704-58f3be6da552" name="Clerk" isLeaf="false" ordering="Unordered" isControlType="false">
-            <elementDefinition Id="a8e78e8a-3be0-434e-807e-cd048e483250" />
-            <objectFlowTargets>
-              <objectFlow Id="298c9235-e0d9-48aa-8a50-7f783e6b8d01" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <mergeNodeMoniker Id="0685e303-4c27-4cf6-8a2a-f5b28a5f4818" LastKnownName="Merge1" />
-                <elementDefinition Id="77f7ddf1-bf06-4fae-84e4-d2290effa1e0" />
-              </objectFlow>
-            </objectFlowTargets>
-            <upperBound>
-              <literalInteger Id="20eac95e-de88-441e-9260-87a2f19016c0" name="2147483647" value="2147483647">
-                <elementDefinition Id="eacc5f5d-902e-461f-9a15-6cf99a8d79bb" />
-              </literalInteger>
-            </upperBound>
-          </objectNode>
           <opaqueAction Id="2fdcab9c-ab1f-4ea8-9a25-822ba4ddacdb" name="Make deposit" isLeaf="false">
             <elementDefinition Id="61a06767-79f8-4ace-b5f5-eaad6a8ecaec" />
             <flowNodeTargets>
@@ -238,26 +202,22 @@
           <decisionNode Id="67552529-38f5-4b06-bf0b-04aeccfbea33" name="Decision11" isLeaf="false">
             <elementDefinition Id="4ea725d4-a51c-47ba-aa02-b5a83d27e9c0" />
             <flowNodeTargets>
-              <controlFlow Id="e6b88eb1-a1ed-4613-b4b3-eec96e77027a" guard="Incorrect" isLeaf="false">
-                <opaqueActionMoniker Id="5efca3d4-f10f-4c66-aacc-d8983b47f036" LastKnownName="Display Error Message" />
-                <elementDefinition Id="1824292d-5e1a-4374-b3b0-10807e984b5f" />
-              </controlFlow>
               <controlFlow Id="c70435a3-ebe6-499b-acf7-73d0a4c2d7a4" guard="Correct" isLeaf="false">
                 <opaqueActionMoniker Id="f2f74487-c64c-43bb-b5db-3539314198f5" LastKnownName="Make selection" />
                 <elementDefinition Id="150a7b19-8609-4c5c-a6cc-55cf9c6302cf" />
+              </controlFlow>
+              <controlFlow Id="c8f75664-95d2-4c0d-8e81-3d0d457491ca" guard="Incorrect" isLeaf="false">
+                <decisionNodeMoniker Id="b68c48db-52ec-4ff3-889a-53823fa43d71" LastKnownName="Decision5" />
+                <elementDefinition Id="965cb7e1-4165-49b3-9ab4-d2a4ca06bd47" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction Id="5efca3d4-f10f-4c66-aacc-d8983b47f036" name="Display Error Message" isLeaf="false">
             <elementDefinition Id="dfb24ddf-e33d-4350-b615-3ada89392cdb" />
             <flowNodeTargets>
-              <controlFlow Id="c70a8196-711e-49d0-9565-6757ebfd890a" guard="Count &gt;= 3" isLeaf="false">
-                <opaqueActionMoniker Id="41b30496-c337-430d-9827-56137a059720" LastKnownName="Change user pin" />
-                <elementDefinition Id="40313ead-eafb-4a8a-8d4f-e50fea3032a1" />
-              </controlFlow>
-              <controlFlow Id="d6c04932-4959-4aaa-9afe-a8a6a82136ee" guard="Count &lt; 3" isLeaf="false">
+              <controlFlow Id="2e472001-b7d4-463b-a231-c816c574fda3" isLeaf="false">
                 <opaqueActionMoniker Id="099c54be-75f4-426d-baca-790412f49d50" LastKnownName="Prompt for pin" />
-                <elementDefinition Id="d188f7b4-dc38-4d1f-9221-12a9929ff0e9" />
+                <elementDefinition Id="2b8a1036-946b-4e55-abbd-c6da4e5bd51e" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -362,6 +322,19 @@
           <activityFinalNode Id="36ad0eac-bb60-4af9-be21-6b2fa2d4721c" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="eab90ed0-4630-4052-93bf-908da87d365a" />
           </activityFinalNode>
+          <decisionNode Id="b68c48db-52ec-4ff3-889a-53823fa43d71" name="Decision5" isLeaf="false">
+            <elementDefinition Id="400acf03-8d5a-4174-b793-3a6ef5eda34a" />
+            <flowNodeTargets>
+              <controlFlow Id="407c2a62-2d6c-4747-8b1c-b1301bf861a0" guard="Count &lt; 3" isLeaf="false">
+                <opaqueActionMoniker Id="5efca3d4-f10f-4c66-aacc-d8983b47f036" LastKnownName="Display Error Message" />
+                <elementDefinition Id="844ccbd4-b020-4dcd-8fd4-495b7e10588f" />
+              </controlFlow>
+              <controlFlow Id="def55b87-1b59-466e-a49b-935fa95349dc" guard="Count &gt;= 3" isLeaf="false">
+                <opaqueActionMoniker Id="41b30496-c337-430d-9827-56137a059720" LastKnownName="Change user pin" />
+                <elementDefinition Id="ba25aee3-e6e1-413f-bb63-d4fe986d474b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>

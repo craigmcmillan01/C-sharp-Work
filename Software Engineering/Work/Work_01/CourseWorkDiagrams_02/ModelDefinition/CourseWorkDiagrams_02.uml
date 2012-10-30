@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="9d749026-f9ae-47f1-96cb-1c24c40bbd7b"
   name="CourseWorkDiagrams_02" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -24,6 +24,19 @@ i.e A0001, B0001, C0001 etc</body>
     <comment
       Id="34b916c1-a9df-4acf-b496-faecf139b036">
       <body>I have made the assumption that the user will also have some way of requesting a new account to be created  and a way to request for there pin to be changed. </body>
+    </comment>
+    <comment
+      Id="0fb761d0-6854-4df9-94d9-246078b4b25d" />
+    <comment
+      Id="f3fe1018-a98a-4431-bcd7-7a1377fb906b" />
+    <comment
+      Id="e69c54a8-d9d2-415c-ad93-c7f5d1b63d07">
+      <body>Making the assumption the ID numbers will include letters and numbers. Chief clerks will start with A, clerks with B and customers with C
+i.e A0001, B0001, C0001 etc</body>
+    </comment>
+    <comment
+      Id="0873b438-b06b-40cd-ad42-95866b60bf39">
+      <body>The bank system will make use of the singleton pattern so that there is only ever 1 instanace of it in the system</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -1177,21 +1190,21 @@ i.e A0001, B0001, C0001 etc</body>
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="3bdac1db-22b2-43f4-9243-492d9554043e"
-                guard="Incorrect"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="8c8ff10f-ddf3-47d1-8daa-120cfde059f9"
-                  LastKnownName="Display Error Message"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </controlFlow>
-              <controlFlow
                 Id="32f85d00-5308-4524-9539-6d4510025134"
                 guard="Correct"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="c1bddfbe-f8eb-40a7-87cc-90a1d1f31428"
                   LastKnownName="Allow entry to system"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7f91749e-f597-42ab-b36f-99509aaabf2d"
+                guard="Incorrect"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="10e359b4-3961-41eb-a3e3-e2c352315e14"
+                  LastKnownName="Decision2"
                   LastKnownLocation="CourseWorkDiagrams_02.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1202,21 +1215,11 @@ i.e A0001, B0001, C0001 etc</body>
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="302a6139-e5d8-4660-8778-f74db1c2f3eb"
-                guard="Count &lt; x"
+                Id="25f9054a-42cc-479a-ac92-8cf5c5738869"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="fe3ae9e6-e0ee-4151-8363-c14967dbc54c"
                   LastKnownName="Prompt for username and password"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="a30cd9e3-5fc5-440c-9c90-5bae7b41e87e"
-                guard="Count &gt;= x"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="ff54b105-c764-4915-be5a-ff1e830344df"
-                  LastKnownName="Lock user out of system"
                   LastKnownLocation="CourseWorkDiagrams_02.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1300,6 +1303,31 @@ i.e A0001, B0001, C0001 etc</body>
             Id="b8b271c4-308f-4ca3-a07a-e3e9a4f14a84"
             name="ActivityFinal1"
             isLeaf="false" />
+          <decisionNode
+            Id="10e359b4-3961-41eb-a3e3-e2c352315e14"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cc375f61-32be-4ce8-ad06-520bdd522584"
+                guard="Count &lt; x"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8c8ff10f-ddf3-47d1-8daa-120cfde059f9"
+                  LastKnownName="Display Error Message"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="24d258b9-4ec0-4230-a98a-881918a4c0f1"
+                guard="Count &gt;= x"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ff54b105-c764-4915-be5a-ff1e830344df"
+                  LastKnownName="Lock user out of system"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </packageHasNamedElement>
@@ -1361,15 +1389,6 @@ i.e A0001, B0001, C0001 etc</body>
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="2b146f69-dfd1-4028-8899-b466257a32fc"
-                guard="New account selected"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="e52e4d6a-c55e-442b-a672-e803b68f0f5b"
-                  LastKnownName="Request New Account"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </controlFlow>
-              <controlFlow
                 Id="cf0ebc3f-3049-4859-9770-e2baed5ee380"
                 guard="Update mortage"
                 isLeaf="false">
@@ -1398,21 +1417,6 @@ i.e A0001, B0001, C0001 etc</body>
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <opaqueAction
-            Id="e52e4d6a-c55e-442b-a672-e803b68f0f5b"
-            name="Request New Account"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="04fdf5e9-9c3a-4c3c-94d4-c071910f7267"
-                isLeaf="false">
-                <sendSignalActionMoniker
-                  Id="47c17b6d-4907-4745-b62b-bf249c833e28"
-                  LastKnownName="New Account Request"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
           <opaqueAction
             Id="12224067-0b22-4956-b90c-23cf922a608e"
             name="Update Mortage Account"
@@ -1473,48 +1477,6 @@ i.e A0001, B0001, C0001 etc</body>
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <sendSignalAction
-            Id="47c17b6d-4907-4745-b62b-bf249c833e28"
-            name="New Account Request"
-            isLeaf="false">
-            <objectFlowTargets>
-              <objectFlow
-                Id="ef072b40-9f64-41c3-8b79-96b3d9bdce8a"
-                isLeaf="false"
-                isMulticast="false"
-                isMultireceive="false">
-                <objectNodeMoniker
-                  Id="a8e78e8a-3be0-434e-807e-cd048e483250"
-                  LastKnownName="Clerk"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </objectFlow>
-            </objectFlowTargets>
-          </sendSignalAction>
-          <objectNode
-            Id="a8e78e8a-3be0-434e-807e-cd048e483250"
-            name="Clerk"
-            isLeaf="false"
-            ordering="Unordered"
-            isControlType="false">
-            <objectFlowTargets>
-              <objectFlow
-                Id="77f7ddf1-bf06-4fae-84e4-d2290effa1e0"
-                isLeaf="false"
-                isMulticast="false"
-                isMultireceive="false">
-                <mergeNodeMoniker
-                  Id="12bf9c30-0ebf-4b57-9d82-f36cecb23039"
-                  LastKnownName="Merge1"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </objectFlow>
-            </objectFlowTargets>
-            <upperBound>
-              <literalInteger
-                Id="eacc5f5d-902e-461f-9a15-6cf99a8d79bb"
-                name="2147483647"
-                value="2147483647" />
-            </upperBound>
-          </objectNode>
           <opaqueAction
             Id="61a06767-79f8-4ace-b5f5-eaad6a8ecaec"
             name="Make deposit"
@@ -1721,21 +1683,21 @@ i.e A0001, B0001, C0001 etc</body>
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="1824292d-5e1a-4374-b3b0-10807e984b5f"
-                guard="Incorrect"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="dfb24ddf-e33d-4350-b615-3ada89392cdb"
-                  LastKnownName="Display Error Message"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </controlFlow>
-              <controlFlow
                 Id="150a7b19-8609-4c5c-a6cc-55cf9c6302cf"
                 guard="Correct"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="963d19ee-b70e-487f-a76a-1abab2875e10"
                   LastKnownName="Make selection"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="965cb7e1-4165-49b3-9ab4-d2a4ca06bd47"
+                guard="Incorrect"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="400acf03-8d5a-4174-b793-3a6ef5eda34a"
+                  LastKnownName="Decision5"
                   LastKnownLocation="CourseWorkDiagrams_02.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1746,17 +1708,7 @@ i.e A0001, B0001, C0001 etc</body>
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="40313ead-eafb-4a8a-8d4f-e50fea3032a1"
-                guard="Count &gt;= 3"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="05580972-8cd5-489e-8615-a5ecf453ded5"
-                  LastKnownName="Change user pin"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="d188f7b4-dc38-4d1f-9221-12a9929ff0e9"
-                guard="Count &lt; 3"
+                Id="2b8a1036-946b-4e55-abbd-c6da4e5bd51e"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="a6c21961-2ea2-4415-b75d-3185b09b0f57"
@@ -1939,6 +1891,31 @@ i.e A0001, B0001, C0001 etc</body>
             Id="eab90ed0-4630-4052-93bf-908da87d365a"
             name="ActivityFinal1"
             isLeaf="false" />
+          <decisionNode
+            Id="400acf03-8d5a-4174-b793-3a6ef5eda34a"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="844ccbd4-b020-4dcd-8fd4-495b7e10588f"
+                guard="Count &lt; 3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dfb24ddf-e33d-4350-b615-3ada89392cdb"
+                  LastKnownName="Display Error Message"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="ba25aee3-e6e1-413f-bb63-d4fe986d474b"
+                guard="Count &gt;= 3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="05580972-8cd5-489e-8615-a5ecf453ded5"
+                  LastKnownName="Change user pin"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </packageHasNamedElement>
@@ -2129,21 +2106,6 @@ i.e A0001, B0001, C0001 etc</body>
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction
-            Id="8d24948b-2be0-4587-9563-b41aab2ecff0"
-            name="Update customer details"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="dfb1c1fd-92e1-4b9a-bc89-ffbc2f836fad"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="ae1a6151-97fe-437a-8419-1e47608f0972"
-                  LastKnownName="View customer details"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
           <decisionNode
             Id="e5f85a0b-6eb8-483e-a2a7-e86a295ac48f"
             name="Decision2"
@@ -2190,15 +2152,6 @@ i.e A0001, B0001, C0001 etc</body>
                 <opaqueActionMoniker
                   Id="ae1a6151-97fe-437a-8419-1e47608f0972"
                   LastKnownName="View customer details"
-                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="324cedc4-27bb-4ad4-ac64-13e4a21400d7"
-                guard="Update Details?"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="8d24948b-2be0-4587-9563-b41aab2ecff0"
-                  LastKnownName="Update customer details"
                   LastKnownLocation="CourseWorkDiagrams_02.uml" />
               </controlFlow>
               <controlFlow
@@ -3927,6 +3880,2940 @@ i.e A0001, B0001, C0001 etc</body>
           <operation
             Id="4d99ae81-c704-4873-a76a-3c459ebb2694"
             name="verifyPassword"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ec46d9af-58de-49ad-89d2-24693b3eab93"
+        name="Chief Clerk"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ea0d26ba-6f51-4405-b8c6-06ae1444235f"
+            isDerived="false"
+            sourceEndRoleName="Chief Clerk"
+            targetEndRoleName="Interest Calculations"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="621c953e-9a48-4baa-a3a8-7e84c42b0fba"
+              LastKnownName="Interest Calculations"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16f2b5df-0673-4ab8-a711-c16278a3f2a8"
+                  name="Chief Clerk"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eee7113b-da34-4084-a2f8-5d1ede81db5d"
+                  name="Interest Calculations"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="51850cd1-a72f-42a1-b47c-587f1e28fdfe"
+            isDerived="false"
+            sourceEndRoleName="Chief Clerk"
+            targetEndRoleName="Request Status Report"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8e335f7d-8f2a-42ef-be3b-6c43234da6bf"
+              LastKnownName="Request Status Report"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf943ef1-f85b-4be2-bff1-1e152bda9347"
+                  name="Chief Clerk"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab113117-b61d-4b39-98f4-6d55d9ed3c15"
+                  name="Request Status Report"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="04ca9191-9858-4a6c-a193-5f3c9c14d426"
+            isDerived="false"
+            sourceEndRoleName="Chief Clerk"
+            targetEndRoleName="Customer Support"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7c239088-d52b-4b27-8f25-283262ec5ea1"
+              LastKnownName="Customer Support"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a328ad4b-cd42-46fe-ae97-c7db48fbee87"
+                  name="Chief Clerk"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01fdfb7f-0798-41fc-9d70-94916c755674"
+                  name="Customer Support"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5de387a3-446b-4685-beae-156c55da289b"
+        name="Clerk"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="55be454c-dca9-4f3e-bef1-cb3aa952d178"
+            isDerived="false"
+            sourceEndRoleName="Clerk"
+            targetEndRoleName="Customer Support"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7c239088-d52b-4b27-8f25-283262ec5ea1"
+              LastKnownName="Customer Support"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74c6a3e8-a428-4bb4-b90c-4ccd6cf70abe"
+                  name="Clerk"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="886b83a0-1ebf-4199-96cf-ced1137b6df9"
+                  name="Customer Support"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+        name="BankStaff"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7c239088-d52b-4b27-8f25-283262ec5ea1"
+        name="Customer Support"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="621c953e-9a48-4baa-a3a8-7e84c42b0fba"
+        name="Interest Calculations"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8e335f7d-8f2a-42ef-be3b-6c43234da6bf"
+        name="Request Status Report"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e590be8f-34c2-4a0b-bafc-94312bb2bfd9"
+        name="Calculate interest on accounts"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8498088e-c518-4eb9-a379-e499dbc1b68d">
+            <useCaseMoniker
+              Id="621c953e-9a48-4baa-a3a8-7e84c42b0fba"
+              LastKnownName="Interest Calculations"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5322312c-655f-47fe-a741-8c83c5ec8e35"
+        name="Alter intersest rates"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c8fb1f21-6448-4cd0-9fa3-7d07e2e9036d">
+            <useCaseMoniker
+              Id="621c953e-9a48-4baa-a3a8-7e84c42b0fba"
+              LastKnownName="Interest Calculations"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fe9af3be-1a4c-4107-af6c-7a54d32df35c"
+        name="Amend Accounts"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="aa9fe87b-2c37-43af-9fd7-55d3e7c4154b">
+            <useCaseMoniker
+              Id="7c239088-d52b-4b27-8f25-283262ec5ea1"
+              LastKnownName="Customer Support"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="39ad2a4b-3881-4212-b780-25c81f87edda"
+        name="Manage Customers"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="3c098bdd-2aed-4fff-af01-d0bafd8cb576">
+            <useCaseMoniker
+              Id="7c239088-d52b-4b27-8f25-283262ec5ea1"
+              LastKnownName="Customer Support"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="faf15505-5b94-4b09-86df-742abcffb868"
+        name="Change customer Pin"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="160e55eb-88db-41dd-bb94-f4e1d2f96be0">
+            <useCaseMoniker
+              Id="39ad2a4b-3881-4212-b780-25c81f87edda"
+              LastKnownName="Manage Customers"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="4fd0a099-4d0d-42ee-8c70-909a9fe530a1">
+            <useCaseMoniker
+              Id="82893325-707e-4bdd-aaa6-d1be1a5cb70e"
+              LastKnownName="Update customer details"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d917737-aabb-41a2-9776-5560816d0aee"
+        name="Close customer account"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="dc0d43a0-3182-460d-8f40-44df297b39aa">
+            <useCaseMoniker
+              Id="fe9af3be-1a4c-4107-af6c-7a54d32df35c"
+              LastKnownName="Amend Accounts"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="23898a0f-020b-4b83-bdf7-b4068ce9ad8d"
+        name="Open customer account"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="97627d09-b0e4-42f6-b0d7-d0fcc0c63f1c">
+            <useCaseMoniker
+              Id="fe9af3be-1a4c-4107-af6c-7a54d32df35c"
+              LastKnownName="Amend Accounts"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="912ad7b9-8c9b-4b2c-88f6-98321abfd668"
+        name="Produce a statement"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="64856343-64f2-4b97-8059-681ca72a18a0">
+            <useCaseMoniker
+              Id="39ad2a4b-3881-4212-b780-25c81f87edda"
+              LastKnownName="Manage Customers"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="82893325-707e-4bdd-aaa6-d1be1a5cb70e"
+        name="Update customer details"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="99ed7736-61df-4143-a3a8-3b9e0dbb6bbe">
+            <useCaseMoniker
+              Id="39ad2a4b-3881-4212-b780-25c81f87edda"
+              LastKnownName="Manage Customers"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="bfdeec60-0a5d-41c6-bc85-4c2d357aa0d0">
+            <useCaseMoniker
+              Id="df894025-deb0-41d0-b4f4-1e7fb5b08fa9"
+              LastKnownName="view customer details"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="df894025-deb0-41d0-b4f4-1e7fb5b08fa9"
+        name="view customer details"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="66742e1d-0c35-4686-b98d-8f7c76d25949">
+            <useCaseMoniker
+              Id="39ad2a4b-3881-4212-b780-25c81f87edda"
+              LastKnownName="Manage Customers"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="92d4e590-b025-49b3-b87a-3f8cb29084e0"
+            LastKnownName="BankStaff"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="68551eaa-b032-4eda-8ab2-39e84728031b"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c296e6eb-48ed-4914-bba3-abd13e9fc84b"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Request New  Account"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bff5f28e-6551-482d-8cce-49ba0ae0db77"
+              LastKnownName="Request New  Account1"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a3050f4-96df-4528-b215-b0f62c54fe24"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f81a624-43ab-4eda-b2df-4da7a099e45e"
+                  name="Request New  Account"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4d9afe3d-4040-499b-a0a3-3d1148c1d2d5"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Request Pin change"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a65dc1c1-6fd2-49ba-9393-5154acd35fd4"
+              LastKnownName="Request Pin change"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2c0ddb5-dac8-4ee3-922e-e5e5d783aa87"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72f616f3-6aa4-4efd-87e9-7c1970952e34"
+                  name="Request Pin change"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="43d15efb-8a2a-4dab-82aa-aed450c51876"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Update Mortgage Account"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="de83c630-8b3e-4432-8f94-f86bdbe8567c"
+              LastKnownName="Update Mortgage Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7736dc1d-9da5-4811-ad7c-b345d5f0c8ae"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="371ae7bc-8d45-424f-bdfb-b75cd6fa6b25"
+                  name="Update Mortgage Account"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="232acead-f952-4ca5-afde-090b50704d76"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Update Savings Account"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="998c5674-e299-45d5-b722-53673762405b"
+              LastKnownName="Update Savings Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6561a3e1-d8c1-454f-a19a-3db2aab7600b"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47aa683f-99c6-405a-8bf7-52a00ab8efb0"
+                  name="Update Savings Account"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="77cb1e01-f728-4823-915c-935a1051d9cb"
+        name="Customer System"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="97b7e5c5-735f-48df-87d3-5d3b804aa9db"
+        name="Deposit Money"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7fb07a12-5a6f-42da-b183-757a8b46c10e">
+            <useCaseMoniker
+              Id="998c5674-e299-45d5-b722-53673762405b"
+              LastKnownName="Update Savings Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="77cb1e01-f728-4823-915c-935a1051d9cb"
+            LastKnownName="Customer System"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="45aa20bd-8fd6-4bec-b555-e40838f5546d"
+        name="Withdraw Money"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5bc5139b-176e-4b78-9b70-4b461e654dcb">
+            <useCaseMoniker
+              Id="998c5674-e299-45d5-b722-53673762405b"
+              LastKnownName="Update Savings Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="77cb1e01-f728-4823-915c-935a1051d9cb"
+            LastKnownName="Customer System"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bff5f28e-6551-482d-8cce-49ba0ae0db77"
+        name="Request New  Account1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d9b125bd-aaa9-4e8e-b5b0-ad9c292a8290"
+        name="Request a statement"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="37e56010-5876-43ad-87d9-f6b484bfca1a">
+            <useCaseMoniker
+              Id="998c5674-e299-45d5-b722-53673762405b"
+              LastKnownName="Update Savings Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="77cb1e01-f728-4823-915c-935a1051d9cb"
+            LastKnownName="Customer System"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4b376b36-13e1-4514-be98-f7c7c2d4e3ac"
+        name="Pay Mortgage"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f82fb1be-577d-4750-a838-2dd385126dc3">
+            <useCaseMoniker
+              Id="de83c630-8b3e-4432-8f94-f86bdbe8567c"
+              LastKnownName="Update Mortgage Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="77cb1e01-f728-4823-915c-935a1051d9cb"
+            LastKnownName="Customer System"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a65dc1c1-6fd2-49ba-9393-5154acd35fd4"
+        name="Request Pin change"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="77cb1e01-f728-4823-915c-935a1051d9cb"
+            LastKnownName="Customer System"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="998c5674-e299-45d5-b722-53673762405b"
+        name="Update Savings Account"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="77cb1e01-f728-4823-915c-935a1051d9cb"
+            LastKnownName="Customer System"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="de83c630-8b3e-4432-8f94-f86bdbe8567c"
+        name="Update Mortgage Account"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="77cb1e01-f728-4823-915c-935a1051d9cb"
+            LastKnownName="Customer System"
+            LastKnownLocation="CourseWorkDiagrams_02.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="c943eafa-7db4-4d56-aa81-cd757d53dbaf"
+        name="ChiefClerk_02"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="9c483d29-06cc-4777-98b6-cf09c89546f9"
+            name="Cheif Clerk"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="264b7b5a-237b-4628-ae7a-c26fae99e64c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <initialNode
+            Id="855f0e13-79ff-44f4-893b-a654dd111ff5"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="79da1a84-bd1a-42d8-97e4-0d130f3b88ea"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="22508edc-6a75-4d1e-9673-dc43cf3a14a3"
+                  LastKnownName="Select operation"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="22508edc-6a75-4d1e-9673-dc43cf3a14a3"
+            name="Select operation"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="89615bbc-22a0-442a-ae8d-000d49b5c681"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ac70c714-f5f7-41aa-a0f0-2b19a1b54522"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="ac70c714-f5f7-41aa-a0f0-2b19a1b54522"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fc3d6472-71fd-460b-aec7-2a09215ec3e3"
+                guard="Alter interest Rates?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ea20ee72-734e-4dd3-9731-8cb490043ae4"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="ae117cb1-37d1-4614-854a-db0bbd16c99c"
+                guard="Calculate interest?"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ecf31643-3829-421c-98bb-4d7f07d8e13f"
+                  LastKnownName="Enter Days since interest last paid"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="bf6a83eb-2531-4ef3-854a-2aa8ae97cd40"
+                guard="Request Report"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="04c09e9a-841b-4eb1-9011-5e189041df0a"
+                  LastKnownName="Generate Report"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <objectNode
+            Id="128b1fd4-4ad2-4aa7-8296-d85ee9626be3"
+            name="Bank system"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="1eb4a738-6d7b-4ee4-9177-1890ba7f8e3d"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="04c09e9a-841b-4eb1-9011-5e189041df0a"
+            name="Generate Report"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8ed371b4-7dc2-497e-a61b-ae7591d61aeb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="28ec2386-9810-46b2-9c9c-588acdcbe208"
+                  LastKnownName="Display Report"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="28ec2386-9810-46b2-9c9c-588acdcbe208"
+            name="Display Report"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f098ffb0-3468-42b6-a9e9-1dfabcac200e"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="69e2720a-4923-47a3-8f27-1038d5ac337f"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="ea20ee72-734e-4dd3-9731-8cb490043ae4"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fac75e19-454c-48da-8491-589a86e79c89"
+                guard="Savings Account"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ca1db49c-5dcb-4e5e-9751-4c01c1bbf876"
+                  LastKnownName="Update savings interst rate"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="185494da-33d5-4114-a9b1-1b76b2c1f5b3"
+                guard="Mortage Account"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1c48a67f-8ae8-4e07-a39f-bd54cbeb56ee"
+                  LastKnownName="Update mortage interest rate"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="ca1db49c-5dcb-4e5e-9751-4c01c1bbf876"
+            name="Update savings interst rate"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e448b65a-0e49-452f-9cf5-ad126b4619e4"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="03f6238e-a7c1-45fe-b68c-dbcf51e8aaf7"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1c48a67f-8ae8-4e07-a39f-bd54cbeb56ee"
+            name="Update mortage interest rate"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="41e5fbd7-d67b-4f25-8616-966d6187d2a7"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="03f6238e-a7c1-45fe-b68c-dbcf51e8aaf7"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="03f6238e-a7c1-45fe-b68c-dbcf51e8aaf7"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b7acb8bb-467b-446b-b182-d16eb874563d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bbe732ee-4083-44d1-9d99-860e2301daa3"
+                  LastKnownName="Save changes"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="bbe732ee-4083-44d1-9d99-860e2301daa3"
+            name="Save changes"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6c027c45-7bb1-4f27-81b5-951b8d854811"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="69e2720a-4923-47a3-8f27-1038d5ac337f"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ecf31643-3829-421c-98bb-4d7f07d8e13f"
+            name="Enter Days since interest last paid"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="36d8f7bd-60ef-4988-8229-30a8d1814fb7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2f3da3f0-d2f0-41c0-8fc8-6611212252c1"
+                  LastKnownName="Calculate interest on all accounts"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2f3da3f0-d2f0-41c0-8fc8-6611212252c1"
+            name="Calculate interest on all accounts"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d16dd1ba-f33e-48a3-979d-ac7a7a1cef0c"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="69e2720a-4923-47a3-8f27-1038d5ac337f"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="69e2720a-4923-47a3-8f27-1038d5ac337f"
+            name="Merge2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cef1b461-c481-40f4-b218-3be1a5cade42"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="63983f52-94d3-4e71-b47d-212776d7a22c"
+                  LastKnownName="Perform more operations"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="63983f52-94d3-4e71-b47d-212776d7a22c"
+            name="Perform more operations"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7dde27aa-a955-44a9-ba74-3815230491c0"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="52e8c59b-4ace-4df4-8a3b-55884282ed9b"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="52e8c59b-4ace-4df4-8a3b-55884282ed9b"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="33396ff3-d289-4bee-8e2e-526998407425"
+                guard="No?"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="bcaaf788-755c-4c33-8e45-1c7890626de5"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1b2f2797-e2e8-419a-ba51-36a1cbfb2f17"
+                guard="Yes?"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="22508edc-6a75-4d1e-9673-dc43cf3a14a3"
+                  LastKnownName="Select operation"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="bcaaf788-755c-4c33-8e45-1c7890626de5"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="ab345880-045d-47e4-854d-38520fe3b94c"
+        name="CustomerActivity_02"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="9ed07736-58e4-498f-8070-af28b24897ce"
+            name="Customer"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="9bf11dbd-5851-422f-86bc-355d27e873bb"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="6b2e276e-c51a-4f70-be5e-c2df3e7b8a9a"
+            name="Security System"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="c0b4e33f-666d-4702-b346-a9619c9b0754"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="74c113cd-411c-400b-8ef7-bad5aba4a069"
+            name="Select operation"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bee5b222-76e0-4e60-8d16-99dd3ca4238c"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="b0f36570-cee3-48d4-970c-ec723266858d"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="b0f36570-cee3-48d4-970c-ec723266858d"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b4c6f30e-7d3e-4511-ad7a-3017049819b2"
+                guard="New account selected"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1c412859-05ec-4203-98d4-755269ed90fe"
+                  LastKnownName="Request New Account"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="ab6016e0-9df4-4a30-801e-d24a807f70c3"
+                guard="Update mortage"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="89591656-e21b-49a2-92c7-6c565094ff22"
+                  LastKnownName="Update Mortage Account"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5750d04e-9b25-4f11-a84b-2705d0bed300"
+                guard="Update savings selected"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9aa92540-b6d6-4c34-b957-935af9af3288"
+                  LastKnownName="Update Savings Account"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7aca9977-de83-4b67-8f9e-567fca750238"
+                guard="Request new pin"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ec1fdf14-666c-497d-8468-46cb427c6a2f"
+                  LastKnownName="Request Pin Change"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="1c412859-05ec-4203-98d4-755269ed90fe"
+            name="Request New Account"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5084f194-70a5-4124-ad36-868bc3e1a0e3"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="2555fb09-92cc-4d3f-b9af-2df6987e1196"
+                  LastKnownName="New Account Request"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="89591656-e21b-49a2-92c7-6c565094ff22"
+            name="Update Mortage Account"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e78e4377-2451-48e1-92e6-b5b4f78d9f18"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="561cf12f-a9b0-4963-8995-bcd0b4423f37"
+                  LastKnownName="Make deposit"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9aa92540-b6d6-4c34-b957-935af9af3288"
+            name="Update Savings Account"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2de3238c-0628-429b-8516-ce9fc67b9bab"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="bd245471-6c46-407e-822d-9878be1ae172"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ec1fdf14-666c-497d-8468-46cb427c6a2f"
+            name="Request Pin Change"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="066d8919-2c34-4345-b855-f68cd0af0eb3"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="b6dbe8d6-24ba-4b84-88ef-9a61ee557ddb"
+                  LastKnownName="New Pin Request"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="332479eb-90eb-4605-9a2c-8be2f5462e16"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="419ab36c-b420-4373-99cb-9a0fbb4c1a09"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="74c113cd-411c-400b-8ef7-bad5aba4a069"
+                  LastKnownName="Select operation"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <sendSignalAction
+            Id="2555fb09-92cc-4d3f-b9af-2df6987e1196"
+            name="New Account Request"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="5f561d27-0adb-46ac-825a-c01e83e4ee10"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="b4c383de-f5f1-4ac5-9ad6-8721185d611b"
+                  LastKnownName="Clerk"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="b4c383de-f5f1-4ac5-9ad6-8721185d611b"
+            name="Clerk"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="940bf149-864a-4720-9884-0ec14797d19a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <mergeNodeMoniker
+                  Id="9c5347a8-391d-4610-8094-40ac80a92b85"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="7230d5ab-59e3-41cb-907f-e221413d85ab"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="561cf12f-a9b0-4963-8995-bcd0b4423f37"
+            name="Make deposit"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4b9399f6-6195-434f-b0af-d4de72a6c946"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="59e2cc4f-27f3-4615-85db-6370d869f894"
+                  LastKnownName="Update Accounts"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="b6dbe8d6-24ba-4b84-88ef-9a61ee557ddb"
+            name="New Pin Request"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="dafaff49-350a-4231-9fce-e2e4eadca837"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="95c2cd30-a899-41c4-a612-b8f2d80c7d8c"
+                  LastKnownName="Clerk1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode
+            Id="95c2cd30-a899-41c4-a612-b8f2d80c7d8c"
+            name="Clerk1"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="d77809ab-51ca-4bd7-956e-b136ee7de401"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <mergeNodeMoniker
+                  Id="9c5347a8-391d-4610-8094-40ac80a92b85"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="e428aa5d-3238-4fbe-a3a8-6970b24989a2"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="4c5a4e88-949a-4f0a-b7da-e6cc227be055"
+            name="Bank System"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="2300e33e-5555-4e28-8691-62cc753f568b"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="59e2cc4f-27f3-4615-85db-6370d869f894"
+            name="Update Accounts"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="812714f3-f980-499b-9be1-a1a42d55a63f"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="9c5347a8-391d-4610-8094-40ac80a92b85"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="bd245471-6c46-407e-822d-9878be1ae172"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="da0e8ed7-ab76-4ef9-a15a-6497bccb7c8e"
+                guard="Request A Statement"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="35b93ad8-155e-49c5-80a1-1f2d966f6159"
+                  LastKnownName="Request Statement"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a6085b05-c02a-4ceb-8b13-5c8c8ea8c263"
+                guard="Withdraw or deposit"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5bc0b18c-06c1-40c8-8887-f725c0e106f9"
+                  LastKnownName="Prompt for pin"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="35b93ad8-155e-49c5-80a1-1f2d966f6159"
+            name="Request Statement"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="03d90de9-b804-49c8-983d-75a429f6e734"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="61b62c69-f5a3-472c-aa1a-025747201566"
+                  LastKnownName="Get statement information"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="61b62c69-f5a3-472c-aa1a-025747201566"
+            name="Get statement information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ed2000b9-b83b-455f-a920-ab94732fefdd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5f587815-fd58-4c54-8afd-5f34a2b959f7"
+                  LastKnownName="Display Statement to user"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5f587815-fd58-4c54-8afd-5f34a2b959f7"
+            name="Display Statement to user"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ab3f03c3-51a7-4a09-9c27-7f061e643560"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="9c5347a8-391d-4610-8094-40ac80a92b85"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5bc0b18c-06c1-40c8-8887-f725c0e106f9"
+            name="Prompt for pin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ec0e26b0-9b51-48bb-9841-ae3519e8c736"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2cb3f59f-85b5-474d-8d94-7f632e345941"
+                  LastKnownName="Enter Pin"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2cb3f59f-85b5-474d-8d94-7f632e345941"
+            name="Enter Pin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a8b12451-bd1c-4d18-b0b4-292ba76cf1ee"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cb04c692-b1ff-484b-874d-b7a5c2564c97"
+                  LastKnownName="Verify Password"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cb04c692-b1ff-484b-874d-b7a5c2564c97"
+            name="Verify Password"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="83ac87b0-de4a-4a01-96bf-8f67320e2e66"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="b4e3f61c-10c3-4315-8cf3-ad0dd068ab02"
+                  LastKnownName="Decision11"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="b4e3f61c-10c3-4315-8cf3-ad0dd068ab02"
+            name="Decision11"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fd64011a-e880-41dc-ab0d-f0ab7fbbf787"
+                guard="Incorrect"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="24d2977f-3722-4fc0-a3f6-6303461b242d"
+                  LastKnownName="Display Error Message"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b5acd953-c78a-401b-a2ab-15602926bcf6"
+                guard="Correct"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="67fe9058-75c9-4b6c-bc8d-39af673c143a"
+                  LastKnownName="Make selection"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="24d2977f-3722-4fc0-a3f6-6303461b242d"
+            name="Display Error Message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c298aede-ef28-45f1-aa6e-91cbe30c213a"
+                guard="Count &gt;= 3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b5089653-1ee7-4430-83df-bc1259f0c947"
+                  LastKnownName="Change user pin"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="623f529a-6b07-4760-9a37-45ba5adc582f"
+                guard="Count &lt; 3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5bc0b18c-06c1-40c8-8887-f725c0e106f9"
+                  LastKnownName="Prompt for pin"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b5089653-1ee7-4430-83df-bc1259f0c947"
+            name="Change user pin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="986424d3-8369-4989-9e9a-0d803a547a9b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bad28c79-9091-4aa9-8564-33fe96f7355c"
+                  LastKnownName="Display error message"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="bad28c79-9091-4aa9-8564-33fe96f7355c"
+            name="Display error message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="74348fc2-40d6-4cd8-882f-28f5d152d369"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="b6dbe8d6-24ba-4b84-88ef-9a61ee557ddb"
+                  LastKnownName="New Pin Request"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="67fe9058-75c9-4b6c-bc8d-39af673c143a"
+            name="Make selection"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9279983d-457e-486b-b123-03389db9d443"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f04e54ed-2f6e-45c6-ae2a-01696843361a"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="f04e54ed-2f6e-45c6-ae2a-01696843361a"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="01d691fc-4d9a-4c9a-b138-4bf1ccc25359"
+                guard="Withdraw"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4137887c-ecb5-45d3-b305-e6d67e8c7363"
+                  LastKnownName="Withdraw  money"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7d86e0ef-9f44-4d48-bf94-caa3ba73995d"
+                guard="Deposit"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0731b748-24f8-40e6-9228-2b3ebb0052de"
+                  LastKnownName="Deposit Money"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="4137887c-ecb5-45d3-b305-e6d67e8c7363"
+            name="Withdraw  money"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="51d17a7a-3d84-455c-bf2f-9b52895f6c40"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0de9fdd0-b2d0-4a23-bcb2-248b619be5f9"
+                  LastKnownName="Update account"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0731b748-24f8-40e6-9228-2b3ebb0052de"
+            name="Deposit Money"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8fab6f7a-8866-407d-91de-26f43654b4bb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0de9fdd0-b2d0-4a23-bcb2-248b619be5f9"
+                  LastKnownName="Update account"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0de9fdd0-b2d0-4a23-bcb2-248b619be5f9"
+            name="Update account"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4faebf98-28ac-4ec2-bd9f-421be80bcf2f"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="9c5347a8-391d-4610-8094-40ac80a92b85"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="9c5347a8-391d-4610-8094-40ac80a92b85"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="db047a79-cf73-430e-a90c-f7778c1f65a4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9e22df96-98d8-4ddc-8bfd-f0492d1da76a"
+                  LastKnownName="Perform new operation?"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="9e22df96-98d8-4ddc-8bfd-f0492d1da76a"
+            name="Perform new operation?"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="984d5c02-0f05-47d7-963a-a59a3838ffe3"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f2787f31-d1aa-4a08-8630-f06014e82aec"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="f2787f31-d1aa-4a08-8630-f06014e82aec"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8e944b52-7e98-42b1-84ac-e142ee2a8604"
+                guard="No"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="18b51c79-5aec-4524-bb86-7818ccdb72e2"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7af56ae1-078f-4d0c-a2e8-ccf7bcc9d8ed"
+                guard="Yes"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="74c113cd-411c-400b-8ef7-bad5aba4a069"
+                  LastKnownName="Select operation"
+                  LastKnownLocation="CourseWorkDiagrams_02.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="18b51c79-5aec-4524-bb86-7818ccdb72e2"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="65219ddb-2907-4c11-838a-b33a5d9ddc57"
+        name="BankStaff"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b79ae6ec-3e59-4219-b953-dc7faeeaa92b"
+            name="name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="85981b0e-97d4-40fe-813f-af159d6cb3df"
+            name="staffID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="94189da3-8baa-49ac-ac4e-b8be4243b1c9"
+            name="password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="61771cf2-1c33-49b5-9080-cceca6e4da7c"
+            name="openNewAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3a50bf95-3d86-4878-9847-8dfd288f3bf6"
+            name="closeCustomerAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="62809d0e-8d0d-405d-8bdc-6e89b786afad"
+            name="changeCustomerPin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6464c826-0c29-43b3-af93-f366163f129e"
+            name="viewCustomerDetails"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8509cc56-7c9a-41ae-b1d4-fd58f7f44479"
+            name="ProduceStatement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9ef3cbfc-9d5c-4477-9996-6c1bebeebc4d"
+            name="BankStaff"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c2b44084-5bdc-46e4-b1f5-c70e4408c3ef"
+            name="BankStaff"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="48eaf24d-7ade-4a24-bbd2-565e78ea61e3"
+                  name="String name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="060b262f-33fc-484f-9584-dba69b94d30f"
+            name="login"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6a3e72d7-ff87-401a-aedb-56ec7d82d055"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CourseWorkDiagrams_02.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="125b3e62-81f2-4f49-93d3-2c6ecef9bbb4"
+                  name="String staffID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b09d706-9141-4137-8549-195a29c022d8"
+                  name="String password"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4834da04-99cd-4c62-b639-1369addb95e3"
+        name="Clerk"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="23522014-4a6c-4b53-b7be-0b6d9e6a3fc1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="65219ddb-2907-4c11-838a-b33a5d9ddc57"
+              LastKnownName="BankStaff"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="113faa21-6b02-4ac3-a117-da470a800b1d"
+            name="Clerk"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3ce87a47-57ba-4fb5-99b2-52e2eb3aed03"
+            name="Clerk"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6932207f-cfb3-485d-9b18-49a9f4a7a51d"
+                  name="String name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8ded3c77-261a-4035-9437-40cafb93632f"
+        name="ChiefClerk"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="17b3e479-5760-4b97-9984-844ae6d6e26e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="65219ddb-2907-4c11-838a-b33a5d9ddc57"
+              LastKnownName="BankStaff"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="61a3f09a-c3b6-4188-8839-68162efd50cc"
+            name="calculateInterest"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a4e8edbd-4cd5-4340-bb39-b081363fa10c"
+            name="alterInterestRates"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="21c34c2f-bf94-4c08-af61-ba0b0eb8533a"
+            name="produceStatusReport"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1e208f1d-4df6-4883-b4bf-6bf8b917d5ea"
+            name="ChiefClerk"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f9266f94-e254-4cf3-9295-3415208633c2"
+            name="ChiefClerk"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aa48f7e8-864a-461e-8e2b-e2d430fa0995"
+                  name="String name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b9d2907d-0246-4d8f-af15-ee530d8f9a76"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="bc107514-92e6-4167-aa79-90f2db7a83e4"
+            name="name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="31c6f0cf-a8a6-4dbe-8ab9-ca47b4f3602a"
+            name="address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="747dd847-31f4-4435-8e82-2384d114c088"
+            name="customerID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e9e9b50e-7743-4a36-9cf4-fb4d06170c27"
+            name="password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ce8b8e80-48f8-4f6d-9bd9-cfb351b96442"
+            name="pinNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1eec0bf6-496a-4e2c-849a-ff683b8ac63e"
+            name="accounts"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="e9808b69-b8a1-4f1d-a23a-fa91255e2468"
+                LastKnownName="Account"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ba4a3f79-730b-43a8-8e70-3f03245a2058"
+            name="Customer(String name, String Adress"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2c481685-6b74-4a58-b75e-c38981084f1e"
+            name="requestPinChange"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="537bc532-084f-45aa-af8b-5b2fb7cf0743"
+            name="updateMortgageAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dc26cba0-264f-4b87-8a2a-9ac8dd22692c"
+            name="login"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f77ec9c8-b909-409c-a66d-8d0d2975f4fe"
+                  name="String customerID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cd786f52-ce28-4ca8-bb52-791180c357f3"
+                  name="String password"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="42f6152f-3120-4709-b88c-dff1d4218b3b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CourseWorkDiagrams_02.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f3ce46cd-21c9-427e-b52a-ad752b2646fb"
+            name="updateSavingsAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="10211fe4-6786-4fac-a3b4-ca576cc6fd9e"
+        name="Account"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="2b0257c6-01d8-4416-a565-be3b2a2024b6"
+            name="accountNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="62c05b1b-3add-4990-8ef0-510550629e71"
+            name="customer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0724832f-adb7-4012-8748-62af400d331f"
+                LastKnownName="Customer"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="75219277-7c04-46eb-b559-4790ec2e2b53"
+            name="balance"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2b6a82bd-8fc9-461e-84a4-5bf8f7087c7f"
+                LastKnownName="Double"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ac4b1ec3-0189-4139-b363-78b740957122"
+            name="amount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2b6a82bd-8fc9-461e-84a4-5bf8f7087c7f"
+                LastKnownName="Double"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ad107b62-4c57-4388-b32c-a0011f2faae0"
+        name="MortgageAccount"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="64cd985b-9151-437e-b4d2-27bca03134ff"
+            isSubstitutable="false">
+            <classMoniker
+              Id="10211fe4-6786-4fac-a3b4-ca576cc6fd9e"
+              LastKnownName="Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="2477914f-072c-477f-ad41-d0382da6dfa2"
+            name="propertyAddress"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="571c9414-b7fb-436b-ad94-f6ff8cf362c7"
+            name="propertyValue"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2b6a82bd-8fc9-461e-84a4-5bf8f7087c7f"
+                LastKnownName="Double"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="35dd37bc-5697-45e2-aeb0-491d9e9918e8"
+            name="makeDeposit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8523a675-39da-4e2e-b1c1-da0f910c467f"
+        name="SavingsAccount"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="cad325b4-5122-41ed-bf4a-65b95bd7395d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="10211fe4-6786-4fac-a3b4-ca576cc6fd9e"
+              LastKnownName="Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0e049a45-ee27-4f25-af65-ec9d1c9f33ea"
+            name="overdrawnLimit"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2b6a82bd-8fc9-461e-84a4-5bf8f7087c7f"
+                LastKnownName="Double"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e6bbf21e-fef7-459e-9369-35799be7fde8"
+            name="deposit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0630aa35-6b2f-4256-8bf9-c81a5d45a1be"
+            name="withdraw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1e1bf062-1cfb-40b6-af07-b88448a10bb7"
+            name="produceStatement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="28d956f7-0cc2-4bfd-af80-94dadfec5322"
+        name="SecuritySystem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="663472ec-75db-42e3-817a-4ce4555ae2a6"
+            isDerived="false"
+            sourceEndRoleName="SecuritySystem"
+            targetEndRoleName="BankStaff"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="65219ddb-2907-4c11-838a-b33a5d9ddc57"
+              LastKnownName="BankStaff"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="70e8d0d7-9ec5-40d4-a4a1-cc8598f2942c"
+                  name="SecuritySystem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9bf8a437-126d-4c7f-a21d-624af5c0ff46"
+                  name="BankStaff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="65599b50-fff7-4303-8243-08bae8da2c37"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7bb1ea8f-6044-4409-8509-db4657f6c2d1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2309afb7-c571-4c89-885c-3985e95ebd45"
+            isDerived="false"
+            sourceEndRoleName="SecuritySystem"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b9d2907d-0246-4d8f-af15-ee530d8f9a76"
+              LastKnownName="Customer"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39f9af54-43e6-4bc1-8dba-6097356d9ccf"
+                  name="SecuritySystem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a6fc901-b63d-4ff2-8c4c-18a18adca479"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="19800d48-65a5-40cc-a822-c4330969df73"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4b28cb35-ec9c-432e-b4bf-35de2284e7f5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="5daf41e4-45f2-462c-b8e4-a23307ba34c1"
+            name="bankStaff"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="e484907f-16b9-4f8f-a4ef-18e705c5d50b"
+                LastKnownName="BankStaff"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="32083ae0-83fe-4169-8a91-34a3c3de54ba"
+            name="customer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0724832f-adb7-4012-8748-62af400d331f"
+                LastKnownName="Customer"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="83d574c7-c3a4-4339-a5c8-987f87ee2b84"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dde870eb-8e2b-411d-b142-ed5978bebc05"
+            name="verifyPin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="45e4a89d-314b-4647-8312-94646ad490b3"
+            name="verifyID"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1c6dcbaf-d14f-4d9b-9add-2e6eeca57b23"
+            name="verifyPassword"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1b2a5e6b-cf01-4f57-87f1-639e283cd476"
+        name="BanksSytem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="9bc0d0b8-f6dc-44f8-ac4b-62b4cc466ede"
+            isDerived="false"
+            sourceEndRoleName="BanksSytem"
+            targetEndRoleName="BankStaff"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="65219ddb-2907-4c11-838a-b33a5d9ddc57"
+              LastKnownName="BankStaff"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5ddd797-4ade-4add-8bb4-38a8e27ac0ec"
+                  name="BanksSytem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e963ef28-744e-4251-a20d-4e063020cf5b"
+                  name="BankStaff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="421bb86d-ecb7-4747-b41a-2e18216e6e7b"
+            isDerived="false"
+            sourceEndRoleName="BanksSytem"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b9d2907d-0246-4d8f-af15-ee530d8f9a76"
+              LastKnownName="Customer"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7031c5c9-73c6-4dbb-a8d3-b4ae6c22317c"
+                  name="BanksSytem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2cf1234c-a743-49ca-972b-bf58ca5742da"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0b76eddc-93a4-440b-8f9d-56a34525a03f"
+            isDerived="false"
+            sourceEndRoleName="BanksSytem"
+            targetEndRoleName="Account"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="10211fe4-6786-4fac-a3b4-ca576cc6fd9e"
+              LastKnownName="Account"
+              LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="311da584-725d-4b79-b963-24606d26413b"
+                  name="BanksSytem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16061e8a-27f4-4c18-b677-6a3ed39f3888"
+                  name="Account"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="02410589-a82c-4a56-8703-599f9400c802"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5b56220e-ebbf-49e2-b609-4df1881af5ba"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="306c2bbb-4bd5-4fde-9720-6f4eef40c5c7"
+            name="savingsDailyInterest"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0d06e3ec-08ee-4ace-92c2-27cd3f1e4de9"
+            name="mortgageDailyInterest"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="60c40fd1-6d2f-4d96-94f3-81613bc85ba1"
+            name="accounts"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="10211fe4-6786-4fac-a3b4-ca576cc6fd9e"
+                LastKnownName="Account"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f86ce99a-1656-4a42-b9db-af13210f95bc"
+            name="customers"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0724832f-adb7-4012-8748-62af400d331f"
+                LastKnownName="Customer"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0f5bfcff-4c15-4460-a1ba-22df888007dd"
+            name="bankStaff"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="e484907f-16b9-4f8f-a4ef-18e705c5d50b"
+                LastKnownName="BankStaff"
+                LastKnownLocation="CourseWorkDiagrams_02.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a25fd546-d74e-4a91-9897-aac5da341037"
+            name="updateInterestRates"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="58143f23-0778-4a90-8373-e0ceb0a3231e"
+            name="UpdateAccounts"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c746f5d7-a62a-46aa-928f-a2c550a34c24"
+            name="generateStatement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1480f153-53f2-4f89-8645-6c145c18b04f"
+            name="createNewAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3c96f011-e24f-46f3-9d3f-5048589a8390"
+            name="closeAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="80adbac2-a05f-4930-a702-662e56e11984"
+            name="getCustomerDetails"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cfce9024-e44f-49a8-955a-8dceac372522"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3ea4d679-13ea-4fce-b0e2-a8366885cd22"
+            name="verifyID"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="184649c4-5bfd-4d0c-ad7d-24e67d373502"
+            name="verifyPassword"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e3659f06-7ea7-47ea-b444-8e5c54d31e15"
+            name="verifyPin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="62e3a645-0dec-445f-b157-22de565c38b3"
+            name="makeWithdrawl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d3d66270-f4ab-4283-8ee5-78877909eac2"
+            name="makeDeposit"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

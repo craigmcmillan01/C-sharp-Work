@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="f84ec5d8-b830-4d4b-84e0-bc4e322906a2" name="UIActivity_01" linkedPackageId="f4498a4e-eedf-46fa-ac16-2a4d8ec480d0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="f84ec5d8-b830-4d4b-84e0-bc4e322906a2" name="UIActivity_01" linkedPackageId="f4498a4e-eedf-46fa-ac16-2a4d8ec480d0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="6b82ce67-d17f-462a-bc3a-30516e5ff244">
       <elementDefinition Id="b0c61080-4a9e-4811-8440-73fa3543d25f" />
@@ -88,26 +88,22 @@
           <decisionNode Id="060eab01-59bf-45a3-a7cb-0efe0238270d" name="Decision1" isLeaf="false">
             <elementDefinition Id="62ab7696-e68b-43a9-96a4-968bf79d7865" />
             <flowNodeTargets>
-              <controlFlow Id="0d42d938-6525-458a-8b61-6268db572600" guard="Incorrect" isLeaf="false">
-                <opaqueActionMoniker Id="857f7457-b114-4661-9f1c-95405bfeba93" LastKnownName="Display Error Message" />
-                <elementDefinition Id="3bdac1db-22b2-43f4-9243-492d9554043e" />
-              </controlFlow>
               <controlFlow Id="1b77119f-72f0-40b5-a099-77ddef661d1d" guard="Correct" isLeaf="false">
                 <opaqueActionMoniker Id="728f20a0-bc48-4eab-b242-a2a28da94e2d" LastKnownName="Allow entry to system" />
                 <elementDefinition Id="32f85d00-5308-4524-9539-6d4510025134" />
+              </controlFlow>
+              <controlFlow Id="90356cea-e454-4dcd-93d7-7464ca585e34" guard="Incorrect" isLeaf="false">
+                <decisionNodeMoniker Id="f4e37d94-0a08-4bb7-9750-7c3cbc2e54b6" LastKnownName="Decision2" />
+                <elementDefinition Id="7f91749e-f597-42ab-b36f-99509aaabf2d" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction Id="857f7457-b114-4661-9f1c-95405bfeba93" name="Display Error Message" isLeaf="false">
             <elementDefinition Id="8c8ff10f-ddf3-47d1-8daa-120cfde059f9" />
             <flowNodeTargets>
-              <controlFlow Id="18ca525a-39ad-4ff7-b118-5fdc3cc969a3" guard="Count &lt; x" isLeaf="false">
+              <controlFlow Id="51c96f76-e202-4243-a021-eb6e0a98211b" isLeaf="false">
                 <opaqueActionMoniker Id="eaf93e00-3e73-488c-8b02-9d301f8e29d2" LastKnownName="Prompt for username and password" />
-                <elementDefinition Id="302a6139-e5d8-4660-8778-f74db1c2f3eb" />
-              </controlFlow>
-              <controlFlow Id="4d7fa7f3-fffe-4913-8216-9a2d656e91df" guard="Count &gt;= x" isLeaf="false">
-                <opaqueActionMoniker Id="64ed76ee-6bbb-4e27-b416-ccc5f0422821" LastKnownName="Lock user out of system" />
-                <elementDefinition Id="a30cd9e3-5fc5-440c-9c90-5bae7b41e87e" />
+                <elementDefinition Id="25f9054a-42cc-479a-ac92-8cf5c5738869" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -159,6 +155,19 @@
           <activityFinalNode Id="9ddfbc31-7383-48fd-b30d-e7b2208aa932" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="b8b271c4-308f-4ca3-a07a-e3e9a4f14a84" />
           </activityFinalNode>
+          <decisionNode Id="f4e37d94-0a08-4bb7-9750-7c3cbc2e54b6" name="Decision2" isLeaf="false">
+            <elementDefinition Id="10e359b4-3961-41eb-a3e3-e2c352315e14" />
+            <flowNodeTargets>
+              <controlFlow Id="8ba58cc2-fb62-499f-be27-81c23e0f892b" guard="Count &lt; x" isLeaf="false">
+                <opaqueActionMoniker Id="857f7457-b114-4661-9f1c-95405bfeba93" LastKnownName="Display Error Message" />
+                <elementDefinition Id="cc375f61-32be-4ce8-ad06-520bdd522584" />
+              </controlFlow>
+              <controlFlow Id="a3769613-e2fd-4ef4-98e3-5f6a1e9641a3" guard="Count &gt;= x" isLeaf="false">
+                <opaqueActionMoniker Id="64ed76ee-6bbb-4e27-b416-ccc5f0422821" LastKnownName="Lock user out of system" />
+                <elementDefinition Id="24d258b9-4ec0-4230-a98a-881918a4c0f1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
